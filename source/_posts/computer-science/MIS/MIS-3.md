@@ -1,8 +1,7 @@
 ---
 layout: post
-title: 管理信息系统 第3章 企业系统
+title: 第3章 数字企业时代的企业应用系统
 date: 2025-12-29 08:55:21
-mermaid: true
 categories:
   - 计算机科学
   - 管理信息系统
@@ -10,67 +9,105 @@ tags:
 ---
 
 # `ERP` 企业资源计划系统
+
 ## 主要特点
-- 模块化设计`Modular Design`，根据需要选择独立的功能模块；
-- 中央数据库`Central DBMS`，一个应用系统、一个统一平台；
-- 集成式业务流程`Seamless information flow`，部门之间无缝衔接和流动；
-- 集成企业最佳的企业实践`Best business practices`，围绕预定义业务流程；
+
+- 模块化设计 Modular Design，根据需要选择独立的功能模块；
+- 中央数据库 Central DBMS，一个应用系统、一个统一平台；
+- 集成式业务流程 Seamless information flow ，部门之间无缝衔接和流动；
+- 集成企业最佳的企业实践 Best business practices，围绕能体现最佳商业实践的预定义业务流程；
 - 可配置的、灵活的；
 - 数据与业务处理的实时性；
-- 互联网驱动`Internet enabled`；
+- 互联网驱动 Internet enabled；
 
 ## 演变过程
+
+![erp-history.png](../../../assets/MIS/erp-history.png)
 `MRP`(1970) -> `MRPII`(1980) -> `ERP`(1990) -> `ERPII`(2000)
 
 ## 主要供应商
+
 - 国内：用友、金蝶、鼎捷
 - 海外：SAP, 科仁, SSA, Microsoft
 
-## 财务系统
-作为扩展，管理进销存
-
-## 生产管理
-CRP MRP
-
 # `SCM` 供应链管理系统
+
 ## 定义
+
 - 组织和流程的网络 Network of organizations and processes for:
 - 从原材料采购、生产制造和产品销售全过程
 - 供应链的上游 Upstream supply chain：
-  - 公司的供应商、供应商的供应商及其相互之间关系的管理
+    - 公司的供应商、供应商的供应商及其相互之间关系的管理
 - 供应链的下游 Downstream supply chain：
-  - 分销商、负责向客户交付产品的组织和流程
+    - 分销商、负责向客户交付产品的组织和流程
 - 供应链内部 Internal supply chain
 
-```mermaid
-flowchart TB
-    Suppliers["Suppliers"] <--> Manufacturers["Manufacturers"] & PIN["Private Industrial Networks<br>Net Marketplaces"]
-    Manufacturers <--> Distributors["Distributors"] & PIN
-    Distributors <--> Retailers["Retailers"]
-    Retailers <--> Customers["Customers"]
-    LogisticsP["Logistics<br>Providers"] <--> Customers & Distributors & Manufacturers & LE["Logistics<br>Exchanges"]
-    VirtualM["Virtual<br>Manufacturers"] <--> Manufacturers & ContractM["Contract<br>Manufacturers"] & PIN & LE
-    ContractM <--> LogisticsP & PIN & LE
-```
+## 要解决的问题
 
-## 解决问题
 1. 供应链运营效率低
-2. 准时生产策略*
+2. ++准时生产策略++{.wavy}
 3. 安全库存
-4. 牛鞭效应*
+4. ++牛鞭效应++{.wavy}
 
-## 管理软件
+> 牛鞭效应 (Bullwhip Effect) 是指在供应链中，需求信息在传递过程中逐级放大，导致上游供应商的需求波动远大于下游客户的实际需求波动。
+
+## 供应链管理软件
+
 1. 供应链计划系统
-2. 供应链执行系统
+    - 供应链建模（确定供应链中哪些实体）
+    - 制定求计划
+    - 优化采购和制造计划
+    - 建立库存水平
+    - 确定运输方式
 
-需求驱动的供应链、互联网驱动的供应链
+2. 供应链执行系统
+   在配送中心和仓库之间管理产品的流动
+
+## 互联网驱动的供应链
+
+![internet-driven-sc.png](../../../assets/MIS/internet-driven-sc.png)
 
 # `CRM` 客户关系管理系统
-商业价值
-目标：将客户信息分发到企业的各个系统和客户接触点中去；
+
+## 商业价值
+
+1. 提高客户满意度
+2. 降低直接营销的成本
+3. 更有效的营销方式
+4. 降低获取和保留客户的成本
+5. 增加销售收入
+
+## 目标
+
+* 客户资源管理管理，了解客户。
+* 从整个组织中获取和集成客户数据，同一个客户的数据集成到一个视图中
+* 强化和分析客户数据
+* 将客户信息分发到企业的各个系统和++客户接触点++{.wavy}中去 customer touch point
+* 与客户交互
 
 ## 分类
+
 1. 操作型CRM
-   - 面向客户的应用程序
+    - 面向客户的应用程序如销售团队自动化，呼叫中心和客户服务支持，以及营销自动化
 2. 分析型CRM
-   - 基于操作性CRM和客户接触点数据分析
+    - 基于操作性CRM和客户接触点数据分析客户数据
+
+# 企业应用系统总结
+
+## 优点
+
+* 有助于统一企业的组织架构：一个组织
+* 管理： 企业范围内的基于知识的业务流程
+* 技术：统一的平台，统一的中央数据库
+* 企业：客户驱动的更高效的业务流程
+
+## 面临的挑战
+
+* 一个复杂的软件系统，需要投入大量的时间、资金和专业知识。软件购买和实施服务费用都很高。平均每个ERP项目280万美元（2014年）。
+* 要求对业务运作方式（业务流程）进行根本性的改变。
+* 组织需要学习和改变自己，很多企业不理解这一点。
+* 依赖于软件供应商的服务支持，增加了用户的跳槽成本（云计算模式也许可以解决这个问题）。
+* 数据需要标准化、有效的组织管理以及进行数据清洗。
+* 技术变化和技术发展可能会淘汰原有系统。
+* 业务流程的变化，软件需要不断维护和修改。
+
