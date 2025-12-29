@@ -8,8 +8,6 @@ const crypto = require('crypto');
 const fs = require('fs');
 const path = require('path');
 
-const randomServer = parseInt(Math.random()*4,10)+1
-
 const randomBG = function(count = 1, image_server = null, image_list = []) {
   if (image_server) {
     if(count && count > 1) {
@@ -24,14 +22,7 @@ const randomBG = function(count = 1, image_server = null, image_list = []) {
     return image_server + '?' + Math.floor(Math.random() * 999999)
   }
 
-  var parseImage = function(img, size) {
-    if (img.startsWith('//') || img.startsWith('http')) {
-      return img
-    } else {
-      return 'https://tva'+randomServer+'.sinaimg.cn/'+size+'/'+img
-    }
-  }
-
+  // 直接使用 image_list 中的本地图片路径
   if(count && count > 1) {
     var shuffled = image_list.slice(0), i = image_list.length, min = i - count, temp, index;
     while (i-- > min) {
@@ -41,12 +32,10 @@ const randomBG = function(count = 1, image_server = null, image_list = []) {
       shuffled[i] = temp;
     }
 
-    return shuffled.slice(min).map(function(img) {
-      return parseImage(img, 'large')
-    });
+    return shuffled.slice(min);
   }
 
-  return parseImage(image_list[Math.floor(Math.random() * image_list.length)], 'mw690')
+  return image_list[Math.floor(Math.random() * image_list.length)]
 }
 
 hexo.extend.helper.register('_url', function(path, text, options = {}) {
