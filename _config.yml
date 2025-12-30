@@ -53,9 +53,10 @@ prismjs:
 default_category: uncategorized
 category_map: # edit for Theme.shoka
   计算机科学: computer-science
-  Java: java
-  二进制杂谈: note
-  Theme Shoka Documentation: theme-shoka-doc
+  R语言: R
+  数据挖掘: data-mining
+  管理信息系统: MIS
+  移动开发技术: mobile-dev
 tag_map:
 
 # Date / Time format
