@@ -9,14 +9,76 @@ tags:
 ---
 
 # 常见相似函数的区别
-## 检验 test 相关 
+## 检验 test 相关
+
 ### `z.test`
+- **包**：BSDA / TeachingDemos
+- **用途**：均值或比例的 z 检验，用于大样本或已知总体标准差的情况。
+- **语法**：`z.test(x, y=NULL, mu=0, sigma.x, sigma.y=NULL, alternative="two.sided", conf.level=0.95)`
+- **主要参数**：
+    - `x, y`：样本向量（单样本或双样本）
+    - `mu`：原假设均值（默认0）
+    - `sigma.x, sigma.y`：已知总体标准差（必填）
+    - `alternative`："two.sided"、"less"、"greater"
+    - `conf.level`：置信水平（默认0.95）
 
 ### `t.test`
+- **包**：stats（基础内置）
+- **用途**：均值的 t 检验，用于小样本或未知总体标准差的情况。
+- **语法**：`t.test(x, y=NULL, mu=0, paired=FALSE, var.equal=FALSE, alternative="two.sided", conf.level=0.95)`
+- **主要参数**：
+    - `x, y`：样本向量（单样本或双样本）
+    - `mu`：原假设均值（默认0）
+    - `paired`：是否配对检验（默认FALSE）
+    - `var.equal`：是否假设方差相等（默认FALSE，采用 Welch 校正）
+    - `alternative`、`conf.level`：同 z.test
 
 ### `prop.test`
+- **包**：stats（基础内置）
+- **用途**：比例的卡方检验，检验观测频数与理论频数是否符合。
+- **语法**：`prop.test(x, n, p=NULL, alternative="two.sided", conf.level=0.95, correct=TRUE)`
+- **主要参数**：
+    - `x`：成功次数（向量支持多组）
+    - `n`：试验总次数
+    - `p`：原假设比例（默认NULL 表示 0.5）
+    - `correct`：是否应用连续性修正（默认TRUE）
+    - `alternative`、`conf.level`：同上
+
+### `var.test`
+- **包**：stats（基础内置）
+- **用途**：方差比的 F 检验，用于检验两个样本的方差是否相等。
+- **语法**：`var.test(x, y, ratio=1, alternative="two.sided", conf.level=0.95)`
+- **主要参数**：
+    - `x, y`：两个样本向量
+    - `ratio`：原假设的方差比（默认1，即方差相等）
+    - `alternative`、`conf.level`：同上
+
+### `sigma.test`
+- **包**：TeachingDemos
+- **用途**：标准差/方差的卡方检验，检验单个样本的总体标准差是否等于指定值。
+- **语法**：`sigma.test(x, sigma, alternative="two.sided", conf.level=0.95)`
+- **主要参数**：
+    - `x`：样本向量
+    - `sigma`：原假设的标准差
+    - `alternative`、`conf.level`：同上
 
 ### `shapiro.test`
+- **包**：stats（基础内置）
+- **用途**：Shapiro-Wilk 正态性检验，检验样本是否来自正态分布。
+- **语法**：`shapiro.test(x)`
+- **主要参数**：
+    - `x`：样本向量（长度 3～5000）
+- **返回**：W 统计量与 p 值，p > 0.05 表示符合正态分布
+
+### `levene.test`
+- **包**：car
+- **用途**：Levene 方差齐性检验，检验多组样本的方差是否相等。
+- **语法**：`leveneTest(y ~ group, data, center=median)`
+- **主要参数**：
+    - `y ~ group`：公式形式（y 为数值，group 为分组因子）
+    - `center`："median"（默认）或 "mean"
+    - `data`：数据框
+
 
 # 项目使用的包和函数
 按包分组，先概述包用途，再列函数的主要作用与核心参数。
