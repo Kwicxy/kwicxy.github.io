@@ -4,7 +4,7 @@ title: R 附录
 date: 2025-12-29 20:17:16
 categories:
   - 计算机科学
-  - R 语言
+  - R语言
 tags:
 ---
 
