@@ -29,7 +29,7 @@ tags:
 
 # 企业信息系统类型
 
-![img.png](/assets/MIS/mis-category.png)
+![img.png](/assets/MIS/mis-category.webp)
 
 ## 按功能划分
 
@@ -71,7 +71,7 @@ tags:
 * 用于组织和分析的数据和软件工具
 * 帮助管理人员和用户提高决策水平
 
-![bi-relationship.png](/assets/MIS/bi-relationship.png)
+![bi-relationship.png](/assets/MIS/bi-relationship.webp)
 
 - `MIS` 管理报告系统
   > 面向中级管理层，根据TPS的数据，实时提供公司的业绩报告；

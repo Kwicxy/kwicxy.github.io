@@ -98,7 +98,7 @@ Conway公司在两年内通过减少司机数量、增加每辆拖车的货运�
 
 知识专家把过去的经验以案例形式存储在知识库中；
 系统搜索与新问题特征相似的旧案例，提出额外问题，找到最匹配的案例，并将旧案例的解决方案经过必要修改后应用于新案例。
-![cbr-work-process.png](../../../assets/MIS/cbr-work-process.png){width=400px}
+![cbr-work-process.png](../../../assets/MIS/cbr-work-process.webp){width=400px}
 
 ## 模糊逻辑 Fuzzy Logic
 

@@ -22,7 +22,7 @@ tags:
 
 ## 演变过程
 
-![erp-history.png](../../../assets/MIS/erp-history.png)
+![erp-history.png](../../../assets/MIS/erp-history.webp.
 `MRP`(1970) -> `MRPII`(1980) -> `ERP`(1990) -> `ERPII`(2000)
 
 ## 主要供应商
@@ -65,7 +65,7 @@ tags:
 
 ## 互联网驱动的供应链
 
-![internet-driven-sc.png](../../../assets/MIS/internet-driven-sc.png)
+![internet-driven-sc.png](../../../assets/MIS/internet-driven-sc.webp)
 
 # `CRM` 客户关系管理系统
 

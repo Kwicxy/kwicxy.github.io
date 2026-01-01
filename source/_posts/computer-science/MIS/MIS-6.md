@@ -46,7 +46,7 @@ tags:
 6. 互联网平台
 7. 咨询与系统集成服务
 
-![it-infrastructure.png](../../../assets/MIS/it-infrastructure.png)
+![it-infrastructure.png](../../../assets/MIS/it-infrastructure.webp)
 
 # 互联网应用趋势
 ## 软件即服务 (++SaaS++{.wavy}, Software-as-a-Service) 
