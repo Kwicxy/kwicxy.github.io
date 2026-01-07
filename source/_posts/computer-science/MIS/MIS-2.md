@@ -8,14 +8,14 @@ categories:
 tags:
 ---
 
-# ++业务流程++{.wavy}
+# ==业务流程==
 
 **企业信息化的核心基础**
 以提供有价值的产品或服务为中心而进行的一系列业务工作的组织和协调方式
 
 - 物料、信息、知识的流动；
-- 活动、步骤的集合 set of activities and procedures；
-- 可能与企业的一个部门相关，也可以是跨部门的 cross-functional。
+- 活动、步骤的集合 _set of activities and procedures_；
+- 可能与企业的一个部门相关，也可以是跨部门的 _cross-functional_。
   企业：可以被看做是业务流程的集合
   业务流程可以是企业的资产或企业的负债
 

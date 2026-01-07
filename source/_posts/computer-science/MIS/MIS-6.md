@@ -29,10 +29,10 @@ tags:
 
 ## 技术推动IT设施的演变
 * 摩尔定律和微处理能力
-  * 计算能力每18个月翻一番 Computing power doubles every 18 months 纳米技术：
+  * 计算能力每18个月翻一番 _Computing power doubles every 18 months_ 纳米技术：
   * 将晶体管的大小缩小到与病毒相当的大小
 * 大规模数字存储的规律
-  * 每年存储的数据量翻了一番 The amount of data being stored doubles each year
+  * 每年存储的数据量翻了一番 _The amount of data being stored doubles each year_
 * 梅特卡夫定律与网络经济学
   * 一个网络的价值或力量随着网络成员的数量呈指数增长
   * 随着网络成员的增加，更多的人想使用它(对网络访问的需求增加)
@@ -49,11 +49,11 @@ tags:
 ![it-infrastructure.png](../../../assets/MIS/it-infrastructure.webp)
 
 # 互联网应用趋势
-## 软件即服务 (++SaaS++{.wavy}, Software-as-a-Service) 
+## 软件即服务 (==SaaS==, Software-as-a-Service) 
 软件的交付模型，在这种模型中，您**按使用次数付费购买软件**，而不是直接购买软件。
 * 使用服务提供商的任何设备做任何事情
 * 支付一小笔费用并在网上存储文件
 * 与普通计算机类似的方式访问这些文件
-* 充分利用应用服务提供者 ASP: Application Service Provider
+* 充分利用应用服务提供者 (ASP: Application Service Provider)
 
 还有 IaaS: Infrastructure as a Service; PaaS: Platform as a Service

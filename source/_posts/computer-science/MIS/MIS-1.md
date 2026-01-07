@@ -10,13 +10,12 @@ tags:
 
 # 信息技术与信息系统的作用
 
-## 企业利用信息系统实现++六大战略目标++{.wavy}
+## 企业利用信息系统实现==六大战略目标==
 
-### 运营优化 Operational excellence
+### 运营优化 _Operational excellence_
 
-- 提高效率以获得更高的盈利能力 Improvement of efficiency to attain higher profitability
-- 信息系统和信息技术是提高效率和提高生产力的重要工具 Information systems, technology an important tool in achieving
-  greater efficiency and productivity
+- 提高效率以获得更高的盈利能力 _Improvement of efficiency to attain higher profitability_
+- 信息系统和信息技术是提高效率和提高生产力的重要工具 _Information systems, technology an important tool in achieving greater efficiency and productivity_
 
 +++ 举例：沃尔玛的零售链系统
 沃尔玛的零售链系统将供应商与商店联系起来,以获得更好的商品补给。
@@ -25,18 +24,16 @@ tags:
 **利用信息技术把成本或劳动转移给供应商和客户。**
 +++
 
-### 新产品、新服务和新模式 New products, services, and business models
+### 新产品、新服务和新模式 _New products, services, and business models_
 
 - 新的商业模式：新的生产模式、运输模式、销售模式和服务模式。
 - 信息系统和信息技术是创造新产品、新服务和新商业模式的主要工具和推动力。
-- 一些公司没有采用合适的商业模式去迎合新技术，或者试图保留一个被新技术注定要淘汰的旧商业模式。Some firms fail to adopt the
-  right business model that suits the new technology, or seek to preserve an old business model that is doomed by new
-  technology.
+- 一些公司没有采用合适的商业模式去迎合新技术，或者试图保留一个被新技术注定要淘汰的旧商业模式。_Some firms fail to adopt the right business model that suits the new technology, or seek to preserve an old business model that is doomed by new technology._
 
-### 与客户和供应商的亲密关系 Customer and supplier intimacy
+### 与客户和供应商的亲密关系 _Customer and supplier intimacy_
 
 - 利用客户关系管理(CRM)系统可以更好地服务客户，以得到客户回报，从而增加收入和利润。
-  Serving customers well leads to customers returning, which raises revenues and profits.
+  _Serving customers well leads to customers returning, which raises revenues and profits._
 
 +++ 举例：Mandarin Oriental
 Mandarin Oriental文华东方酒店高端宾馆可以利用计算机跟踪和发现顾客的偏好，用于监视和定制酒店环境（将顾客房间的温度、入住时间、常拨的号码、电视节目等信息存入数据库）。
@@ -57,7 +54,7 @@ TAL公司通过它开发的一个计算机决策模型来决定要生产多少�
 亚马逊跟踪用户对图书和CD的购买偏好，并可以推荐其他人购买的书籍给客户.
 +++
 
-### 决策的改进 Improved decision making
+### 决策的改进 _Improved decision making_
 
 在缺乏准确信息的情况下，管理者只能使用预测、最佳猜测和运气来进行决策，这会导致：
 
@@ -72,16 +69,16 @@ Verizon（威瑞森电信）公司是美国最大的电信公司之一，它使�
 利用这些信息，管理人员可以立即调整，将资源分配给受影响的区域，通知消费者修复工作，并快速恢复服务。
 +++
 
-### 竞争优势 Competitive advantage
+### 竞争优势 _Competitive advantage_
 
-- 企业运营管理效率更高 Delivering better performance
-- 更好的商品更低的价格 Charging less for superior products
-- 实时、快速地响应客户和供应商 Responding to customers and suppliers in real time
+- 企业运营管理效率更高 _Delivering better performance_
+- 更好的商品更低的价格 _Charging less for superior products_
+- 实时、快速地响应客户和供应商 _Responding to customers and suppliers in real time_
 
-### 生存的必要 Survival
+### 生存的必要 _Survival_
 
 - 信息技术是企业开展业务的基础。
-- 行业级的变化。Industry-level changes
+- 行业级的变化。_Industry-level changes_
   > 举例：自从花旗银行1977年引入了自动取款机（ATM），其它银行为了生存纷纷向客户提供自动取款机。
 - 政府法规的要求
 
@@ -89,10 +86,10 @@ Verizon（威瑞森电信）公司是美国最大的电信公司之一，它使�
 
 ## 信息系统如何改变企业
 
-1. 移动数字平台 Mobile Platform:（最普遍）移动设备可以下载成千上万的应用程序来支持协作、基于位置的服务和与同事的交流；
-2. 云计算 Cloud Computing: 将互联网上的许多计算机集成在一起，可以执行传统上意义上的公司主机的功能和任务；
-3. 大数据 Big Data: 企业可以从大量的数据中寻找有意义的知识和见解；
-4. ++人工智能 Artificial Intelligence++{.wavy}
+1. 移动数字平台 _Mobile Platform_:（最普遍）移动设备可以下载成千上万的应用程序来支持协作、基于位置的服务和与同事的交流；
+2. 云计算 _Cloud Computing_: 将互联网上的许多计算机集成在一起，可以执行传统上意义上的公司主机的功能和任务；
+3. 大数据 _Big Data_: 企业可以从大量的数据中寻找有意义的知识和见解；
+4. ++人工智能 _Artificial Intelligence_++
 
 # 企业转型与组织变革
 
