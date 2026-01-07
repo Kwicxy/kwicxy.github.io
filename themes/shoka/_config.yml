@@ -163,8 +163,8 @@ reward:
   # If true, reward will be displayed in every article by default.
   enable: true
   account:
-    wechatpay: /wechatpay.jpg
-    alipay: /alipay.jpg
+    wechatpay: /wechatpay.webp
+    alipay: /alipay.webp
     # paypal: /paypal.png
 
 # TagCloud settings for tags page.
