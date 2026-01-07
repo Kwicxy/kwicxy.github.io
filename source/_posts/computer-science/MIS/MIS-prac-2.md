@@ -36,7 +36,7 @@ tags:
     - shipping the product.
 {.options}
 
-04. The {.gap} function is responsible for making sure customers are aware of the company's products. {.quiz}
+04. The []{.gap} function is responsible for making sure customers are aware of the company's products. {.quiz}
     - finance and accounting
     - human resources
     - manufacturing and production
@@ -98,7 +98,7 @@ The business processes of a sandwich shop include: Taking orders, making sandwic
     - BIS
 {.options}
 
-14. A(n) {.gap} is typically a major source of data for other systems. {.quiz}
+14. A(n) []{.gap} is typically a major source of data for other systems. {.quiz}
     - TPS {.correct}
     - MIS
     - ESS
@@ -234,7 +234,7 @@ The business processes of a sandwich shop include: Taking orders, making sandwic
     - SCM
 {.options}
 
-31. A(n) {.gap} system collects data from various key business processes and stores the data in a single, comprehensive data repository, usable by other parts of the business. {.quiz}
+31. A(n) []{.gap} system collects data from various key business processes and stores the data in a single, comprehensive data repository, usable by other parts of the business. {.quiz}
     - transaction processing
     - enterprise {.correct}
     - automatic reporting
@@ -322,7 +322,7 @@ The business processes of a sandwich shop include: Taking orders, making sandwic
     - provide the ability for citizens to network electronically with other citizens.
 {.options}
 
-42. In {.gap}, digital technology and the Internet are used to execute the major business processes in the enterprise. {.quiz}
+42. In []{.gap}, digital technology and the Internet are used to execute the major business processes in the enterprise. {.quiz}
     - e-commerce
     - e-business {.correct}
     - enterprise applications
@@ -562,7 +562,7 @@ Customers, suppliers, employees, managers, and even oversight agencies continual
     - CIO.
 {.options}
 
-90. A {.gap} is a senior manager who oversees the use of IT in the firm. {.quiz}
+90. A []{.gap} is a senior manager who oversees the use of IT in the firm. {.quiz}
     - CEO
     - CFO
     - CIO {.correct}
@@ -578,7 +578,7 @@ Customers, suppliers, employees, managers, and even oversight agencies continual
     - oversees the company's security policy.
 {.options}
 
-92. The {.gap} helps design programs and systems to find new sources of knowledge or to make better use of existing knowledge in organizational and management processes. {.quiz}
+92. The []{.gap} helps design programs and systems to find new sources of knowledge or to make better use of existing knowledge in organizational and management processes. {.quiz}
     - CTO
     - CSO
     - CKO {.correct}
@@ -602,7 +602,7 @@ Customers, suppliers, employees, managers, and even oversight agencies continual
     - data scientists.
 {.options}
 
-95. A firm's {.gap} is responsible for enterprise-wide governance and utilization of information to maximize the value the organization can realize from its data. {.quiz}
+95. A firm's []{.gap} is responsible for enterprise-wide governance and utilization of information to maximize the value the organization can realize from its data. {.quiz}
     - CKO
     - CIO
     - CDO {.correct}
@@ -610,7 +610,7 @@ Customers, suppliers, employees, managers, and even oversight agencies continual
     - database administrator
 {.options}
 
-96. {.gap} are responsible for translating business problems and requirements into information requirements and systems. {.quiz}
+96. []{.gap} are responsible for translating business problems and requirements into information requirements and systems. {.quiz}
     - End users
     - Information systems managers
     - Programmers

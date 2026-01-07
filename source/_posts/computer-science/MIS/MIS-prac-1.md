@@ -83,7 +83,7 @@ tags:
     - Competitive advantage
 {.options}
 
-10. In each of the years between 1999 and 2019, capital investment in information technology, consisting of IT equipment, software, and research and development (R&D), accounted for over {.gap} percent of U.S. total capital spending (in nominal GDP). {.quiz}
+10. In each of the years between 1999 and 2019, capital investment in information technology, consisting of IT equipment, software, and research and development (R&D), accounted for over []{.gap} percent of U.S. total capital spending (in nominal GDP). {.quiz}
     - 40 {.correct}
     - 50
     - 55
@@ -359,7 +359,7 @@ tags:
     - Knowledge workers
 {.options}
 
-49. In {.gap}, raw data is systematically acquired and transformed during various stages that add value to that information. {.quiz}
+49. In []{.gap}, raw data is systematically acquired and transformed during various stages that add value to that information. {.quiz}
     - an information value chain {.correct}
     - a firm value chain
     - an industry value chain
