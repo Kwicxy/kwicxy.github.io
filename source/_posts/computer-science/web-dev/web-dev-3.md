@@ -57,7 +57,8 @@ tags:
 @WebServlet(name="inputServlet", value="/input")
 public class InputServlet extends HttpServlet {
     @Override
-    protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+    protected void doPost(HttpServletRequest req, HttpServletResponse resp) 
+                     throws ServletException, IOException {
         System.out.println(req.getParameter("name"));
         System.out.println(Integer.parseInt(req.getParameter("age")));
         System.out.println(Arrays.toString(req.getParameterValues("hobby")));
@@ -76,7 +77,8 @@ public class InputServlet extends HttpServlet {
     }
 
     @Override
-    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+    protected void doGet(HttpServletRequest req, HttpServletResponse resp) 
+                     throws ServletException, IOException {
         PrintWriter out = resp.getWriter();
         out.println("<html><body><form method=\"post\" action=\"input\">");
         out.println("<label for=\"name|\">name</label><input name=\"name\"/>");
@@ -114,7 +116,8 @@ HTTP中包含了请求标头(Header)信息，HttpServletRequest 上设计了一�
 @WebServlet(name = "headerServlet", value = "/headers")
 public class HeaderServlet extends HttpServlet {
     @Override
-    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+    protected void doGet(HttpServletRequest req, HttpServletResponse resp) 
+                     throws ServletException, IOException {
         resp.setContentType("text/plain;charset=UTF-8");
         PrintWriter out = resp.getWriter();
         

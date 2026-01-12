@@ -40,18 +40,20 @@ tags:
 
 1. **attribute** 相关
    `getAttribute(name: String) -> Object`
+   获取请求域中的属性值。通常用于在请求转发（RequestDispatcher）时传递数据。
    `setAttribute(name: String, obj: Object)`
+   在请求域中存储属性值。
 
 2. **parameter** 相关
    `getParameter(name: String) -> String`
-   `setParameter(name: String, value: String)`
+   获取客户端发送的请求参数值（如表单数据或 URL 查询参数）。
 
 ### ServletResponse 响应接口
 
 1. `getWriter() -> PrintWriter`
-   获得一个 PrintWriter, 
+   获取一个字符输出流 `PrintWriter`，用于向客户端发送文本响应内容。
 2. `setContentType(type: String)`
-   设置响应对象的类型, 
+   设置响应的内容类型（MIME Type）及字符编码，如 `text/html;charset=UTF-8`。让浏览器知道如何解析响应数据。
 
 ## GenericServlet 抽象类
 
@@ -81,12 +83,19 @@ HTTP协议支持的方法有GET、POST、PUT、PATCH、DELETE，以及OPTIONS和
 在编程中，需要根据应用程序的需求选择合适的HTTP方法来操作资源。
 
 1. `doGet`: **获取**资源
+   用于处理 GET 请求，一般用于读取数据。
 2. `doPost`: **创建**资源
+   用于处理 POST 请求，一般用于提交表单或上传文件。
 3. `doPut`: **修改**资源
+   用于处理 PUT 请求，通常用于更新资源。
 4. `doPatch`: **修改部分**资源
+   用于处理 PATCH 请求，对资源进行部分更新。
 5. `doDelete`: **删除**资源
-6. `doOptions`: 
-7. `doTrace`:
+   用于处理 DELETE 请求，删除指定的资源。
+6. `doOptions`: **获取支持的方法**
+   用于获取服务器支持的 HTTP 请求方法。
+7. `doTrace`: **追踪路径**
+   用于回显服务器收到的请求，主要用于测试或诊断。
 
 +++
 
@@ -95,29 +104,40 @@ HTTP协议支持的方法有GET、POST、PUT、PATCH、DELETE，以及OPTIONS和
 继承自 [`ServletRequest`](#servletrequest-请求接口)
 
 1. `getSession() -> HttpSession`
+   获取当前请求关联的 Session 对象。如果不存在，默认会创建一个新的。
 2. `getContextPath() -> String`
+   获取当前 Web 应用的上下文路径（Context Path），即项目部署名。
 
 ### HttpServletResponse 响应接口
 
 继承自 [`ServletResponse`](#servletresponse-响应接口)
 
 1. `addCookie(cookie: Cookie)`
+   向响应中添加一个 Cookie，浏览器接收到后会保存该 Cookie。
 2. `sendRedirect(location: String)`
+   发送一个重定向响应，通知浏览器访问新的 URL 地址（状态码 302）。
 
 ## ServletConfig 配置接口
 
 1. `getInitParameter(name: String) -> String`
+   根据参数名获取 Servlet 的初始化参数值（在 web.xml 或注解中配置）。
 2. `getServletName() -> String`
+   获取当前 Servlet 的名称。
 3. `getServletContext() -> ServletContext`
+   获取当前 Web 应用的 ServletContext 对象（应用上下文）。
 
 ### ServletContext 上下文接口
 
 1. attribute 相关
    `getAttribute(name: String)`
+   获取应用域（全局）中的属性值。
    `setAttribute(name: String, obj: Object)`
+   在应用域中存储属性值，所有 Servlet 共享。
 2. resource 相关
-   `getResourcePaths()`
-   `getResourceStream()`
+   `getResourcePaths(path: String) -> Set<String>`
+   获取指定路径下的所有资源路径列表。
+   `getResourceStream(path: String) -> InputStream`
+   获取指定路径资源的输入流，用于读取资源文件内容。
 
 # 代码示例
 ## HelloServlet
@@ -157,4 +177,4 @@ public class HelloServlet extends HttpServlet {
 }
 ```
 
-## 
+##

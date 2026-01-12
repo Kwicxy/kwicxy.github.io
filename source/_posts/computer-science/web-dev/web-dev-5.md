@@ -33,13 +33,13 @@ public class OnlineUsersListener implements HttpSessionListener {
     @Override
     public void sessionCreated(HttpSessionEvent se) {
         OnlineUsersListener.counter++;
-        se.getSession().getServletContext().log("New session created. Count: " + counter);
+        System.out.println("New session created. Count: " + counter);
     }
     
     @Override
     public void sessionDestroyed(HttpSessionEvent se) {
         OnlineUsersListener.counter--;
-        se.getSession().getServletContext().log("Session destroyed. Count: " + counter);
+        System.out.println("Session destroyed. Count: " + counter);
     }
 }
 ```
