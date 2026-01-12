@@ -81,3 +81,5 @@ flowchart TD
     L -->|否| M["k = k + 1"]
     M --> H
 ```
+
+{% mmedia "video" "src:/assets/data-mining/AprioriVisualization.webm" "autoplay:true" %}
