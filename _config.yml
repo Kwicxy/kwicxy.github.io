@@ -3,8 +3,8 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: 夢の書架
-subtitle: Yume Senpai Presents
+title: あさめの図書館
+subtitle: Shoka.asame.space
 description: 世界需要七休日
 keywords: 关键词1,关键词2 # edit for Theme.shoka
 author: 梦前辈
@@ -13,7 +13,7 @@ timezone: 'Asia/Shanghai'
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: https://kwicxy.github.io
+url: https://shoka.asame.space
 root: /
 permalink: :title/ # edit for Theme.shoka
 permalink_defaults:
@@ -57,6 +57,7 @@ category_map: # edit for Theme.shoka
   数据挖掘: data-mining
   管理信息系统: MIS
   Web开发技术: web-dev
+  
 tag_map:
 
 # Date / Time format
