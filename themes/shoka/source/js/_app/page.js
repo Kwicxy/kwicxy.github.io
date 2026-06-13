@@ -130,11 +130,89 @@ const postFancybox = function(p) {
   }
 }
 
+const isMermaidCode = function(code) {
+  return /^(sequenceDiagram|flowchart|graph|classDiagram|stateDiagram|stateDiagram-v2|erDiagram|journey|gantt|pie|gitGraph|mindmap|timeline|quadrantChart|requirementDiagram|C4Context|C4Container|C4Component|C4Dynamic|block-beta|packet-beta|architecture-beta|sankey-beta|xychart-beta)\b/.test(code.trim());
+}
+
+const restoreMermaidCode = function() {
+  $.each('.md figure.highlight', function(element) {
+    var code = element.child('.code');
+    var lines = [];
+
+    if(!code)
+      return
+
+    $.each('.line', function(line) {
+      lines.push(line.innerText);
+    }, code);
+
+    var content = lines.join('\n').replace(/\s+$/g, '');
+    if(!isMermaidCode(content))
+      return
+
+    var pre = document.createElement('pre');
+    pre.className = 'mermaid';
+    pre.textContent = content;
+    element.parentNode.replaceChild(pre, element);
+  });
+}
+
+const getMermaidApi = function() {
+  if(!window.mermaid)
+    return null
+
+  if(typeof window.mermaid.initialize === 'function')
+    return window.mermaid
+
+  if(window.mermaid.default && typeof window.mermaid.default.initialize === 'function')
+    return window.mermaid.default
+
+  return null
+}
+
+const renderMermaid = function() {
+  if(!LOCAL.mermaid)
+    return
+
+  restoreMermaidCode();
+
+  if(!$('.md .mermaid'))
+    return
+
+  vendorCss('mermaid');
+  vendorJs('mermaid', function() {
+    var mermaidApi = getMermaidApi();
+    if(!mermaidApi)
+      return
+
+    mermaidApi.initialize({
+      startOnLoad: false,
+      theme: BODY.hasClass('darkmode') ? 'dark' : 'default',
+      flowchart: {
+        htmlLabels: false,
+        useMaxWidth: true
+      }
+    });
+
+    mermaidApi.run({
+      nodes: document.querySelectorAll('.md .mermaid')
+    }).then(function() {
+      $.each('pre.mermaid > svg', function (element) {
+        element.style.maxWidth = ''
+      });
+    }).catch(function(error) {
+      console.error(error);
+    });
+  }, getMermaidApi());
+}
+
 const postBeauty = function () {
   loadComments();
 
   if(!$('.md'))
     return
+
+  renderMermaid();
 
   postFancybox('.post.block');
 

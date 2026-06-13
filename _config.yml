@@ -111,6 +111,9 @@ markdown:
           rowspan: true
           headerless: true
     - plugin:
+        name: ./markdown-it-mermaid
+        enable: false
+    - plugin:
         name: ./markdown-it-furigana
         enable: true
         options:

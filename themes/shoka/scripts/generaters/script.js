@@ -24,6 +24,7 @@ hexo.extend.generator.register('script', function(locals){
       valine: theme.vendors.js.valine,
       chart: theme.vendors.js.chart,
       copy_tex: theme.vendors.js.copy_tex,
+      mermaid: theme.vendors.js.mermaid,
       fancybox: theme.vendors.js.fancybox
     },
     css: {
