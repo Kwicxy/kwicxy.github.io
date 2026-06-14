@@ -3,7 +3,7 @@ layout: post
 title: 第2章 企业信息系统
 date: 2025-12-29 08:54:39
 categories:
-  - 计算机科学
+  - 管理学
   - 管理信息系统
 tags:
 ---

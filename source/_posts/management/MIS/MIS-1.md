@@ -3,7 +3,7 @@ layout: post
 title: 第1章 信息系统与企业转型
 date: 2025-12-29 08:17:16
 categories:
-  - 计算机科学
+  - 管理学
   - 管理信息系统
 tags:
 ---

@@ -4,7 +4,7 @@ title: Laudon MIS 练习题 1 (全英慎入)
 quiz: true
 date: 2026-01-07 17:16:15
 categories:
-  - 计算机科学
+  - 管理学
   - 管理信息系统
 tags:
 ---

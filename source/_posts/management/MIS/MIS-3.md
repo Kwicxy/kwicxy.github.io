@@ -3,7 +3,7 @@ layout: post
 title: 第3章 数字企业时代的企业应用系统
 date: 2025-12-29 08:55:21
 categories:
-  - 计算机科学
+  - 管理学
   - 管理信息系统
 tags:
 ---

@@ -3,7 +3,7 @@ layout: post
 title: 第4章 管理知识和人工智能
 date: 2025-12-29 09:15:21
 categories:
-  - 计算机科学
+  - 管理学
   - 管理信息系统
 tags:
 ---

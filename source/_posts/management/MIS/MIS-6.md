@@ -3,7 +3,7 @@ layout: post
 title: 第6章 IT基础设施与新兴技术
 date: 2025-12-29 09:29:16
 categories:
-  - 计算机科学
+  - 管理学
   - 管理信息系统
 tags:
 ---

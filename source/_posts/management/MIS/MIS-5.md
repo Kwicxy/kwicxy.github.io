@@ -3,7 +3,7 @@ layout: post
 title: 第5章 信息系统开发
 date: 2025-12-29 09:26:16
 categories:
-  - 计算机科学
+  - 管理学
   - 管理信息系统
 tags:
 ---
