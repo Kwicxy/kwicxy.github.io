@@ -45,6 +45,7 @@ fireworks:
 
 font:
   enable: true
+  host: //fonts.font.im
   # Font options:
   # `external: true` will load this font family from `host` above.
   # `family: Times New Roman`. Without any quotes.
