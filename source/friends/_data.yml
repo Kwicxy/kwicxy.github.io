@@ -1,13 +1,13 @@
-- site: 優萌初華
-  owner: 霜月琉璃
-  url: https://shoka.lostyu.me
-  desc: 琉璃的医学 & 编程笔记
-  image: https://cdn.jsdelivr.net/gh/amehime/shoka@latest/images/avatar.jpg
+- site: らくハンの部屋
+  owner: GTX690
+  url: https://gtx6901.github.io
+  desc: Touching Fish
+  image: https://gtx6901.github.io/images/avatar.jpg
   color: "#e9546b"
 
-- site: 優萌初華
-  owner: 霜月琉璃
-  url: https://shoka.lostyu.me
-  desc: 琉璃的医学 & 编程笔记
-  image: https://cdn.jsdelivr.net/gh/amehime/shoka@latest/images/avatar.jpg
+- site: 莯
+  owner: 木漏日
+  url: http://47.99.50.141
+  desc: 一个基于 Spring Boot + MyBatis + Vue 的现代化 Web 应用
+  image: http://47.99.50.141:8080/uploads/photo/d007ae23-7c4a-4640-bd62-184f69bea55d.jpg
   color: "#e9546b"

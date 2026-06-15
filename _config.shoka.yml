@@ -1,4 +1,4 @@
-alternate: Yume Shoka
+alternate: Asame.space
 
 # Assets
 statics: / #//cdn.jsdelivr.net/gh/kwicxy/shoka@latest/
@@ -16,7 +16,7 @@ menu:
     archives: /archives/ || list-alt
     categories: /categories/ || th
     tags: /tags/ || tags
-  # friends: /friends/ || heart
+  friends: /friends/ || heart
 
 # Social Links
 # Usage: `Key: permalink || icon || color`
@@ -26,7 +26,7 @@ menu:
 social:
   github: https://github.com/kwicxy || github || "#191717"
   #google: https://plus.google.com/yourname || google
-  twitter: https://twitter.com/kwicxy || twitter || "#00aff0"
+  twitter: https://twitter.com/kwicxy_ || twitter || "#00aff0"
   # zhihu: https://www.zhihu.com/people/rurismzk || zhihu || "#1e88e5"
   # music: https://music.163.com/#/user/home?id=12886823 || cloud-music || "#e60026"
   # weibo: https://weibo.com/kwicxy || weibo || "#ea716e"
