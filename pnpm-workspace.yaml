@@ -1,0 +1,4 @@
+onlyBuiltDependencies:
+  - deasync
+  - hexo-util
+  - highlight.js
