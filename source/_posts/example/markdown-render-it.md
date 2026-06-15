@@ -4,10 +4,13 @@ date: 2025-12-14 23:29:08
 categories:
     - 测试 
 tags:
+mermaid: true
+math: true
 ---
 
 The purpose of this post is to help you make sure all of HTML elements can display properly. If you use CSS reset, don't forget to redefine the style by yourself.
 本页作为测试页
+
 ---
 
 # Heading 1
@@ -65,6 +68,50 @@ Maecenas ornare arcu at mi suscipit, non molestie tortor ultrices. Aenean conval
 | Division 1 | Division 2 | Division 3 |
 | Division 1 | Division 2 | Division 3 |
 | Division 1 | Division 2 | Division 3 |
+
+## Math
+
+$$
+f(x) \sim f(0) + f'(0)x + \frac{f''(0)}{2}x^2 + \cdots
+$$
+
+## mermaid
+
+```mermaid
+sequenceDiagram
+    actor Reporter as 报障用户
+    participant MobileApp as 移动端
+    participant API as 控制器层
+    participant Service as 服务层
+    participant DB as 数据层
+    participant Notification as 通知
+
+    Reporter->>MobileApp: 填写并提交工单
+    MobileApp->>API: POST /api/workorders {payload}
+    API->>Service: validate(payload)
+    alt 信息不完整
+        Service-->>API: validation error
+        API-->>MobileApp: 400 Bad Request (要求补充)
+        MobileApp-->>Reporter: 提示补充信息
+    else 信息完整
+        Service->>DB: insert workorder
+        DB-->>Service: workorder{id:WO-123}
+        Service->>Notification: sendConfirmation(Reporter, WO-123)
+        Service-->>API: OK {id:WO-123}
+        API-->>MobileApp: 201 Created (WO-123)
+        Notification-->>Reporter: 通知（短信/邮件/推送）
+    end
+```
+
+## Quoted Block
+
+:::info
+This is an info message.
+:::
+
+:::warning
+This is a warning message.
+:::
 
 ## Misc Stuff - abbr, acronym, sub, sup, kbd, etc.
 
