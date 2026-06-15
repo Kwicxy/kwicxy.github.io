@@ -1,3 +1,8 @@
 /node_modules/
 /pnpm-lock.yaml
 /.idea/
+
+public/
+docs/
+
+.DS_Store
