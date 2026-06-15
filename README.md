@@ -1,5 +1,5 @@
 # Kwicxy.github.io
 
-Visit site: `https://shoka.asame.space`
+Visit site: `http://pages.rosmontis.love`
 
 > inspired by `https://shoka.lostyu.me`
