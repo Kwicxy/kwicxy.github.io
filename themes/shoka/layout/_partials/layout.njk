@@ -142,7 +142,14 @@
   };
 </script>
 
-<script src="https://cdn.polyfill.io/v2/polyfill.js"></script>
+<script>
+  if (!window.Promise || !window.fetch || !Array.prototype.includes) {
+    var s = document.createElement('script');
+    s.src = 'https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js';
+    document.head.appendChild(s);
+  }
+</script>
+
 
 {{ _vendor_js() }}
 
