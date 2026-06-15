@@ -85,41 +85,49 @@
 
 [data-theme="dark"] {
   &:root {
-    --grey-0: #222;
-    --grey-1: #21252b;
-    --grey-2: #363636;
-    --grey-3: #444;
-    --grey-4: #666;
-    --grey-5: #aaa;
-    --grey-6: #ccc;
-    --grey-7: #ddd;
-    --grey-8: #eee;
-    --grey-9: #f7f7f7;
+    --grey-0: #242a32;
+    --grey-1: #1f242b;
+    --grey-2: #2c333c;
+    --grey-3: #3a434d;
+    --grey-4: #5d6874;
+    --grey-5: #9aa4ae;
+    --grey-6: #bac3cc;
+    --grey-7: #d7dee6;
+    --grey-8: #e8edf2;
+    --grey-9: #f8fafc;
 
-    --grey-1-a7: alpha(#222, .7);
-    --grey-1-a5: alpha(#222, .5);
-    --grey-1-a3: alpha(#222, .3);
-    --grey-1-a0: alpha(#222, 0);
-    --grey-9-a1: alpha(#333, .1);
-    --grey-2-a0: alpha(#363636, 0);
+    --grey-1-a7: alpha(#1f242b, .7);
+    --grey-1-a5: alpha(#1f242b, .5);
+    --grey-1-a3: alpha(#1f242b, .3);
+    --grey-1-a0: alpha(#1f242b, 0);
+    --grey-9-a1: alpha(#f8fafc, .08);
+    --grey-2-a0: alpha(#2c333c, 0);
 
-    --color-pink-light: shade(#ffe6fa, 80%);
-    --color-cyan-light: shade(#e3fdf5, 80%);
+    --color-pink-light: #3a2735;
+    --color-cyan-light: #23363a;
 
-    --color-red: alpha(lighten(#e9546b, 20%), .9);
-    --color-pink: alpha(lighten(#ed6ea0, 20%), .8);
-    --color-orange: alpha(lighten(#ec8c69, 20%), .8);
-    --color-yellow: lighten(#eab700, 50%);
-    --color-green: lighten(#316745, 50%);
-    --color-aqua: lighten(#3e999f, 50%);
-    --color-blue: lighten(#38a1db, 50%);
-    --color-purple: lighten(#9d5b8b, 50%);
-    --color-grey: lighten(#869194, 50%);
+    --color-red: #f07b8c;
+    --color-pink: #e783a9;
+    --color-orange: #f09a78;
+    --color-yellow: #e6c86e;
+    --color-green: #87c98e;
+    --color-aqua: #80c9ce;
+    --color-blue: #83bde7;
+    --color-purple: #c19aca;
+    --color-grey: #a9b3bc;
 
-    --body-bg-shadow: #000;
-    --box-bg-shadow: #000;
-    --text-color: var(--grey-5);
+    --color-red-a1: alpha(#f07b8c, .14);
+    --color-red-a3: alpha(#f07b8c, .28);
+    --color-pink-a3: alpha(#e783a9, .26);
+    --color-pink-light-a3: alpha(#3a2735, .35);
+    --color-pink-light-a5: alpha(#3a2735, .5);
+    --color-pink-light-a7: alpha(#3a2735, .7);
+
+    --body-bg-shadow: #181d23;
+    --box-bg-shadow: alpha(#000, .28);
+    --text-color: var(--grey-6);
     --header-text-color: var(--grey-9);
+    --nav-bg: linear-gradient(-225deg, var(--color-cyan-light) 0, var(--color-pink-light) 100%);
   }
 
   .primary {
@@ -162,10 +170,10 @@
   .index.wrap .card .message .btn,
   img, [data-background-image] {
     the-transition();
-    opacity: .75;
+    opacity: .82;
 
     &:hover {
-      opacity: .9;
+      opacity: .95;
     }
   }
 
@@ -201,4 +209,3 @@
 .grey {
   color: var(--color-grey);
 }
-
