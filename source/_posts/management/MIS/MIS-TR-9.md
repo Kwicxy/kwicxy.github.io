@@ -7,6 +7,7 @@ categories:
   - 管理学
   - 管理信息系统
 tags:
+  - 习题
 ---
 
 # Chapter 9   Achieving Operational Excellence and Customer Intimacy: Enterprise Applications

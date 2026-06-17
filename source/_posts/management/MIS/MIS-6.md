@@ -6,6 +6,9 @@ categories:
   - 管理学
   - 管理信息系统
 tags:
+  - IT基础设施
+  - 云计算
+  - SaaS
 ---
 
 # IT基础设施

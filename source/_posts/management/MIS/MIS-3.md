@@ -6,6 +6,10 @@ categories:
   - 管理学
   - 管理信息系统
 tags:
+  - ERP
+  - SCM
+  - CRM
+  - KMS
 ---
 
 # `ERP` 企业资源计划系统
