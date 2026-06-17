@@ -61,41 +61,29 @@ UML 建模要按需使用。考试和论文中最常用的是用例图、类图�
 
 ## 用例图示例：图书馆管理系统
 
-Mermaid 没有标准 UML 用例图语法，这里用 `flowchart` 近似表达系统边界、参与者和用例关系。
-
 ```mermaid
 flowchart LR
-    Reader[普通读者]
-    Vip[VIP 读者]
-    Librarian[图书管理员]
-    Admin[系统管理员]
-    Isbn[第三方 ISBN 系统]
+    A(普通读者) --> A1(查看借阅记录)
+    A --> A2(修改密码)
+    A --> A3(查询图书)
+    A --> A4(借阅图书) -.-> |#lt;#lt;include#gt;#gt;| Z(验证读者身份)
+    A --> A5(归还图书) -.-> |#lt;#lt;include#gt;#gt;| Z
 
-    subgraph Sys[高校图书馆管理系统]
-        Query([查询图书])
-        Borrow([借阅图书])
-        Return([归还图书])
-        Record([查看借阅记录])
-        Auth([验证读者身份])
-        Reserve([预约热门图书])
-        Store([图书入库])
-        Sync([同步 ISBN 图书信息])
-        Permission([用户权限管理])
-    end
+    B(VIP读者) --> |#lt;#lt;extend#gt;#gt;| A
+    B --> B1(预约热门图书) ---> |"#lt;#lt;extend#gt;#gt;
+    可借库存不足"| A4
+    B --> B2(图书续借)
 
-    Reader --> Query
-    Reader --> Borrow
-    Reader --> Return
-    Reader --> Record
-    Vip --> Reader
-    Vip --> Reserve
-    Librarian --> Store
-    Admin --> Permission
-    Isbn --> Sync
-    Borrow -. "<<include>>" .-> Auth
-    Return -. "<<include>>" .-> Auth
-    Store -. "<<include>>" .-> Sync
-    Reserve -. "<<extend>>" .-> Borrow
+    C(图书管理员) --> C1(收取逾期罚金) ---> |"#lt;#lt;extend#gt;#gt;
+    图书逾期未还"| A5
+    C --> C2(图书信息维护)
+    C --> C3(处理借阅申请)
+    C --> C4(读者信息管理)
+    C --> C5(图书入库) -.-> |#lt;#lt;include#gt;#gt;| D1
+
+    C ~~~ D
+    D(ISBN图书信息系统) --> D1(同步ISBN图书信息)
+
 ```
 
 ## 常见错误
