@@ -61,6 +61,11 @@ const changeTheme = function(type) {
     btn.removeClass('i-moon');
     btn.addClass('i-sun');
   }
+  window.dispatchEvent(new CustomEvent('theme:change', {
+    detail: {
+      theme: type || 'light'
+    }
+  }));
 }
 
 const changeMetaTheme = function(color) {
@@ -286,4 +291,3 @@ const clipBoard = function(str, callback) {
   }
   BODY.removeChild(ta);
 }
-

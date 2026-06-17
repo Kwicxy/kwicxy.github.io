@@ -1,11 +1,11 @@
 .label {
   font-family: var(--mermaid-font-family);
-  color: var(--grey-7);
+  color: var(--mermaid-text);
   font-size: $font-size-small;
 }
 
 .label text {
-  fill: var(--text-color);
+  fill: var(--mermaid-text);
 }
 
 .node rect,
@@ -13,8 +13,8 @@
 .node ellipse,
 .node polygon,
 .node path {
-  fill: var(--grey-1);
-  stroke: var(--text-color);
+  fill: var(--mermaid-bg);
+  stroke: var(--mermaid-line);
   stroke-width: .0625rem;
 }
 
@@ -26,35 +26,35 @@
 }
 
 .arrowheadPath {
-  fill: var(--text-color);
+  fill: var(--mermaid-line);
 }
 
 .edgePath .path {
-  stroke: var(--text-color);
+  stroke: var(--mermaid-line);
 }
 
 .flowchart-link {
-  stroke: var(--text-color);
+  stroke: var(--mermaid-line);
   fill: none;
 }
 
 .edgeLabel {
-  background-color: var(--grey-2);
+  background-color: var(--mermaid-surface);
   rect {
     opacity: .8;
-    fill: var(--grey-2) !important;
+    fill: var(--mermaid-surface) !important;
   }
   text-align: center;
 }
 
 .cluster rect {
-  fill: var(--grey-2);
-  stroke: var(--text-color);
+  fill: var(--mermaid-surface);
+  stroke: var(--mermaid-line);
   stroke-width: .0625rem;
 }
 
 .cluster text {
-  fill: var(--text-color);
+  fill: var(--mermaid-text);
 }
 
 div.mermaidTooltip {
@@ -64,8 +64,8 @@ div.mermaidTooltip {
   padding: .125rem;
   font-family: var(--mermaid-font-family);
   font-size: .75rem;
-  background: var(--grey-1);
-  border: .0625rem solid var(--text-color);
+  background: var(--mermaid-bg);
+  border: .0625rem solid var(--mermaid-line);
   border-radius: .125rem;
   pointer-events: none;
   z-index: $zindex-3;

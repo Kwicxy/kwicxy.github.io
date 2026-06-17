@@ -1,95 +1,95 @@
 .actor {
-  stroke: var(--text-color);
-  fill: var(--grey-1);
+  stroke: var(--mermaid-line);
+  fill: var(--mermaid-bg);
 }
 
 text.actor {
-  fill: var(--text-color);
+  fill: var(--mermaid-text);
   stroke: none;
 }
 
 .actor-line {
-  stroke: var(--text-color);
+  stroke: var(--mermaid-line);
 }
 
 .messageLine0 {
   stroke-width: 1.5;
   stroke-dasharray: '2 2';
-  stroke: var(--text-color);
+  stroke: var(--mermaid-line);
 }
 
 .messageLine1 {
   stroke-width: 1.5;
   stroke-dasharray: '2 2';
-  stroke: var(--text-color);
+  stroke: var(--mermaid-line);
 }
 
 #arrowhead {
-  fill: var(--text-color);
+  fill: var(--mermaid-line);
 }
 
 .sequenceNumber {
-  fill: white;
+  fill: var(--mermaid-contrast-text);
 }
 
 #sequencenumber {
-  fill: var(--text-color);
+  fill: var(--mermaid-line);
 }
 
 #crosshead path {
-  fill: var(--text-color) !important;
-  stroke: var(--text-color) !important;
+  fill: var(--mermaid-line) !important;
+  stroke: var(--mermaid-line) !important;
 }
 
 .messageText {
-  fill: var(--text-color);
+  fill: var(--mermaid-text);
   stroke: none;
 }
 
 .labelBox {
-  stroke: var(--text-color);
-  fill: var(--grey-3);
+  stroke: var(--mermaid-line);
+  fill: var(--mermaid-surface);
 }
 
 .labelText {
-  fill: var(--text-color);
+  fill: var(--mermaid-text);
   stroke: none;
 }
 
 .loopText {
-  fill: var(--text-color);
+  fill: var(--mermaid-text);
   stroke: none;
 }
 
 .loopLine {
   stroke-width: 2;
   stroke-dasharray: '2 2';
-  stroke: var(--text-color);
+  stroke: var(--mermaid-line);
 }
 
 .note {
-  stroke: var(--grey-4);
-  fill: var(--grey-3);
+  stroke: var(--mermaid-note-border);
+  fill: var(--mermaid-note-bg);
 }
 
 .noteText {
-  fill: black;
+  fill: var(--mermaid-note-text);
   stroke: none;
   font-family: var(--mermaid-font-family);
   font-size: .875rem;
 }
 
 .activation0 {
-  fill: #f4f4f4;
-  stroke: #666;
+  fill: var(--mermaid-surface);
+  stroke: var(--mermaid-line);
 }
 
 .activation1 {
-  fill: #f4f4f4;
-  stroke: #666;
+  fill: var(--mermaid-surface);
+  stroke: var(--mermaid-line);
 }
 
 .activation2 {
-  fill: #f4f4f4;
-  stroke: #666;
+  fill: var(--mermaid-surface);
+  stroke: var(--mermaid-line);
 }

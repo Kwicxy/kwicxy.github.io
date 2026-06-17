@@ -1,5 +1,5 @@
 g.classGroup text {
-  fill: var(--text-color);
+  fill: var(--mermaid-text);
   stroke: none;
   font-family: var(--mermaid-font-family);
   font-size: .625rem;
@@ -14,29 +14,29 @@ g.clickable {
 }
 
 g.classGroup rect {
-  fill: var(--grey-1);
-  stroke: var(--text-color);
+  fill: var(--mermaid-bg);
+  stroke: var(--mermaid-line);
 }
 
 g.classGroup line {
-  stroke: var(--text-color);
+  stroke: var(--mermaid-line);
   stroke-width: 1;
 }
 
 .classLabel .box {
   stroke: none;
   stroke-width: 0;
-  fill: var(--grey-1);
+  fill: var(--mermaid-bg);
   opacity: .5;
 }
 
 .classLabel .label {
-  fill: var(--text-color);
+  fill: var(--mermaid-text);
   font-size: .625rem;
 }
 
 .relation {
-  stroke: var(--text-color);
+  stroke: var(--mermaid-line);
   stroke-width: 1;
   fill: none;
 }
@@ -46,8 +46,8 @@ g.classGroup line {
 }
 
 @mixin composition {
-  fill: var(--text-color);
-  stroke: var(--text-color);
+  fill: var(--mermaid-line);
+  stroke: var(--mermaid-line);
   stroke-width: 1;
 }
 
@@ -60,8 +60,8 @@ g.classGroup line {
 }
 
 @mixin aggregation {
-  fill: var(--grey-1);
-  stroke: var(--text-color);
+  fill: var(--mermaid-bg);
+  stroke: var(--mermaid-line);
   stroke-width: 1;
 }
 

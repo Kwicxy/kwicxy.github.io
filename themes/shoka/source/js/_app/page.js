@@ -157,6 +157,24 @@ const restoreMermaidCode = function() {
   });
 }
 
+const restoreRenderedMermaid = function() {
+  $.each('.md pre.mermaid', function(element) {
+    if(element.dataset.mermaidCode) {
+      element.removeAttribute('data-processed');
+      element.textContent = element.dataset.mermaidCode;
+    }
+  });
+}
+
+const cacheMermaidCode = function() {
+  $.each('.md pre.mermaid', function(element) {
+    var code = element.textContent.replace(/\s+$/g, '');
+
+    if(isMermaidCode(code))
+      element.dataset.mermaidCode = code;
+  });
+}
+
 const getMermaidApi = function() {
   if(!window.mermaid)
     return null
@@ -170,11 +188,104 @@ const getMermaidApi = function() {
   return null
 }
 
+const getCssVariable = function(name, fallback) {
+  var value = getComputedStyle(HTML).getPropertyValue(name).trim();
+
+  if(!value)
+    return fallback;
+
+  var matched = value.match(/^var\((--[^,\s)]+)(?:,\s*([^)]+))?\)$/);
+  if(matched)
+    return getCssVariable(matched[1], matched[2] || fallback);
+
+  return value;
+}
+
+const getMermaidThemeVariables = function() {
+  var bg = getCssVariable('--mermaid-bg', '#fdfdfd');
+  var surface = getCssVariable('--mermaid-surface', '#f7f7f7');
+  var altSurface = getCssVariable('--mermaid-alt-surface', '#ffffff');
+  var line = getCssVariable('--mermaid-line', '#666666');
+  var text = getCssVariable('--mermaid-text', '#333333');
+  var muted = getCssVariable('--mermaid-muted', '#999999');
+  var accent = getCssVariable('--mermaid-accent', '#e9546b');
+  var noteBg = getCssVariable('--mermaid-note-bg', '#fff8c5');
+  var noteBorder = getCssVariable('--mermaid-note-border', '#e6c86e');
+  var noteText = getCssVariable('--mermaid-note-text', '#222222');
+
+  return {
+    background: 'transparent',
+    mainBkg: bg,
+    secondBkg: surface,
+    tertiaryColor: altSurface,
+    primaryColor: bg,
+    primaryTextColor: text,
+    primaryBorderColor: line,
+    secondaryColor: surface,
+    secondaryTextColor: text,
+    secondaryBorderColor: line,
+    tertiaryTextColor: text,
+    tertiaryBorderColor: line,
+    lineColor: line,
+    textColor: text,
+    fontFamily: getCssVariable('--mermaid-font-family', '"trebuchet ms", verdana, arial'),
+    nodeTextColor: text,
+    clusterBkg: surface,
+    clusterBorder: line,
+    edgeLabelBackground: surface,
+    noteBkgColor: noteBg,
+    noteTextColor: noteText,
+    noteBorderColor: noteBorder,
+    actorBkg: bg,
+    actorBorder: line,
+    actorTextColor: text,
+    actorLineColor: line,
+    signalColor: line,
+    signalTextColor: text,
+    labelBoxBkgColor: surface,
+    labelBoxBorderColor: line,
+    labelTextColor: text,
+    loopTextColor: text,
+    activationBkgColor: surface,
+    activationBorderColor: line,
+    sequenceNumberColor: getCssVariable('--mermaid-contrast-text', '#fdfdfd'),
+    sectionBkgColor: bg,
+    altSectionBkgColor: altSurface,
+    sectionBkgColor2: bg,
+    sectionBkgColor3: altSurface,
+    sectionBkgColor4: bg,
+    sectionBkgColor5: altSurface,
+    sectionBkgColor6: bg,
+    sectionBkgColor7: altSurface,
+    taskBkgColor: line,
+    taskTextColor: getCssVariable('--mermaid-contrast-text', '#fdfdfd'),
+    taskTextOutsideColor: text,
+    taskTextLightColor: text,
+    taskTextDarkColor: text,
+    taskBorderColor: line,
+    activeTaskBkgColor: bg,
+    activeTaskBorderColor: line,
+    doneTaskBkgColor: bg,
+    doneTaskBorderColor: getCssVariable('--color-green', '#0a7426'),
+    critBkgColor: accent,
+    critBorderColor: accent,
+    todayLineColor: accent,
+    titleColor: text,
+    c0: accent,
+    c1: getCssVariable('--color-blue', '#38a1db'),
+    c2: getCssVariable('--color-green', '#0a7426'),
+    c3: getCssVariable('--color-purple', '#9d5b8b'),
+    c4: muted
+  };
+}
+
 const renderMermaid = function() {
   if(!LOCAL.mermaid)
     return
 
+  restoreRenderedMermaid();
   restoreMermaidCode();
+  cacheMermaidCode();
 
   if(!$('.md .mermaid'))
     return
@@ -187,7 +298,8 @@ const renderMermaid = function() {
 
     mermaidApi.initialize({
       startOnLoad: false,
-      theme: BODY.hasClass('darkmode') ? 'dark' : 'default',
+      theme: 'base',
+      themeVariables: getMermaidThemeVariables(),
       flowchart: {
         htmlLabels: false,
         useMaxWidth: true
@@ -205,6 +317,13 @@ const renderMermaid = function() {
     });
   }, getMermaidApi());
 }
+
+window.addEventListener('theme:change', function() {
+  if(!LOCAL.mermaid || !$('.md pre.mermaid'))
+    return
+
+  setTimeout(renderMermaid, 0);
+});
 
 const postBeauty = function () {
   loadComments();

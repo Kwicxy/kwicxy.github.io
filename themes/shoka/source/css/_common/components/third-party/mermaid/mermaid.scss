@@ -13,13 +13,14 @@ pre.graphviz {
   white-space: normal;
   max-width: calc(100% - 3.125rem);
   svg > g > polygon {
-    fill: var(--grey-1);
+    fill: var(--mermaid-bg);
   }
 }
 
 .mermaid {
-  &.graph svg{
-    max-height: 18.75rem;
+  svg{
+    max-height: 42rem;
+    // max-width: calc(100% - 3.125rem);
   }
 
   @import 'flowchart';
@@ -34,4 +35,3 @@ pre.graphviz {
 :root {
   --mermaid-font-family: "trebuchet ms", verdana, arial;
 }
-

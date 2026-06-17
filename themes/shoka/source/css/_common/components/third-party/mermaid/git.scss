@@ -1,7 +1,7 @@
 .commit-id,
 .commit-msg,
 .branch-label {
-  fill: lightgrey;
-  color: lightgrey;
+  fill: var(--mermaid-muted);
+  color: var(--mermaid-muted);
   font-family: var(--mermaid-font-family);
 }

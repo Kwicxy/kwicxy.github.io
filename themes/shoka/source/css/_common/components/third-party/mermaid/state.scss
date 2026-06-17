@@ -1,52 +1,52 @@
 g.stateGroup text {
-  fill: var(--text-color);
+  fill: var(--mermaid-text);
   stroke: none;
   font-size: .625rem;
   font-family: var(--mermaid-font-family);
 }
 g.stateGroup text {
-  fill: var(--text-color);
+  fill: var(--mermaid-text);
   stroke: none;
   font-size: .625rem;
 
 }
 g.stateGroup .state-title {
   font-weight: bolder;
-  fill: black;
+  fill: var(--mermaid-text);
 }
 
 g.stateGroup rect {
-  fill: var(--grey-1);
-  stroke: var(--text-color);
+  fill: var(--mermaid-bg);
+  stroke: var(--mermaid-line);
 }
 
 g.stateGroup line {
-  stroke: var(--text-color);
+  stroke: var(--mermaid-line);
   stroke-width: 1;
 }
 
 .transition {
-  stroke: var(--text-color);
+  stroke: var(--mermaid-line);
   stroke-width: 1;
   fill: none;
 }
 
 .stateGroup .composit {
-  fill: white;
+  fill: var(--mermaid-bg);
   border-bottom: .0625rem
 }
 
 .stateGroup .alt-composit {
-  fill: #e0e0e0;
+  fill: var(--mermaid-alt-surface);
   border-bottom: .0625rem
 }
 
 .state-note {
-  stroke: var(--grey-4);
-  fill: var(--grey-3);
+  stroke: var(--mermaid-note-border);
+  fill: var(--mermaid-note-bg);
 
   text {
-    fill: black;
+    fill: var(--mermaid-note-text);
     stroke: none;
     font-size: .625rem;
   }
@@ -55,33 +55,33 @@ g.stateGroup line {
 .stateLabel .box {
   stroke: none;
   stroke-width: 0;
-  fill: var(--grey-1);
+  fill: var(--mermaid-bg);
   opacity: .5;
 }
 
 .stateLabel text {
-  fill: black;
+  fill: var(--mermaid-text);
   font-size: .625rem;
   font-weight: bold;
   font-family: var(--mermaid-font-family);
 }
 
 .node circle.state-start {
-  fill: black;
-  stroke: black;
+  fill: var(--mermaid-line);
+  stroke: var(--mermaid-line);
 }
 .node circle.state-end {
-  fill: black;
-  stroke: white;
+  fill: var(--mermaid-line);
+  stroke: var(--mermaid-contrast-text);
   stroke-width: 1.5
 }
 #statediagram-barbEnd {
-  fill: var(--text-color)
+  fill: var(--mermaid-line)
 }
 
 .statediagram-cluster rect {
-  fill: var(--grey-1);
-  stroke: var(--text-color);
+  fill: var(--mermaid-bg);
+  stroke: var(--mermaid-line);
   stroke-width: .0625rem;
 }
 .statediagram-cluster rect.outer {
@@ -89,7 +89,7 @@ g.stateGroup line {
   ry: .3125rem;
 }
 .statediagram-state .divider {
-  stroke: var(--text-color);
+  stroke: var(--mermaid-line);
 }
 
 .statediagram-state .title-state {
@@ -97,10 +97,10 @@ g.stateGroup line {
   ry: .3125rem;
 }
 .statediagram-cluster.statediagram-cluster .inner {
-  fill: white;
+  fill: var(--mermaid-bg);
 }
 .statediagram-cluster.statediagram-cluster-alt .inner {
-  fill: #e0e0e0;
+  fill: var(--mermaid-alt-surface);
 }
 
 .statediagram-cluster .inner {
@@ -114,7 +114,7 @@ g.stateGroup line {
 }
 .statediagram-state rect.divider {
   stroke-dasharray: 10,10;
-  fill: #efefef;
+  fill: var(--mermaid-surface);
 }
 
 .note-edge {
@@ -122,8 +122,8 @@ g.stateGroup line {
 }
 
 .statediagram-note rect {
-  stroke: var(--grey-4);
-  fill: var(--grey-3);
+  stroke: var(--mermaid-note-border);
+  fill: var(--mermaid-note-bg);
   stroke-width: .0625rem;
   rx: 0;
   ry: 0;
