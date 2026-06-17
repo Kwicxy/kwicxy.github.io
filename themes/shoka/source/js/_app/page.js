@@ -130,8 +130,14 @@ const postFancybox = function(p) {
   }
 }
 
+const getMermaidCodeBody = function(code) {
+  return code.trim().replace(/^---\s*[\r\n][\s\S]*?[\r\n]---\s*/, '').trim();
+}
+
 const isMermaidCode = function(code) {
-  return /^(sequenceDiagram|flowchart|graph|classDiagram|stateDiagram|stateDiagram-v2|erDiagram|journey|gantt|pie|gitGraph|mindmap|timeline|quadrantChart|requirementDiagram|C4Context|C4Container|C4Component|C4Dynamic|block-beta|packet-beta|architecture-beta|sankey-beta|xychart-beta)\b/.test(code.trim());
+  return /^(sequenceDiagram|flowchart|graph|classDiagram|stateDiagram|stateDiagram-v2|erDiagram|journey|gantt|pie|gitGraph|mindmap|timeline|quadrantChart|requirementDiagram|C4Context|C4Container|C4Component|C4Dynamic|block|packet|architecture|sankey|xychart|kanban|radar-beta|eventmodeling|treemap-beta|venn-beta|ishikawa-beta|wardley-beta|treeView-beta)\b/.test(
+    getMermaidCodeBody(code),
+  );
 }
 
 const restoreMermaidCode = function() {
