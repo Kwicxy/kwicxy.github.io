@@ -83,8 +83,8 @@ font:
   # Font settings for <code> and code blocks.
   codes:
     external: true
-    family: Fira Code
-    size: 0.65
+    family: Hack
+    size: 0.75
 
 # project of https://www.iconfont.cn/
 # //at.alicdn.com/t/font_1832207_c8i9n1ulxlt.css => 1832207_c8i9n1ulxlt
@@ -172,7 +172,7 @@ reward:
 tagcloud:
   # All values below are same as default, change them by yourself.
   min: 16 # Minimun font size in px
-  max: 22 # Maxium font size in px
+  max: 24 # Maxium font size in px
   start: "#72cecf" # Start color (hex, rgba, hsla or color keywords)
   end: "#ffbac3" # End color (hex, rgba, hsla or color keywords)
   amount: 200 # Amount of tags, change it if you have more than 200 tags

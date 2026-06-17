@@ -1,13 +1,13 @@
+- site: 滴墨
+  owner: Komorebi
+  url: http://dimo.qwq6.xyz
+  desc: 像雾，像雨，又像风。这里写代码、写电影、写一些半夜想通的小事 —— 慢慢沉淀，等你来读。
+  image: https://dimo.qwq6.xyz/dimo.svg
+  color: "#87c5ba"
+
 - site: らくハンの部屋
   owner: GTX690
   url: https://gtx6901.github.io
   desc: Touching Fish
   image: https://gtx6901.github.io/images/avatar.jpg
-  color: "#e9546b"
-
-- site: 莯
-  owner: 木漏日
-  url: http://www.qwq6.xyz
-  desc: 一个基于 Spring Boot + MyBatis + Vue 的现代化 Web 应用
-  image: http://www.qwq6.xyz/api/uploads/photo/d007ae23-7c4a-4640-bd62-184f69bea55d.jpg
   color: "#e9546b"
