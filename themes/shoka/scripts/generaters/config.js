@@ -26,18 +26,18 @@ hexo.extend.filter.register('before_generate', () => {
     }
   }
 
-  hexo.theme.config.style = {}
+  hexo.theme.config.style = {};
 
   for (const style of ['iconfont', 'colors', 'custom']) {
-    var custom_file = 'source/_data/'+style+'.styl'
+    const custom_file = 'source/_data/' + style + '.scss';
     if (fs.existsSync(custom_file)) {
-      hexo.theme.config.style[style] = path.resolve(hexo.base_dir, custom_file)
+      hexo.theme.config.style[style] = path.resolve(hexo.base_dir, custom_file);
     }
   }
 
   if (data.images && data.images.length >= 1) {
-    hexo.theme.config.image_list = data.images
+    hexo.theme.config.image_list = data.images;
   } else {
-    hexo.theme.config.image_list = yaml.load(fs.readFileSync(path.join(__dirname, '../../_images.yml')))
+    hexo.theme.config.image_list = yaml.load(fs.readFileSync(path.join(__dirname, '../../_images.yml')));
   }
-})
+});

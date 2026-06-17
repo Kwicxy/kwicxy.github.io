@@ -1,0 +1,87 @@
+//
+// Variables
+// ==================================================
+
+// Typography
+// Font, line-height, and elements colors.
+// --------------------------------------------------
+@function config-font-family($config) {
+  @return hexo-config("font.#{$config}.family");
+}
+
+@function config-font-size($config, $fallback) {
+  $enabled: hexo-config("font.enable");
+  $size: hexo-config("font.#{$config}.size");
+  @if $enabled and $size != null {
+    @return $size * 1em;
+  }
+  @return $fallback;
+}
+
+// Font families.
+$font-family-chinese: -apple-system, "PingFang SC", "Microsoft YaHei";
+
+$font-family-base: config-font-family("global"), $font-family-chinese, sans-serif;
+$font-family-logo: config-font-family("logo"), $font-family-base;
+$font-family-title: config-font-family("title"), config-font-family("headings"), config-font-family("global"), $font-family-base;
+$font-family-headings: config-font-family("headings"), config-font-family("global"), $font-family-title;
+$font-family-posts: config-font-family("posts"), $font-family-base;
+$font-family-monospace: config-font-family("codes"), consolas, Menlo, $font-family-chinese;
+
+$iconfont: hexo-config("iconfont");
+
+// Font size
+$font-size-base: config-font-size("global", 1em);
+$font-size-smallest: .75em;
+$font-size-smaller: .8125em;
+$font-size-small: .875em;
+$font-size-medium: 1em;
+$font-size-large: 1.125em;
+$font-size-larger: 1.25em;
+$font-size-largest: 1.5em;
+
+
+// Headings font size
+$font-size-headings-step: .125em;
+$font-size-headings-base: config-font-size("headings", 1.625em);
+
+
+// Global line height
+$line-height-base: 2;
+$line-height-code-block: 1.6; // Can't be less than 1.3;
+
+
+// Z-index master list
+// --------------------------------------------------
+$zindex-0: -1;
+$zindex-1: 1;
+$zindex-2: 9;
+$zindex-3: 99;
+$zindex-4: 999;
+$zindex-5: 9999;
+
+
+// Pagination
+// --------------------------------------------------
+
+
+// Layout sizes
+// --------------------------------------------------
+$sidebar-width: 15;
+$sidebar-desktop: $sidebar-width * 1rem;
+$content-offset: .75rem;
+$content-wrap: calc(100% - #{($sidebar-width * 1rem) + $content-offset});
+
+$content-desktop-padding: 1.25rem;
+$content-tablet-padding: .625rem;
+$content-mobile-padding: .5rem;
+
+$content-desktop: calc(100% - #{$content-desktop-padding / 2});
+$content-desktop-large: 72.5rem;
+$content-desktop-largest: 73%;
+
+
+// Site Meta
+$font-size-title: config-font-size("title", 2em);
+$font-size-subtitle: $font-size-small;
+$font-size-logo: config-font-size("logo", 3.5em);

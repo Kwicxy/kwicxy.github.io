@@ -1,0 +1,41 @@
+#copyright {
+  background: var(--grey-2);
+  padding: 1rem 2rem;
+  position: relative;
+  font-size: $font-size-smallest;
+  border-radius: .625rem;
+  color: var(--grey-6);
+
+  li {
+    &::before {
+      @include font-family-icons();
+      color: var(--grey-5);
+      margin-right: .3125rem;
+      font-size: 1.1rem;
+      line-height: .75rem;
+      vertical-align: -.0667rem;
+    }
+  }
+
+  .author::before {
+    content: "\e69d";
+  }
+
+  .link::before {
+    content: "\e67b";
+  }
+
+  .license::before {
+    content: "\e61b";
+  }
+  // &::before {
+  //   content: "";
+  //   position: absolute;
+  //   width: .3125rem;
+  //   height: 100%;
+  //   left: -.3125rem;
+  //   top: 0rem;
+  //   background: var(--primary-color);
+  //   border-radius: .375rem;
+  // }
+}
