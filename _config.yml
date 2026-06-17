@@ -42,21 +42,25 @@ post_asset_folder: false
 relative_link: false
 future: true
 highlight:
-  enable: false # edit for Theme.shoka
+  enable: true # edit for Theme.shoka
   line_number: true
   auto_detect: true
   tab_replace: ''
 prismjs:
-  enable: false # edit for Theme.shoka
+  enable: true # edit for Theme.shoka
 
 # Category & Tag
 default_category: uncategorized
 category_map: # edit for Theme.shoka
   计算机科学: computer-science
-  R语言: R
+  管理学: management
+  数学: math
+  # R语言: R
   数据挖掘: data-mining
-  管理信息系统: MIS
+  # 管理信息系统: MIS
   Web开发技术: web-dev
+  信息系统分析、设计与实现: IS-analysis
+  信息检索与Web数据挖掘: data-search
   
 tag_map:
 
