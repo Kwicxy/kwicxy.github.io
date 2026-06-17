@@ -43,10 +43,17 @@
         display: none;
       }
     }
+    
+    .owner {
+      font-size: $font-size-smallest;
+      margin: 0 0 0 .2rem;
+      font-style: italic;
+      color: var(--grey-5);
+    }
 
     .desc {
       font-size: $font-size-smallest;
-      margin: .5rem 0;
+      margin: .2rem 0;
     }
 
 

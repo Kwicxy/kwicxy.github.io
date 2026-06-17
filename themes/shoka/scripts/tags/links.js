@@ -70,12 +70,14 @@ function linkGrid(args, content) {
       result += `<span class="exturl image" data-url="${durl}" data-background-image="${item_image}"></span>
           <div class="info">
           <span class="exturl title" data-url="${durl}">${item.site}</span>
+          <span class="owner">@${item.owner}</span>
           <p class="desc">${item.desc || item.url}</p>
           </div></div>`;
     } else {
       result += `<a href="${item.url}" class="image" data-background-image="${item_image}"></a>
           <div class="info">
           <a href="${item.url}" class="title">${item.site}</a>
+          <span class="owner">@${item.owner}</span>
           <p class="desc">${item.desc || item.url}</p>
           </div></div>`;
     }
