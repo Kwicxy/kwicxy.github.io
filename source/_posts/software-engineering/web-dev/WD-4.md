@@ -3,7 +3,7 @@ layout: post
 title: 第4章 会话管理与作用域
 date: 2026-01-13 02:09:31
 categories:
-  - 计算机科学
+  - 软件工程
   - Web开发技术
 tags:
   - Java

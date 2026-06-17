@@ -4,7 +4,7 @@ title: Web开发技术期末复习
 date: 2025-12-31 15:29:31
 mermaid: true
 categories:
-  - 计算机科学
+  - 软件工程
   - Web开发技术
 tags:
   - Java

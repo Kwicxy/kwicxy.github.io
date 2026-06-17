@@ -4,7 +4,7 @@ title: 第5章 聚类算法
 math: true
 date: 2025-12-30 11:18:10
 categories:
-  - 计算机科学
+  - 软件工程
   - 数据挖掘
 tags:
   - K-Means

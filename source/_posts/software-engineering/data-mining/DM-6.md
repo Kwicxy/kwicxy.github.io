@@ -5,7 +5,7 @@ math: true
 mermaid: true
 date: 2025-12-31 11:22:10
 categories:
-  - 计算机科学
+  - 软件工程
   - 数据挖掘
 tags:
   - 关联规则

@@ -4,7 +4,7 @@ title: 第3章 分类算法
 math: true
 date: 2025-12-30 10:28:10
 categories:
-  - 计算机科学
+  - 软件工程
   - 数据挖掘
 tags:
   - 分类算法

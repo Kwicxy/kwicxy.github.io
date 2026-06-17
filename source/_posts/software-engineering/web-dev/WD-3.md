@@ -4,7 +4,7 @@ title: 第3章 Servlet请求与响应
 date: 2026-01-12 23:49:31
 mermaid: true
 categories:
-  - 计算机科学
+  - 软件工程
   - Web开发技术
 tags:
   - Java

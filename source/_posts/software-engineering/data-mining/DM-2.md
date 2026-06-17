@@ -4,7 +4,7 @@ title: 第2章 数据预处理
 math: true
 date: 2025-12-30 10:18:10
 categories:
-  - 计算机科学
+  - 软件工程
   - 数据挖掘
 tags:
   - 数据预处理

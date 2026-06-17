@@ -3,7 +3,7 @@ layout: post
 title: 第1章 什么是数据挖掘
 date: 2025-12-30 10:08:10
 categories:
-  - 计算机科学
+  - 软件工程
   - 数据挖掘
 tags:
   - 数据挖掘

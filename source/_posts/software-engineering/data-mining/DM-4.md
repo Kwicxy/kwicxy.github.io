@@ -4,7 +4,7 @@ title: 第4章 分类算法的评估指标
 math: true
 date: 2025-12-30 11:08:10
 categories:
-  - 计算机科学
+  - 软件工程
   - 数据挖掘
 tags:
   - 分类模型

@@ -3,7 +3,7 @@ layout: post
 title: 移动开发期末
 date: 2025-12-25 16:07:44
 categories:
-  - 计算机科学
+  - 软件工程
   - 移动开发技术
 tags:
   - Vue

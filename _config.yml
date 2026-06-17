@@ -53,11 +53,12 @@ prismjs:
 default_category: uncategorized
 category_map: # edit for Theme.shoka
   计算机科学: computer-science
+  软件工程: software-engineering
   管理学: management
   数学: math
-  # R语言: R
+  R语言: R
   数据挖掘: data-mining
-  # 管理信息系统: MIS
+  管理信息系统: MIS
   Web开发技术: web-dev
   信息系统分析、设计与实现: IS-analysis
   信息检索与Web数据挖掘: data-search

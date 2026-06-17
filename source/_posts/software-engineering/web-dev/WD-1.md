@@ -3,7 +3,7 @@ layout: post
 title: 第1章 概述
 date: 2026-01-12 21:29:31
 categories:
-  - 计算机科学
+  - 软件工程
   - Web开发技术
 tags:
   - Java
