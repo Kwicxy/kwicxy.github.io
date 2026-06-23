@@ -1,6 +1,13 @@
 packages:
   - "."
 
+allowBuilds:
+  '@parcel/watcher': true
+  deasync: true
+  hexo-util: true
+  highlight.js: true
+  puppeteer: true
+
 onlyBuiltDependencies:
   - deasync
   - hexo-util

@@ -43,6 +43,9 @@
   --text-color: var(--grey-7);
   --header-text-color: var(--grey-0);
   --primary-color: var(--color-red);
+  --scrollbar-track: rgba(233, 84, 107, 0.08);
+  --scrollbar-thumb: rgba(233, 84, 107, 0.42);
+  --scrollbar-thumb-hover: rgba(233, 84, 107, 0.72);
 
   --mermaid-bg: var(--grey-1);
   --mermaid-surface: var(--grey-2);
@@ -140,6 +143,9 @@
     --box-bg-shadow: rgba(0, 0, 0, 0.28);
     --text-color: var(--grey-6);
     --header-text-color: var(--grey-9);
+    --scrollbar-track: rgba(248, 250, 252, 0.08);
+    --scrollbar-thumb: rgba(231, 131, 169, 0.52);
+    --scrollbar-thumb-hover: rgba(231, 131, 169, 0.82);
     --mermaid-bg: var(--grey-1);
     --mermaid-surface: var(--grey-2);
     --mermaid-alt-surface: var(--grey-3);
