@@ -4,6 +4,7 @@
 
 .md {
   font-family: $font-family-posts;
+  line-height: $line-height-posts;
   @include word-wrap;
 
   .exturl .ic {

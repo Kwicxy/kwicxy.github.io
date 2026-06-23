@@ -2,8 +2,8 @@
 
 // Placeholder: $code-block
 %code-block {
-  background: var(--grey-2);
-  color: var(--grey-7);
+  background: var(--code-bg);
+  color: var(--code-text);
   line-height: $line-height-code-block;
   margin: 1.25rem auto;
 }
@@ -12,7 +12,12 @@ pre,
 code,
 .code-container {
   font-family: $font-family-monospace;
-  font-size: $font-size-medium;
+}
+
+:not(td)>pre,
+:not(pre)>code,
+.code-container {
+  font-size: $font-size-code;
 }
 
 
@@ -51,23 +56,11 @@ code,
   @extend %code-block;
 
   *::selection {
-    background: var(--grey-4);
+    background: var(--code-selection);
   }
 
-  //&::before {
-  //  content: " ";
-  //  position: absolute;
-  //  border-radius: 50%;
-  //  background: #fc625d;
-  //  width: .75rem;
-  //  height: .75rem;
-  //  left: .75rem;
-  //  top: .8125rem;
-  //  box-shadow: 1.25rem 0 #fdbc40, 2.5rem 0 #35cd4b;
-  //}
-
   figcaption {
-    color: var(--grey-4);
+    color: var(--code-muted);
     display: inline-flex;
     font-size: $font-size-small;
     font-weight: 700;
@@ -78,7 +71,7 @@ code,
     align-items: center;
     justify-content: space-between;
 
-    background-color: var(--grey-3);
+    background-color: var(--code-surface);
     margin-bottom: .625rem;
 
     &::before {
@@ -95,10 +88,10 @@ code,
     }
 
     a {
-      color: var(--grey-5);
+      color: var(--code-muted);
 
       &:hover {
-        color: var(--grey-6);
+        color: var(--code-text);
       }
     }
   }
@@ -136,14 +129,13 @@ code,
 
 
 .code-container {
-  overflow-x: scroll;
+  overflow-x: auto;
   overflow-y: hidden;
+  padding: .75em 0;
 
-  &::after {
-    content: "";
-    display: block;
-    height: .625rem;
-    width: 100%;
+  pre,
+  code {
+    font-size: 1em;
   }
 
   table {
@@ -154,11 +146,6 @@ code,
 
   tr {
     background-color: inherit;
-    &:hover {
-      td {
-        background-color: var(--grey-3);
-      }
-    }
   }
 
   td {
@@ -167,21 +154,22 @@ code,
     vertical-align: unset;
     border: unset;
     @include the-transition;
-    pre::before {
-      content: " ";
-    }
+  }
+
+  td:first-child pre::before {
+    content: " ";
   }
 
   td:first-child {
     position: absolute;
-    background: var(--grey-2);
+    background: var(--code-bg);
     text-align: right;
     overflow-x: visible !important;
     overflow-y: hidden;
     left: 0;
     width: 2.5rem;
     padding-right: .9375rem;
-    color: var(--color-grey);
+    color: var(--code-muted);
     z-index: $zindex-1;
   }
 
@@ -199,7 +187,7 @@ code,
 
   td[data-command]::before {
     content: attr(data-command) " ";
-    color: var(--grey-5);
+    color: var(--code-muted);
     display: block;
     letter-spacing: -1px;
     padding-right: .5rem;
@@ -209,16 +197,16 @@ code,
 
   td[data-command] + td {
     padding-left: .5rem;
-    border-left: 1px solid var(--grey-4);
+    border-left: 1px solid var(--code-selection);
   }
 
   .marked {
     td {
-      background-color: var(--grey-3);
+      background-color: var(--code-surface);
     }
     &:hover {
       td:last-child {
-        background-color: var(--color-red-a1);
+        background-color: var(--code-deletion-bg);
       }
     }
   }
@@ -231,8 +219,8 @@ code,
     width: 100%;
     height: 2.875rem;
     text-align: center;
-    color: var(--text-color);
-    background-image: linear-gradient(to bottom, var(--grey-2-a0) 0, var(--grey-2) 80%);
+    color: var(--code-text);
+    background-image: linear-gradient(to bottom, var(--code-bg-a0) 0, var(--code-bg) 80%);
     z-index: $zindex-1;
 
     &::after {
@@ -240,7 +228,7 @@ code,
       display: block;
       width: 100%;
       height: 1rem;
-      background: var(--grey-2);
+      background: var(--code-bg);
     }
 
     .ic {
@@ -264,21 +252,24 @@ code,
 
   // For diff highlight
   .deletion {
-    background: var(--color-pink-light);
+    background: var(--code-deletion-bg);
   }
 
   .addition {
-    background: var(--color-cyan-light);
+    background: var(--code-addition-bg);
   }
 
   .meta {
-    color: var(--color-yellow);
-    @include disable-user-select;
+    color: var(--code-yellow);
   }
 
   .comment,
   .punctuation {
-    color: var(--grey-5);
+    color: var(--code-comment);
+  }
+
+  .punctuation {
+    color: var(--code-punctuation);
   }
 
   .variable,
@@ -295,7 +286,7 @@ code,
   .css .id,
   .css .class,
   .css .pseudo {
-    color: var(--color-red);
+    color: var(--code-red);
   }
 
   .number,
@@ -306,7 +297,7 @@ code,
   .params,
   .constant,
   .command {
-    color: var(--color-orange);
+    color: var(--code-peach);
   }
 
   .ruby .class .title,
@@ -320,13 +311,13 @@ code,
   .xml .cdata,
   .special,
   .formula {
-    color: var(--color-green);
+    color: var(--code-green);
   }
 
   .title,
   .css .hexcolor,
   .namespace {
-    color: var(--color-aqua);
+    color: var(--code-teal);
   }
 
   .class-name,
@@ -337,11 +328,11 @@ code,
   .perl .sub,
   .javascript .title,
   .coffeescript .title {
-    color: var(--color-blue);
+    color: var(--code-blue);
   }
 
   .keyword,
   .javascript .function {
-    color: var(--color-purple);
+    color: var(--code-mauve);
   }
 }
