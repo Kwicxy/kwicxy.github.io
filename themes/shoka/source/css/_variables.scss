@@ -19,19 +19,19 @@
 }
 
 // Font families.
-$font-family-chinese: -apple-system, "PingFang SC", "Microsoft YaHei";
+$font-family-base-sans: config-font-family("global"), -apple-system, "PingFang SC", "Noto Sans SC", "Microsoft YaHei", sans-serif;
+$font-family-base-serif: "Noto Serif SC", "Songti SC", "SimSun", "STSong", "NSimSun", serif;
 
-$font-family-base: config-font-family("global"), $font-family-chinese, sans-serif;
-$font-family-logo: config-font-family("logo"), $font-family-base;
-$font-family-title: config-font-family("title"), config-font-family("headings"), config-font-family("global"), $font-family-base;
-$font-family-headings: config-font-family("headings"), config-font-family("global"), $font-family-title;
-$font-family-posts: config-font-family("posts"), $font-family-base;
-$font-family-monospace: config-font-family("codes"), consolas, Menlo, $font-family-chinese;
+$font-family-logo: config-font-family("logo"), $font-family-base-serif;
+$font-family-title: config-font-family("title"), $font-family-base-serif;
+$font-family-headings: config-font-family("headings"), $font-family-base-serif;
+$font-family-posts: config-font-family("posts"), $font-family-base-sans;
+$font-family-monospace: config-font-family("codes"), Menlo, consolas, $font-family-base-sans;
 
 $iconfont: hexo-config("iconfont");
 
 // Font size
-$font-size-base: config-font-size("global", 1em);
+$font-size-base: 1em;
 $font-size-smallest: .75em;
 $font-size-smaller: .8125em;
 $font-size-small: .875em;
@@ -48,7 +48,7 @@ $font-size-headings-base: config-font-size("headings", 1.625em);
 
 // Global line height
 $line-height-base: 2;
-$line-height-code-block: 1.6; // Can't be less than 1.3;
+$line-height-code-block: 1.5; // Can't be less than 1.3;
 
 
 // Z-index master list

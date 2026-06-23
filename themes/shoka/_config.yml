@@ -55,7 +55,6 @@ font:
   global:
     external: true
     family: Mulish
-    size:
 
   # Font settings for alternate title.
   logo:
@@ -66,7 +65,7 @@ font:
   # Font settings for site title.
   title:
     external: true
-    family: Noto Serif JP
+    family: Noto Serif SC
     size: 2.5
 
   # Font settings for headlines (<h1> to <h6>).
@@ -78,7 +77,7 @@ font:
   # Font settings for posts.
   posts:
     external: true
-    family:
+    family: Mulish
 
   # Font settings for <code> and code blocks.
   codes:
