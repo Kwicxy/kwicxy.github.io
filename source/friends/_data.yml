@@ -5,6 +5,13 @@
   image: https://dimo.qwq6.xyz/dimo.svg
   color: "#87c5ba"
 
+- site: 一罐可乐
+  owner: Xxxhite
+  url: http://blog.sopak.space
+  desc: 今天开始我要自己上厕所爸爸妈妈你们不要小看我宝宝巴土教我上厕所秘诀我等不及了我要上厕所
+  image: http://blog.sopak.space/assets/home/home.webp
+  color: "#F482FD"
+
 - site: らくハンの部屋
   owner: GTX690
   url: https://gtx6901.github.io
@@ -18,3 +25,4 @@
   desc: 琉璃的医学 & 编程笔记   Theme.Shoka 主题原作者
   image: https://cdn.jsdelivr.net/gh/amehime/shoka@latest/images/avatar.jpg
   color: "#e9546b"
+  
