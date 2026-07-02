@@ -54,7 +54,8 @@ default_category: uncategorized
 category_map: # edit for Theme.shoka
   计算机科学: computer-science
   软件工程: software-engineering
-  管理学: management
+  课程笔记: course-notes
+  试卷真题: exam-papers
   数学: math
   R语言: R
   数据挖掘: data-mining
