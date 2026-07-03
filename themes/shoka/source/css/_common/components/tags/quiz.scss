@@ -25,6 +25,10 @@
 .md ol>li.quiz {
   margin: .625rem 0;
 
+  &.no-index::before {
+    content: none;
+  }
+
   &::before{
     counter-increment: counter;
     content: counter(counter) ".";
@@ -195,5 +199,4 @@
     @extend %times;
   }
 }
-
 
