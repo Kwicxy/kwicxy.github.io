@@ -5,7 +5,7 @@ math: true
 quiz: true
 date: 2026-07-02 11:00:00
 categories:
-  - 考研真题
+  - 试卷真题
   - 数学一
 tags:
   - 考研数学
@@ -15,21 +15,21 @@ tags:
 
 # 2026 年考研数学一真题
 
-> 题目与解析参考“计算机考研杂货铺”的 2026 年数学一真题页面整理。部分公式由网页渲染结果复原为 LaTeX，便于本博客渲染与复习。
-
 # 选择题
 
 1～10 小题，每小题 5 分，共 50 分。下列每题给出的四个选项中，只有一个选项符合题目要求。
 
-01. 设函数 $z=z(x,y)$ 由方程 $x-az=e^{y+az}$（$a$ 是非 $0$ 常数）确定，则（　）{.quiz}
-    - A. $\dfrac{\partial z}{\partial x}-\dfrac{\partial z}{\partial y}=\dfrac{1}{a}$ {.correct}
-    - B. $\dfrac{\partial z}{\partial x}+\dfrac{\partial z}{\partial y}=\dfrac{1}{a}$
-    - C. $\dfrac{\partial z}{\partial x}-\dfrac{\partial z}{\partial y}=-\dfrac{1}{a}$
-    - D. $\dfrac{\partial z}{\partial x}+\dfrac{\partial z}{\partial y}=-\dfrac{1}{a}$
+## 01
+
+1. 设函数 $z=z(x,y)$ 由方程 $x-az=e^{y+az}$（$a$ 是非 $0$ 常数）确定，则（　）{.quiz .no-index}
+    - $\dfrac{\partial z}{\partial x}-\dfrac{\partial z}{\partial y}=\dfrac{1}{a}$. {.correct}
+    - $\dfrac{\partial z}{\partial x}+\dfrac{\partial z}{\partial y}=\dfrac{1}{a}$.
+    - $\dfrac{\partial z}{\partial x}-\dfrac{\partial z}{\partial y}=-\dfrac{1}{a}$.
+    - $\dfrac{\partial z}{\partial x}+\dfrac{\partial z}{\partial y}=-\dfrac{1}{a}$.
 {.options}
 
-+++ Answer
-正确答案：A
++++ 答案与解析
+正确答案：`A`
 
 由 $x-az=e^{y+az}$ 对 $x$、$y$ 分别求偏导：
 
@@ -45,18 +45,20 @@ z_x=\frac{1}{a(1+e^{y+az})},\qquad
 z_y=-\frac{e^{y+az}}{a(1+e^{y+az})}.
 $$
 
-故 $z_x-z_y=\dfrac{1}{a}$。
+故 $z_x-z_y=\frac{1}{a}$。
 +++
 
-02. 幂级数 $\displaystyle \sum_{n=1}^{\infty}\left(\frac{3+(-1)^n}{4}\right)^n x^{2n}$ 的收敛域是（　）{.quiz}
-    - A. $[-2,2]$
-    - B. $[-1,1]$
-    - C. $(-2,2)$
-    - D. $(-1,1)$ {.correct}
+## 02
+
+1. 幂级数 $\displaystyle \sum_{n=1}^{\infty}\left(\frac{3+(-1)^n}{4}\right)^n x^{2n}$ 的收敛域是（　）{.quiz .no-index}
+    - $[-2,2]$.
+    - $[-1,1]$.
+    - $(-2,2)$.
+    - $(-1,1)$. {.correct}
 {.options}
 
-+++ Answer
-正确答案：D
++++ 答案与解析
+正确答案：`D`
 
 令 $y=x^2$，原级数化为 $\sum b_n y^n$，其中
 
@@ -67,15 +69,17 @@ $$
 $n$ 为偶数时 $b_n=1$，$n$ 为奇数时 $b_n=(1/2)^n$，所以根值上极限为 $1$，关于 $y$ 的收敛半径为 $1$。由 $|x|<1$ 得收敛；端点 $x=\pm1$ 时偶数项不趋于 $0$，发散。故收敛域为 $(-1,1)$。
 +++
 
-03. 设函数 $f(x)$ 在区间 $[-1,1]$ 上有定义，则（　）{.quiz}
-    - A. 当 $f(x)$ 在 $(-1,0)$ 单调递减，在 $(0,1)$ 单调递增时，$f(0)$ 是极小值
-    - B. 当 $f(0)$ 是极小值时，$f(x)$ 在 $(-1,0)$ 单调递减，在 $(0,1)$ 单调递增
-    - C. 当 $f(x)$ 的图形在 $[-1,1]$ 是凹的时，$\dfrac{f(x)-f(1)}{x-1}$ 在 $[-1,1)$ 单调递增 {.correct}
-    - D. $\dfrac{f(x)-f(1)}{x-1}$ 在 $[-1,1)$ 单调递增时，$f(x)$ 的图形在 $[-1,1]$ 是凹的
+## 03
+
+1. 设函数 $f(x)$ 在区间 $[-1,1]$ 上有定义，则（　）{.quiz .no-index}
+    - 当 $f(x)$ 在 $(-1,0)$ 单调递减，在 $(0,1)$ 单调递增时，$f(0)$ 是极小值.
+    - 当 $f(0)$ 是极小值时，$f(x)$ 在 $(-1,0)$ 单调递减，在 $(0,1)$ 单调递增.
+    - 当 $f(x)$ 的图形在 $[-1,1]$ 是凹的时，$\frac{f(x)-f(1)}{x-1}$ 在 $[-1,1)$ 单调递增. {.correct}
+    - $\frac{f(x)-f(1)}{x-1}$ 在 $[-1,1)$ 单调递增时，$f(x)$ 的图形在 $[-1,1]$ 是凹的.
 {.options}
 
-+++ Answer
-正确答案：C
++++ 答案与解析
+正确答案：`C`
 
 A、B 都忽略了函数在 $0$ 附近可能不连续或震荡；D 的割线斜率单调性不能反推整体凹性。若 $f$ 凹向上，则导数单调递增，固定右端点 $1$ 时，割线斜率
 
@@ -86,15 +90,17 @@ $$
 随 $x$ 增大而增大，故 C 正确。
 +++
 
-04. 已知有界区域 $\Omega$ 由曲面 $z=\sqrt{4-x^2-y^2}$ 与 $z=\sqrt{x^2+y^2}$ 围成，函数 $f(u)$ 连续，则（　）{.quiz}
-    - A. $\displaystyle \int_0^{2\pi}d\theta\int_0^2dr\int_r^{\sqrt{4-r^2}} f(r^2+z^2)r\,dz$
-    - B. $\displaystyle \int_0^{2\pi}d\theta\int_0^{\sqrt2}dr\int_0^{\sqrt{4-r^2}} f(r^2+z^2)r\,dz$
-    - C. $\displaystyle \int_0^{2\pi}d\theta\int_0^{\pi/4}d\varphi\int_0^2 f(r^2)r^2\sin\varphi\,dr$ {.correct}
-    - D. $\displaystyle \int_0^{2\pi}d\theta\int_0^{\pi/2}d\varphi\int_0^2 f(r^2)r^2\sin\varphi\,dr$
+## 04
+
+1. 已知有界区域 $\Omega$ 由曲面 $z=\sqrt{4-x^2-y^2}$ 与 $z=\sqrt{x^2+y^2}$ 围成，函数 $f(u)$ 连续，则（　）{.quiz .no-index}
+    - $\displaystyle \int_0^{2\pi}d\theta\int_0^2dr\int_r^{\sqrt{4-r^2}} f(r^2+z^2)r\,dz$.
+    - $\displaystyle \int_0^{2\pi}d\theta\int_0^{\sqrt2}dr\int_0^{\sqrt{4-r^2}} f(r^2+z^2)r\,dz$.
+    - $\displaystyle \int_0^{2\pi}d\theta\int_0^{\pi/4}d\varphi\int_0^2 f(r^2)r^2\sin\varphi\,dr$. {.correct}
+    - $\displaystyle \int_0^{2\pi}d\theta\int_0^{\pi/2}d\varphi\int_0^2 f(r^2)r^2\sin\varphi\,dr$.
 {.options}
 
-+++ Answer
-正确答案：C
++++ 答案与解析
+正确答案：`C`
 
 区域由半径为 $2$ 的上半球面与圆锥面 $z=\sqrt{x^2+y^2}$ 围成。球坐标下
 
@@ -105,28 +111,32 @@ $$
 圆锥面对应 $\varphi=\pi/4$，半球面对应 $0\le \rho\le2$，且 $0\le\theta\le2\pi$。被积函数变为 $f(\rho^2)$，体积元为 $\rho^2\sin\varphi\,d\rho d\varphi d\theta$。
 +++
 
-05. 单位矩阵经过若干次互换两行得到的矩阵称为置换矩阵。设 $A$ 为 $n$ 阶置换矩阵，$A^*$ 为 $A$ 的伴随矩阵，则（　）{.quiz}
-    - A. $A^*$ 为置换矩阵
-    - B. $A^{-1}$ 为置换矩阵 {.correct}
-    - C. $A^{-1}=A^*$
-    - D. $A^{-1}=-A^*$
+## 05
+
+1. 单位矩阵经过若干次互换两行得到的矩阵称为置换矩阵。设 $A$ 为 $n$ 阶置换矩阵，$A^*$ 为 $A$ 的伴随矩阵，则（　）{.quiz .no-index}
+    - $A^*$ 为置换矩阵.
+    - $A^{-1}$ 为置换矩阵. {.correct}
+    - $A^{-1}=A^*$.
+    - $A^{-1}=-A^*$.
 {.options}
 
-+++ Answer
-正确答案：B
++++ 答案与解析
+正确答案：`B`
 
 置换矩阵是正交矩阵，满足 $A^{-1}=A^T$，而 $A^T$ 仍为置换矩阵。又 $A^*=\det(A)A^{-1}$，当 $\det(A)=-1$ 时，$A^*$ 可能含负元素，所以 A 不恒成立；C、D 也只在特定行交换奇偶性下成立。
 +++
 
-06. 设 $A$、$B$ 为 $n$ 阶矩阵，$\beta$ 是 $n$ 维列向量。若 $A$ 的列向量组可由 $B$ 的列向量组表示，则（　）{.quiz}
-    - A. 当 $Ax=\beta$ 有解时，$Bx=\beta$ 有解 {.correct}
-    - B. 当 $A^Tx=\beta$ 有解时，$B^Tx=\beta$ 有解
-    - C. 当 $Bx=\beta$ 有解时，$Ax=\beta$ 有解
-    - D. 当 $B^Tx=\beta$ 有解时，$A^Tx=\beta$ 有解
+## 06
+
+1. 设 $A$、$B$ 为 $n$ 阶矩阵，$\beta$ 是 $n$ 维列向量。若 $A$ 的列向量组可由 $B$ 的列向量组表示，则（　）{.quiz .no-index}
+    - 当 $Ax=\beta$ 有解时，$Bx=\beta$ 有解. {.correct}
+    - 当 $A^Tx=\beta$ 有解时，$B^Tx=\beta$ 有解.
+    - 当 $Bx=\beta$ 有解时，$Ax=\beta$ 有解.
+    - 当 $B^Tx=\beta$ 有解时，$A^Tx=\beta$ 有解.
 {.options}
 
-+++ Answer
-正确答案：A
++++ 答案与解析
+正确答案：`A`
 
 $A$ 的列向量组可由 $B$ 的列向量组表示，等价于存在矩阵 $C$ 使 $A=BC$，因此
 
@@ -137,15 +147,17 @@ $$
 若 $Ax=\beta$ 有解，则 $\beta\in\operatorname{Col}(A)$，从而 $\beta\in\operatorname{Col}(B)$，所以 $Bx=\beta$ 有解。
 +++
 
-07. 设二次型 $f(x_1,x_2,x_3)=a(x_1^2+x_2^2+x_3^2)+4x_1x_2+4x_1x_3+4x_2x_3$。若方程 $f(x_1,x_2,x_3)=-1$ 表示的曲面为圆柱面，则（　）{.quiz}
-    - A. $a=-4$，且 $f$ 的规范型为 $-y_1^2-y_2^2-y_3^2$
-    - B. $a=-4$，且 $f$ 在正交变换下的标准型为 $-6y_1^2-6y_2^2$ {.correct}
-    - C. $a=2$，且 $f$ 的规范型为 $-y_1^2-y_2^2-y_3^2$
-    - D. $a=2$，且 $f$ 在正交变换下的标准型为 $-6y_1^2-6y_2^2$
+## 07
+
+1. 设二次型 $f(x_1,x_2,x_3)=a(x_1^2+x_2^2+x_3^2)+4x_1x_2+4x_1x_3+4x_2x_3$。若方程 $f(x_1,x_2,x_3)=-1$ 表示的曲面为圆柱面，则（　）{.quiz .no-index}
+    - $a=-4$，且 $f$ 的规范型为 $-y_1^2-y_2^2-y_3^2$.
+    - $a=-4$，且 $f$ 在正交变换下的标准型为 $-6y_1^2-6y_2^2$. {.correct}
+    - $a=2$，且 $f$ 的规范型为 $-y_1^2-y_2^2-y_3^2$.
+    - $a=2$，且 $f$ 在正交变换下的标准型为 $-6y_1^2-6y_2^2$.
 {.options}
 
-+++ Answer
-正确答案：B
++++ 答案与解析
+正确答案：`B`
 
 二次型矩阵为
 
@@ -160,15 +172,17 @@ $$
 特征值为 $a+4$、$a-2$、$a-2$。圆柱面要求一个特征值为 $0$，其余两个同号且方程有实点。取 $a=-4$ 时，特征值为 $0,-6,-6$，正交变换下标准型为 $-6y_1^2-6y_2^2$，方程化为 $y_1^2+y_2^2=1/6$，是圆柱面。
 +++
 
-08. 设随机变量 $X\sim N(1,2)$，令 $f(t)=E[(X+t)^2]$，则 $f(t)$ 的最小值点和最小值分别为（　）{.quiz}
-    - A. $1,2$
-    - B. $1,4$
-    - C. $-1,2$ {.correct}
-    - D. $-1,4$
+## 08
+
+1. 设随机变量 $X\sim N(1,2)$，令 $f(t)=E[(X+t)^2]$，则 $f(t)$ 的最小值点和最小值分别为（　）{.quiz .no-index}
+    - $1,2$.
+    - $1,4$.
+    - $-1,2$. {.correct}
+    - $-1,4$.
 {.options}
 
-+++ Answer
-正确答案：C
++++ 答案与解析
+正确答案：`C`
 
 $$
 f(t)=E(X^2)+2tE(X)+t^2.
@@ -183,15 +197,17 @@ $$
 最小值点为 $t=-1$，最小值为 $2$。
 +++
 
-09. 设连续型随机变量 $X$ 的分布函数为 $F(x)$，随机变量 $Y$ 的分布函数为 $F(ay+b)$，$X$ 的数学期望为 $\mu$，方差为 $\sigma^2$（$\sigma>0$）。若 $Y$ 的数学期望和方差分别为 $0$ 和 $1$，则（　）{.quiz}
-    - A. $a=\sigma,\ b=\mu$ {.correct}
-    - B. $a=\sigma,\ b=-\mu$
-    - C. $a=\dfrac{1}{\sigma},\ b=\mu$
-    - D. $a=\dfrac{1}{\sigma},\ b=-\mu$
+## 09
+
+1. 设连续型随机变量 $X$ 的分布函数为 $F(x)$，随机变量 $Y$ 的分布函数为 $F(ay+b)$，$X$ 的数学期望为 $\mu$，方差为 $\sigma^2$（$\sigma>0$）。若 $Y$ 的数学期望和方差分别为 $0$ 和 $1$，则（　）{.quiz .no-index}
+    - $a=\sigma,\ b=\mu$. {.correct}
+    - $a=\sigma,\ b=-\mu$.
+    - $a=\frac{1}{\sigma},\ b=\mu$.
+    - $a=\frac{1}{\sigma},\ b=-\mu$.
 {.options}
 
-+++ Answer
-正确答案：A
++++ 答案与解析
+正确答案：`A`
 
 由 $F_Y(y)=F(ay+b)$ 可知 $X=aY+b$，即
 
@@ -208,15 +224,17 @@ $$
 取 $a>0$，得 $a=\sigma$，$b=\mu$。
 +++
 
-10. 设随机变量 $X$ 的概率分布为 $P\{X=k\}=\dfrac{1}{2^{k+1}}+\dfrac{1}{3^k}$（$k=1,2,\cdots$），则对于正整数 $m,n$ 有（　）{.quiz}
-    - A. $P\{X>m+n\mid X>m\}=P\{X>m\}$
-    - B. $P\{X>m+n\mid X>m\}=P\{X>n\}$
-    - C. $P\{X>m+n\mid X>m\}>P\{X>m\}$
-    - D. $P\{X>m+n\mid X>m\}>P\{X>n\}$ {.correct}
+## 10
+
+1. 设随机变量 $X$ 的概率分布为 $P\{X=k\}=\frac{1}{2^{k+1}}+\frac{1}{3^k}$（$k=1,2,\cdots$），则对于正整数 $m,n$ 有（　）{.quiz .no-index}
+    - $P\{X>m+n\mid X>m\}=P\{X>m\}$.
+    - $P\{X>m+n\mid X>m\}=P\{X>n\}$.
+    - $P\{X>m+n\mid X>m\}>P\{X>m\}$.
+    - $P\{X>m+n\mid X>m\}>P\{X>n\}$. {.correct}
 {.options}
 
-+++ Answer
-正确答案：D
++++ 答案与解析
+正确答案：`D`
 
 先求尾概率：
 
@@ -225,17 +243,19 @@ P\{X>k\}=\sum_{j=k+1}^{\infty}\left(\frac{1}{2^{j+1}}+\frac{1}{3^j}\right)
 =\frac{1}{2^{k+1}}+\frac{1}{2\cdot3^k}.
 $$
 
-因此 $P\{X>m+n\mid X>m\}$ 是 $2^{-n}$ 与 $3^{-n}$ 的加权平均，且权重更偏向较大的 $2^{-n}$；而 $P\{X>n\}$ 是二者的等权平均。故条件概率大于 $P\{X>n\}$。
+因此 $P\{X>m+n\mid X>m\}$ 是 $2^{-n}$ 与 $3^{-n}$ 的加权平均，且权重更偏向较大的 $2^{-n}$.而 $P\{X>n\}$ 是二者的等权平均。故条件概率大于 $P\{X>n\}$。
 +++
 
 # 填空题
 
 11～16 小题，每小题 5 分，共 30 分。
 
-11. 设向量 $v_1=(0,x,z)$，$v_2=(y,0,1)$，令 $F(x,y,z)=v_1\times v_2$，则 $\operatorname{div}F=$ ____________。
+## 11
 
-+++ Answer
-答案：$1+z$
+设向量 $v_1=(0,x,z)$，$v_2=(y,0,1)$，令 $F(x,y,z)=v_1\times v_2$，则 $\operatorname{div}F=$ ____________。
+
++++ 答案与解析
+答案：$1+z$.
 
 $$
 F=v_1\times v_2=(x,yz,-xy).
@@ -250,10 +270,12 @@ $$
 $$
 +++
 
-12. $\displaystyle \lim_{x\to0}\left(\frac{1}{x}-\frac{\ln(1+x)}{x\sin x}\right)=$ ____________。
+## 12
 
-+++ Answer
-答案：$\dfrac{1}{2}$
+$\displaystyle \lim_{x\to0}\left(\frac{1}{x}-\frac{\ln(1+x)}{x\sin x}\right)=$ ____________。
+
++++ 答案与解析
+答案：$\frac{1}{2}$.
 
 通分得
 
@@ -271,16 +293,18 @@ $$
 $$
 +++
 
-13. 设函数 $y=y(x)$ 由参数方程
+## 13
+
+设函数 $y=y(x)$ 由参数方程
 
 $$
 x=2\sin^2t,\qquad y=t+\cos t
 $$
 
-确定，则 $\left.\dfrac{d^2y}{dx^2}\right|_{t=\pi/4}=$ ____________。
+确定，则 $\left.\frac{d^2y}{dx^2}\right|_{t=\pi/4}=$ ____________。
 
-+++ Answer
-答案：$-\dfrac{\sqrt2}{8}$
++++ 答案与解析
+答案：$-\frac{\sqrt2}{8}$.
 
 $$
 \frac{dy}{dx}=\frac{dy/dt}{dx/dt}
@@ -300,10 +324,12 @@ $$
 $$
 +++
 
-14. 设 $\displaystyle \int_1^{+\infty}\frac{\ln(x+1)}{x^2}\,dx=$ ____________。
+## 14
 
-+++ Answer
-答案：$2\ln2$
+设 $\displaystyle \int_1^{+\infty}\frac{\ln(x+1)}{x^2}\,dx=$ ____________。
+
++++ 答案与解析
+答案：$2\ln2$.
 
 分部积分，取 $u=\ln(x+1)$、$dv=x^{-2}dx$，则
 
@@ -312,7 +338,7 @@ I=\left.-\frac{\ln(x+1)}{x}\right|_1^{+\infty}
 +\int_1^{+\infty}\frac{1}{x(x+1)}\,dx.
 $$
 
-第一项为 $\ln2$；第二项
+第一项为 $\ln2$.第二项
 
 $$
 \int_1^{+\infty}\left(\frac1x-\frac1{x+1}\right)dx=\ln2.
@@ -321,7 +347,9 @@ $$
 故 $I=2\ln2$。
 +++
 
-15. 设矩阵
+## 15
+
+设矩阵
 
 $$
 A=\begin{pmatrix}
@@ -338,8 +366,8 @@ $$
 
 记 $m(X)$ 为 3 阶矩阵 $X$ 的实特征值中的最大值。若 $m(A)<m(B)$，则 $a$ 的取值范围为 ____________。
 
-+++ Answer
-答案：$(-\infty,0)$
++++ 答案与解析
+答案：$(-\infty,0)$.
 
 $A$ 的特征值为 $1,a-2,a+2$，所以
 
@@ -359,17 +387,19 @@ $$
 
 分段比较：
 
-- $a\le-1$ 时，$m(A)=1<2=m(B)$；
-- $-1<a\le1$ 时，$a+2<2$，得 $a<0$；
+- $a\le-1$ 时，$m(A)=1<2=m(B)$.
+- $-1<a\le1$ 时，$a+2<2$，得 $a<0$.
 - $a>1$ 时，$a+2<a+1$ 无解。
 
 故 $a<0$。
 +++
 
-16. 设随机变量 $X$ 服从参数为 $1$ 的泊松分布，随机变量 $Y$ 服从参数为 $3$ 的泊松分布，$X$ 与 $Y-X$ 相互独立，则 $E(XY)=$ ____________。
+## 16
 
-+++ Answer
-答案：$4$
+设随机变量 $X$ 服从参数为 $1$ 的泊松分布，随机变量 $Y$ 服从参数为 $3$ 的泊松分布，$X$ 与 $Y-X$ 相互独立，则 $E(XY)=$ ____________。
+
++++ 答案与解析
+答案：$4$.
 
 由 $X\sim P(1)$ 得 $E(X)=1$，$E(X^2)=D(X)+[E(X)]^2=2$。又
 
@@ -388,10 +418,12 @@ $$
 
 17～22 小题，共 70 分。解答应写出文字说明、证明过程或演算步骤。
 
-17. （本题满分 10 分）求 $f(x,y)=(2x^2-y^2)e^x$ 的极值。
+## 17
 
-+++ Answer
-答案：在 $(-2,0)$ 处取得极大值 $8e^{-2}$；$(0,0)$ 为鞍点，无极值。
+（本题满分 10 分）求 $f(x,y)=(2x^2-y^2)e^x$ 的极值。
+
++++ 答案与解析
+答案：在 $(-2,0)$ 处取得极大值 $8e^{-2}$.$(0,0)$ 为鞍点，无极值。
 
 先求一阶偏导：
 
@@ -415,16 +447,18 @@ f(-2,0)=8e^{-2}.
 $$
 +++
 
-18. （本题满分 12 分）设 $f(u)$ 在 $(0,+\infty)$ 内具有 3 阶连续导数，且存在可微函数 $F(x,y)$ 使
+## 18
+
+（本题满分 12 分）设 $f(u)$ 在 $(0,+\infty)$ 内具有 3 阶连续导数，且存在可微函数 $F(x,y)$ 使
 
 $$
 dF(x,y)=\frac{f(xy)}{x^2y}\,dx+\frac{f''(xy)}{xy^2}\,dy\qquad(xy>0).
 $$
 
-(1) 证明：$\dfrac{f''(u)}{u}-\dfrac{f(u)}{u}=c$，$c$ 为常数；  
+(1) 证明：$\frac{f''(u)}{u}-\frac{f(u)}{u}=c$，$c$ 为常数；  
 (2) 设 $f(1)=1$，$f'(1)=-1$，$f''(1)=0$，求 $f(u)$ 的表达式。
 
-+++ Answer
++++ 答案与解析
 答案：
 
 $$
@@ -484,13 +518,15 @@ f(u)=e^{1-u}-e^{u-1}+u.
 $$
 +++
 
-19. （本题满分 12 分）设有向曲线 $L$ 为椭圆 $x^2+3y^2=1$ 上沿逆时针方向从点 $A(-\frac12,-\frac12)$ 到点 $B(\frac12,\frac12)$ 的部分，计算曲线积分
+## 19
+
+（本题满分 12 分）设有向曲线 $L$ 为椭圆 $x^2+3y^2=1$ 上沿逆时针方向从点 $A(-\frac12,-\frac12)$ 到点 $B(\frac12,\frac12)$ 的部分，计算曲线积分
 
 $$
 I=\int_L (e^{x^2}\sin x-2xy)\,dx+(6x-x^2-y\cos4y)\,dy.
 $$
 
-+++ Answer
++++ 答案与解析
 答案：
 
 $$
@@ -537,12 +573,14 @@ I=2\sqrt3\pi-\left(\sqrt3\pi+\frac14\right)
 $$
 +++
 
-20. （本题满分 12 分）设可导函数 $f(x)$ 严格单调递增且满足 $\displaystyle \int_{-1}^1 f(x)\,dx=0$，记 $\displaystyle a=\int_0^1 f(x)\,dx$。
+## 20
 
-(1) 证明：$a>0$；  
+（本题满分 12 分）设可导函数 $f(x)$ 严格单调递增且满足 $\displaystyle \int_{-1}^1 f(x)\,dx=0$，记 $\displaystyle a=\int_0^1 f(x)\,dx$。
+
+(1) 证明：$a>0$.  
 (2) 令 $\displaystyle F(x)=a(1-x^2)+\int_1^x f(t)\,dt$，证明：存在 $\xi\in(-1,1)$ 使 $F''(\xi)=0$。
 
-+++ Answer
++++ 答案与解析
 (1) 因为 $f$ 严格单调递增，在 $(-1,0)$ 上 $f(x)<f(0)$，在 $(0,1)$ 上 $f(x)>f(0)$。又
 
 $$
@@ -576,7 +614,9 @@ F''(\xi)=0.
 $$
 +++
 
-21. （本题满分 12 分）已知向量组
+## 21
+
+（本题满分 12 分）已知向量组
 
 $$
 \alpha_1=\begin{pmatrix}1\\0\\-1\\-1\end{pmatrix},\quad
@@ -590,7 +630,7 @@ $$
 (1) 证明：$\alpha_1,\alpha_2$ 是 $\alpha_1,\alpha_2,\alpha_3,\alpha_4$ 的极大线性无关组。  
 (2) 求矩阵 $H$ 使得 $A=GH$，并求 $A^{10}$。
 
-+++ Answer
++++ 答案与解析
 (1) 设 $k_1\alpha_1+k_2\alpha_2=0$，由分量比较得 $k_1=k_2=0$，所以 $\alpha_1,\alpha_2$ 线性无关。又
 
 $$
@@ -648,7 +688,9 @@ A^{10}=
 $$
 +++
 
-22. （本题满分 12 分）假设某种元件寿命服从指数分布，其均值 $\theta$ 是未知参数。为估计 $\theta$，取 $n$ 个这种元件同时做寿命实验，试验直到出现 $k$（$1\le k\le n$）个元件失效时停止。
+## 22
+
+（本题满分 12 分）假设某种元件寿命服从指数分布，其均值 $\theta$ 是未知参数。为估计 $\theta$，取 $n$ 个这种元件同时做寿命实验，试验直到出现 $k$（$1\le k\le n$）个元件失效时停止。
 
 (1) 若 $k=1$，失效元件寿命记为 $T$，求 $T$ 的概率密度；确定 $a$，使 $\hat\theta=aT$ 是 $\theta$ 的无偏估计，并求 $D(\hat\theta)$。  
 (2) 已知 $k$ 个失效元件寿命值分别为 $t_1,t_2,\cdots,t_k$，且 $t_1\le t_2\le\cdots\le t_k$，似然函数为
@@ -659,7 +701,7 @@ $$
 
 求 $\theta$ 的最大似然估计值。
 
-+++ Answer
++++ 答案与解析
 (1) 单个元件寿命密度为
 
 $$
