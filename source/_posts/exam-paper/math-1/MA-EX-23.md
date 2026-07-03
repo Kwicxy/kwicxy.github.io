@@ -3,6 +3,7 @@ layout: post
 title: 2023 年考研数学一真题
 math: true
 quiz: true
+copyright: false
 date: 2026-07-02 08:00:00
 categories:
   - 试卷真题
