@@ -20,11 +20,96 @@ var oWinHeight = window.innerHeight;
 var oWinWidth = window.innerWidth;
 var LOCAL_HASH = 0, LOCAL_URL = window.location.href;
 var pjax;
-const lazyload = lozad('img, [data-background-image]', {
-    loaded: function(el) {
-        el.addClass('lozaded');
+
+const createLazyload = function() {
+  var selector = "img, [data-background-image]";
+
+  const markLoaded = function(el) {
+    if(el.addClass) {
+      el.addClass("lozaded");
+    } else {
+      el.classList.add("lozaded");
     }
-})
+  };
+
+  if(typeof lozad === "function") {
+    return lozad(selector, {
+      loaded: markLoaded
+    });
+  }
+
+  const loadElement = function(el) {
+    if(!el || el.classList.contains("lozaded"))
+      return;
+
+    var src = el.getAttribute("data-src");
+    var srcset = el.getAttribute("data-srcset");
+    var background = el.getAttribute("data-background-image");
+
+    if(src) {
+      el.setAttribute("src", src);
+      el.removeAttribute("data-src");
+    }
+
+    if(srcset) {
+      el.setAttribute("srcset", srcset);
+      el.removeAttribute("data-srcset");
+    }
+
+    if(background) {
+      el.style.backgroundImage = 'url("' + background.replace(/"/g, '\\"') + '")';
+    }
+
+    markLoaded(el);
+  };
+
+  var observer = window.IntersectionObserver ? new IntersectionObserver(function(entries) {
+    entries.forEach(function(entry) {
+      if(entry.isIntersecting || entry.intersectionRatio > 0) {
+        loadElement(entry.target);
+        observer.unobserve(entry.target);
+      }
+    });
+  }, {
+    rootMargin: "200px 0px"
+  }) : null;
+
+  const collectElements = function(root) {
+    var elements = [];
+
+    if(root && root.nodeType === 1) {
+      if(root.matches && root.matches(selector)) {
+        elements.push(root);
+      }
+
+      Array.prototype.slice.call(root.querySelectorAll(selector)).forEach(function(el) {
+        elements.push(el);
+      });
+
+      return elements;
+    }
+
+    return Array.prototype.slice.call(document.querySelectorAll(selector));
+  };
+
+  return {
+    observe: function(root) {
+      collectElements(root).forEach(function(el) {
+        if(el.classList.contains("lozaded"))
+          return;
+
+        if(observer) {
+          observer.observe(el);
+        } else {
+          loadElement(el);
+        }
+      });
+    },
+    triggerLoad: loadElement
+  };
+}
+
+const lazyload = createLazyload();
 
 const Loader = {
   timer: null,

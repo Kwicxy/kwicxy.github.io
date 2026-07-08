@@ -105,7 +105,8 @@ const siteInit = function () {
 
   domInit()
 
-  pjax = new Pjax({
+  if(typeof Pjax === "function") {
+    pjax = new Pjax({
             selectors: [
               'head title',
               '.languages',
@@ -115,9 +116,16 @@ const siteInit = function () {
             analytics: false,
             cacheBust: false
           })
+  } else {
+    pjax = {
+      refresh: function() {}
+    }
+  }
 
-  CONFIG.quicklink.ignores = LOCAL.ignores
-  quicklink.listen(CONFIG.quicklink)
+  if(window.quicklink && CONFIG.quicklink) {
+    CONFIG.quicklink.ignores = LOCAL.ignores
+    quicklink.listen(CONFIG.quicklink)
+  }
 
   visibilityListener()
   themeColorListener()

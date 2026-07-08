@@ -86,6 +86,13 @@ const pjaxScript = function(element) {
 }
 
 const pageScroll = function(target, offset, complete) {
+  if(typeof anime !== "function") {
+    var scrollTarget = typeof offset == 'number' ? target.parentNode : document.scrollingElement;
+    scrollTarget.scrollTop = offset || (typeof target == 'number' ? target : (target ? target.top() + document.documentElement.scrollTop - siteNavHeight : 0));
+    complete && complete();
+    return;
+  }
+
   var opt = {
     targets: typeof offset == 'number' ? target.parentNode : document.scrollingElement,
     duration: 500,
@@ -99,6 +106,21 @@ const pageScroll = function(target, offset, complete) {
 }
 
 const transition = function(target, type, complete) {
+  if(typeof anime !== "function") {
+    if(type === 0) {
+      target.display("none");
+    } else if(type === 1 || type === "bounceUpIn" || type === "shrinkIn" || type === "slideRightIn") {
+      target.display("block");
+    } else if(type === "slideRightOut") {
+      target.display("none");
+    } else if(type && type.display) {
+      target.display(type.display);
+    }
+
+    complete && complete();
+    return;
+  }
+
   var animation = {}
   var display = 'none'
   switch(type) {
