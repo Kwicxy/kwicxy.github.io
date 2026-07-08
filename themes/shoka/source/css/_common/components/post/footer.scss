@@ -8,4 +8,11 @@
     margin: 1.25rem auto 0rem;
   }
 
+  .meta {
+    display: flex;
+    justify-content: space-between;
+    font-size: $font-size-small;
+    letter-spacing: .0625rem;
+    color: var(--grey-5);
+  }
 }

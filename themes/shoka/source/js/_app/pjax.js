@@ -57,6 +57,8 @@ const applyArtalkThemeClass = function(dark) {
   var element = $('#comments');
   if(!element) return;
 
+  element.toggleClass('atk-dark-mode', dark);
+
   $.each('#comments .atk', function(item) {
     item.toggleClass('atk-dark-mode', dark);
   });
