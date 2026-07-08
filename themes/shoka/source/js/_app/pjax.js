@@ -47,6 +47,39 @@ const pjaxReload = function () {
   pageScroll(0);
 }
 
+var artalkInstance = null;
+
+const artalkComments = function() {
+  var element = $('#comments');
+  if(!element || !LOCAL.artalk || !CONFIG.artalk || !CONFIG.artalk.server) return;
+
+  if(artalkInstance && typeof artalkInstance.destroy === "function") {
+    artalkInstance.destroy();
+  }
+  artalkInstance = null;
+  element.innerHTML = "";
+
+  vendorCss('artalk');
+  LOCAL.comment = true;
+  vendorCss('comment');
+  vendorJs('artalk', function() {
+    if(typeof Artalk !== "object" || typeof Artalk.init !== "function") return;
+
+    var options = Object.assign({}, CONFIG.artalk);
+    options = Object.assign(options, typeof LOCAL.artalk === "object" ? LOCAL.artalk : {});
+    options.el = '#comments';
+    options.pageKey = LOCAL.path;
+    options.pageTitle = LOCAL.title || document.title;
+
+    artalkInstance = Artalk.init(options);
+
+    setTimeout(function(){
+      positionInit(1);
+      postFancybox('.atk');
+    }, 1000);
+  }, window.Artalk);
+}
+
 const siteRefresh = function (reload) {
   LOCAL_HASH = 0
   LOCAL_URL = window.location.href
@@ -55,21 +88,7 @@ const siteRefresh = function (reload) {
   vendorJs('copy_tex');
   vendorCss('mermaid');
   vendorJs('chart');
-  vendorJs('valine', function() {
-    var options = Object.assign({}, CONFIG.valine);
-    options = Object.assign(options, LOCAL.valine||{});
-    options.el = '#comments';
-    options.pathname = LOCAL.path;
-    options.pjax = pjax;
-    options.lazyload = lazyload;
-
-    new MiniValine(options);
-
-    setTimeout(function(){
-      positionInit(1);
-      postFancybox('.v');
-    }, 1000);
-  }, window.MiniValine);
+  artalkComments();
 
   if(!reload) {
     $.each('script[data-pjax]', pjaxScript);

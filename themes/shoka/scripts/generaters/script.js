@@ -21,14 +21,15 @@ hexo.extend.generator.register('script', function(locals){
     darkmode: theme.darkmode,
     auto_scroll: theme.auto_scroll,
     js: {
-      valine: theme.vendors.js.valine,
+      artalk: theme.vendors.js.artalk,
       chart: theme.vendors.js.chart,
       copy_tex: theme.vendors.js.copy_tex,
       mermaid: theme.vendors.js.mermaid,
       fancybox: theme.vendors.js.fancybox
     },
     css: {
-      valine: theme.css + "/comment.css",
+      artalk: theme.vendors.css.artalk,
+      comment: theme.css + "/comment.css",
       katex: theme.vendors.css.katex,
       mermaid: theme.css + "/mermaid.css",
       fancybox: theme.vendors.css.fancybox
@@ -38,7 +39,7 @@ hexo.extend.generator.register('script', function(locals){
       provider: theme.search.provider,
       hits    : theme.search.hits || {}
     } : null,
-    valine: theme.valine,
+    artalk: theme.artalk,
     quicklink: {
       timeout : theme.quicklink.timeout,
       priority: theme.quicklink.priority

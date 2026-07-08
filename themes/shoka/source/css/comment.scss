@@ -2,4 +2,50 @@
 
 @import "_mixins";
 
-@import "_common/components/third-party/valine";
+#comments {
+  margin-top: 2rem;
+
+  &.wrap {
+    animation: none;
+    opacity: 0;
+  }
+}
+
+.atk-main-editor,
+.atk-list > .atk-list-header,
+.atk-list > .atk-comment-wrap {
+  @include shadow-box;
+}
+
+.atk-main-editor,
+.atk-list > .atk-list-header {
+  border: none;
+}
+
+.atk-comment-wrap {
+  border-bottom-color: var(--grey-2);
+}
+
+.atk-content a,
+.atk-comment-name {
+  color: var(--color-aqua);
+
+  &:hover {
+    color: var(--primary-color);
+  }
+}
+
+.atk-send-btn {
+  background: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+.atk-dark-mode {
+  --at-color-font: var(--text-color);
+  --at-color-deep: var(--text-color);
+  --at-color-sub: var(--grey-5);
+  --at-color-grey: var(--grey-4);
+  --at-color-bg: var(--body-bg-shadow);
+  --at-color-bg-grey: var(--grey-1);
+  --at-color-border: var(--grey-2);
+}

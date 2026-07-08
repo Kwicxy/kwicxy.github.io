@@ -95,9 +95,11 @@
 
 {%- set ccIcon = '<i class="ic i-creative-commons"></i>' %}
 {%- set ccText = theme.creative_commons.license | upper %}
+{%- set pageTitle = page.title if page.title else config.title %}
 <script data-config type="text/javascript">
   var LOCAL = {
     path: '{{ _permapath(page.path) }}',
+    title: {{ pageTitle|safedump }},
     favicon: {
       show: "{{ __('favicon.show') }}",
       hide: "{{ __('favicon.hide') }}"
@@ -107,8 +109,8 @@
       empty: "{{ __('search.empty') }}",
       stats: "{{ __('search.stats') }}"
     },
-    {%- if theme.widgets.recent_comments or page.comment !== false  %}
-    valine: {{ page.valine|safedump if page.valine else "true"  }},{%- endif %}
+    {%- if page.comment !== false  %}
+    artalk: {{ page.artalk|safedump if page.artalk else "true"  }},{%- endif %}
     {%- if page.chart %}chart: true,{%- endif %}
     {%- if page.math %}copy_tex: true,
     katex: true,{%- endif %}

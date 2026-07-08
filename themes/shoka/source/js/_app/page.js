@@ -617,12 +617,17 @@ const loadComments = function () {
     goToComment.display("")
   }
 
+  LOCAL.comment = true;
+
   if (!window.IntersectionObserver) {
-    vendorCss('valine');
+    vendorCss('artalk');
+    vendorCss('comment');
+    transition(element, 'bounceUpIn');
   } else {
     var io = new IntersectionObserver(function(entries, observer) {
       var entry = entries[0];
-      vendorCss('valine');
+      vendorCss('artalk');
+      vendorCss('comment');
       if (entry.isIntersecting || entry.intersectionRatio > 0) {
         transition($('#comments'), 'bounceUpIn');
         observer.disconnect();
