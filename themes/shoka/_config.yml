@@ -125,7 +125,7 @@ sidebar:
   # Sidebar Position.
   position: right
   # Replace the default avatar image and set the url here.
-  avatar: my_avatar.PNG
+  avatar: rosmon-jirai.webp
 
 widgets:
   # if true, will show random posts
@@ -170,8 +170,8 @@ reward:
 # TagCloud settings for tags page.
 tagcloud:
   # All values below are same as default, change them by yourself.
-  min: 16 # Minimun font size in px
-  max: 24 # Maxium font size in px
+  min: 14 # Minimun font size in px
+  max: 28 # Maxium font size in px
   start: "#72cecf" # Start color (hex, rgba, hsla or color keywords)
   end: "#ffbac3" # End color (hex, rgba, hsla or color keywords)
   amount: 200 # Amount of tags, change it if you have more than 200 tags
