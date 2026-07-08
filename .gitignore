@@ -7,3 +7,5 @@ docs/
 
 .DS_Store
 db.json
+gh-actions-deploy
+gh-actions-deploy.pub
