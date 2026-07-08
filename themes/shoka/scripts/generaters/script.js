@@ -34,22 +34,16 @@ hexo.extend.generator.register('script', function(locals){
       fancybox: theme.vendors.css.fancybox
     },
     loader: theme.loader,
-    search : null,
+    search : theme.search && theme.search.provider ? {
+      provider: theme.search.provider,
+      hits    : theme.search.hits || {}
+    } : null,
     valine: theme.valine,
     quicklink: {
       timeout : theme.quicklink.timeout,
       priority: theme.quicklink.priority
     }
   };
-
-  if(config.algolia) {
-    siteConfig.search = {
-      appID    : config.algolia.appId,
-      apiKey   : config.algolia.apiKey,
-      indexName: config.algolia.indexName,
-      hits     : theme.search.hits
-    }
-  }
 
   if(theme.audio) {
     siteConfig.audio = theme.audio

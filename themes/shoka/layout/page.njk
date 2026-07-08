@@ -15,7 +15,7 @@
 {% endblock %}
 
 {% block header %}
-  <h1 itemprop="name headline">
+  <h1 itemprop="name headline" data-pagefind-meta="title">
     {%- if page.link %}
       {%- set postTitleIcon = '<i class="ic i-link-alt"></i>' %}
       {%- set postText = page.title or page.link %}

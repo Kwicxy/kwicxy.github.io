@@ -633,128 +633,205 @@ const loadComments = function () {
   }
 }
 
-const algoliaSearch = function(pjax) {
-  if(CONFIG.search === null)
+const pagefindSearch = function(pjax) {
+  if(CONFIG.search === null || CONFIG.search.provider !== "pagefind")
     return
 
   if(!siteSearch) {
-    siteSearch = BODY.createChild('div', {
-      id: 'search',
-      innerHTML: '<div class="inner"><div class="header"><span class="icon"><i class="ic i-search"></i></span><div class="search-input-container"></div><span class="close-btn"><i class="ic i-times-circle"></i></span></div><div class="results"><div class="inner"><div id="search-stats"></div><div id="search-hits"></div><div id="search-pagination"></div></div></div></div>'
+    siteSearch = BODY.createChild("div", {
+      id: "search",
+      innerHTML: '<div class="inner"><div class="header"><span class="icon"><i class="ic i-search"></i></span><div class="search-input-container"><input class="search-input" type="search" autocomplete="off"></div><span class="close-btn"><i class="ic i-times-circle"></i></span></div><div class="results"><div class="inner"><div id="search-stats"></div><div id="search-hits"></div><div id="search-pagination"></div></div></div></div>'
     });
   }
 
-  var search = instantsearch({
-    indexName: CONFIG.search.indexName,
-    searchClient  : algoliasearch(CONFIG.search.appID, CONFIG.search.apiKey),
-    searchFunction: function(helper) {
-      var searchInput = $('.search-input');
-      if (searchInput.value) {
-        helper.search();
+  if(siteSearch.dataset.initialized === "true")
+    return
+
+  siteSearch.dataset.initialized = "true";
+
+  var searchInput = $(".search-input");
+  var searchStats = $("#search-stats");
+  var searchHits = $("#search-hits");
+  var searchPagination = $("#search-pagination");
+  var pageSize = (CONFIG.search.hits && CONFIG.search.hits.per_page) || 10;
+  var pagefindInstance = null;
+  var pagefindLoading = null;
+  var searchToken = 0;
+  var currentResults = [];
+  var renderedCount = 0;
+  var loadingMoreToken = null;
+
+  searchInput.placeholder = LOCAL.search.placeholder;
+
+  const escapeHTML = function(text) {
+    return String(text || "").replace(/[&<>"']/g, function(match) {
+      return {
+        "&": "&amp;",
+        "<": "&lt;",
+        ">": "&gt;",
+        '"': "&quot;",
+        "'": "&#39;"
+      }[match];
+    });
+  };
+
+  const pagefindURL = function() {
+    var root = CONFIG.root || "/";
+    return root.replace(/\/?$/, "/") + "pagefind/pagefind.js";
+  };
+
+  const renderStats = function(hits, time) {
+    var stats = LOCAL.search.stats
+      .replace(/\$\{hits}/, hits)
+      .replace(/\$\{time}/, time);
+    searchStats.innerHTML = stats + "<hr>";
+  };
+
+  const renderMessage = function(message) {
+    searchStats.innerHTML = "";
+    searchHits.innerHTML = '<div id="hits-empty">' + message + "</div>";
+    searchPagination.innerHTML = "";
+  };
+
+  const refreshResults = function() {
+    if(pjax && searchHits) {
+      pjax.refresh(searchHits);
+    }
+  };
+
+  const loadPagefind = function() {
+    if(pagefindInstance) {
+      return Promise.resolve(pagefindInstance);
+    }
+
+    if(!pagefindLoading) {
+      pagefindLoading = import(pagefindURL()).then(function(pagefind) {
+        pagefindInstance = pagefind;
+        return pagefind;
+      });
+    }
+
+    return pagefindLoading;
+  };
+
+  const renderMoreResults = function(token) {
+    if(loadingMoreToken === token) {
+      return;
+    }
+
+    loadingMoreToken = token;
+    var nextResults = currentResults.slice(renderedCount, renderedCount + pageSize);
+    Promise.all(nextResults.map(function(result) {
+      return result.data();
+    })).then(function(results) {
+      if(loadingMoreToken === token) {
+        loadingMoreToken = null;
       }
+
+      if(token !== searchToken) {
+        return;
+      }
+
+      var items = results.map(function(result) {
+        var title = escapeHTML(result.meta && result.meta.title ? result.meta.title : result.url);
+        var excerpt = result.excerpt ? '<span class="excerpt">' + result.excerpt + "</span>" : "";
+        return '<li class="item"><a href="' + escapeHTML(result.url) + '">' + title + excerpt + "</a></li>";
+      }).join("");
+
+      if(renderedCount === 0) {
+        searchHits.innerHTML = "<ol>" + items + "</ol>";
+      } else {
+        var list = searchHits.querySelector("ol");
+        if(list) {
+          list.insertAdjacentHTML("beforeend", items);
+        }
+      }
+
+      renderedCount += results.length;
+      if(renderedCount < currentResults.length) {
+        searchPagination.innerHTML = '<button class="page-number search-load-more" type="button">加载更多</button>';
+      } else {
+        searchPagination.innerHTML = "";
+      }
+
+      refreshResults();
+    }).catch(function(error) {
+      if(loadingMoreToken === token) {
+        loadingMoreToken = null;
+      }
+      renderMessage(escapeHTML(error.message || "Pagefind result loading failed."));
+    });
+  };
+
+  const performSearch = function() {
+    var query = searchInput.value.trim();
+    var token = ++searchToken;
+
+    if(!query) {
+      currentResults = [];
+      renderedCount = 0;
+      searchStats.innerHTML = "";
+      searchHits.innerHTML = "";
+      searchPagination.innerHTML = "";
+      return;
+    }
+
+    var startedAt = Date.now();
+    loadPagefind().then(function(pagefind) {
+      return pagefind.debouncedSearch(query);
+    }).then(function(search) {
+      if(token !== searchToken || search === null) {
+        return;
+      }
+
+      currentResults = search.results || [];
+      renderedCount = 0;
+      renderStats(currentResults.length, Date.now() - startedAt);
+
+      if(currentResults.length === 0) {
+        renderMessage(LOCAL.search.empty.replace(/\$\{query}/, escapeHTML(query)));
+        return;
+      }
+
+      renderMoreResults(token);
+    }).catch(function(error) {
+      renderMessage(escapeHTML(error.message || "Pagefind search failed."));
+    });
+  };
+
+  searchInput.addEventListener("input", performSearch);
+  searchPagination.addEventListener("click", function(event) {
+    if(event.target.classList.contains("search-load-more")) {
+      renderMoreResults(searchToken);
     }
   });
 
-  search.on('render', function() {
-    pjax.refresh($('#search-hits'));
-  });
-
-  // Registering Widgets
-  search.addWidgets([
-    instantsearch.widgets.configure({
-      hitsPerPage: CONFIG.search.hits.per_page || 10
-    }),
-
-    instantsearch.widgets.searchBox({
-      container           : '.search-input-container',
-      placeholder         : LOCAL.search.placeholder,
-      // Hide default icons of algolia search
-      showReset           : false,
-      showSubmit          : false,
-      showLoadingIndicator: false,
-      cssClasses          : {
-        input: 'search-input'
-      }
-    }),
-
-    instantsearch.widgets.stats({
-      container: '#search-stats',
-      templates: {
-        text: function(data) {
-          var stats = LOCAL.search.stats
-            .replace(/\$\{hits}/, data.nbHits)
-            .replace(/\$\{time}/, data.processingTimeMS);
-          return stats + '<span class="algolia-powered"></span><hr>';
-        }
-      }
-    }),
-
-    instantsearch.widgets.hits({
-      container: '#search-hits',
-      templates: {
-        item: function(data) {
-          var cats = data.categories ? '<span>'+data.categories.join('<i class="ic i-angle-right"></i>')+'</span>' : '';
-          return '<a href="' + CONFIG.root + data.path +'">'+cats+data._highlightResult.title.value+'</a>';
-        },
-        empty: function(data) {
-          return '<div id="hits-empty">'+
-              LOCAL.search.empty.replace(/\$\{query}/, data.query) +
-            '</div>';
-        }
-      },
-      cssClasses: {
-        item: 'item'
-      }
-    }),
-
-    instantsearch.widgets.pagination({
-      container: '#search-pagination',
-      scrollTo : false,
-      showFirst: false,
-      showLast : false,
-      templates: {
-        first   : '<i class="ic i-angle-double-left"></i>',
-        last    : '<i class="ic i-angle-double-right"></i>',
-        previous: '<i class="ic i-angle-left"></i>',
-        next    : '<i class="ic i-angle-right"></i>'
-      },
-      cssClasses: {
-        root        : 'pagination',
-        item        : 'pagination-item',
-        link        : 'page-number',
-        selectedItem: 'current',
-        disabledItem: 'disabled-item'
-      }
-    })
-  ]);
-
-  search.start();
-
   // Handle and trigger popup window
-  $.each('.search', function(element) {
-    element.addEventListener('click', function() {
-      document.body.style.overflow = 'hidden';
-      transition(siteSearch, 'shrinkIn', function() {
-          $('.search-input').focus();
+  $.each(".search", function(element) {
+    element.addEventListener("click", function() {
+      document.body.style.overflow = "hidden";
+      transition(siteSearch, "shrinkIn", function() {
+          loadPagefind();
+          searchInput.focus();
         }) // transition.shrinkIn
     });
   });
 
   // Monitor main search box
   const onPopupClose = function() {
-    document.body.style.overflow = '';
+    document.body.style.overflow = "";
     transition(siteSearch, 0); // "transition.shrinkOut"
   };
 
-  siteSearch.addEventListener('click', function(event) {
+  siteSearch.addEventListener("click", function(event) {
     if (event.target === siteSearch) {
       onPopupClose();
     }
   });
-  $('.close-btn').addEventListener('click', onPopupClose);
-  window.addEventListener('pjax:success', onPopupClose);
-  window.addEventListener('keyup', function(event) {
-    if (event.key === 'Escape') {
+  $(".close-btn").addEventListener("click", onPopupClose);
+  window.addEventListener("pjax:success", onPopupClose);
+  window.addEventListener("keyup", function(event) {
+    if (event.key === "Escape") {
       onPopupClose();
     }
   });

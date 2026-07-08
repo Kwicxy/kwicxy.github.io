@@ -3,9 +3,10 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "build": "hexo generate",
+    "build": "hexo generate && pagefind --site public",
     "clean": "hexo clean",
     "deploy": "hexo deploy",
+    "search:serve": "hexo generate && pagefind --site public --serve",
     "server": "hexo server"
   },
   "hexo": {
@@ -13,7 +14,6 @@
   },
   "dependencies": {
     "hexo": "^8.1.1",
-    "hexo-algoliasearch": "^2.0.1",
     "hexo-autoprefixer": "^2.0.0",
     "hexo-deployer-git": "^4.0.0",
     "hexo-generator-category": "^2.0.0",
@@ -25,5 +25,8 @@
     "hexo-tag-mmedia": "^1.2.1",
     "hexo-util": "^4.0.0",
     "sass": "^1.101.0"
+  },
+  "devDependencies": {
+    "pagefind": "^1.5.2"
   }
 }
