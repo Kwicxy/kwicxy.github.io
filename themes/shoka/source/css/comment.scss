@@ -9,43 +9,89 @@
     animation: none;
     opacity: 0;
   }
-}
 
-.atk-main-editor,
-.atk-list > .atk-list-header,
-.atk-list > .atk-comment-wrap {
-  @include shadow-box;
-}
-
-.atk-main-editor,
-.atk-list > .atk-list-header {
-  border: none;
-}
-
-.atk-comment-wrap {
-  border-bottom-color: var(--grey-2);
-}
-
-.atk-content a,
-.atk-comment-name {
-  color: var(--color-aqua);
-
-  &:hover {
-    color: var(--primary-color);
+  .atk {
+    --at-color-main: var(--primary-color);
+    --at-color-font: var(--text-color);
+    --at-color-deep: var(--grey-7);
+    --at-color-sub: var(--grey-5);
+    --at-color-grey: var(--grey-4);
+    --at-color-meta: var(--grey-5);
+    --at-color-border: var(--grey-2);
+    --at-color-bg: var(--grey-1);
+    --at-color-bg-grey: var(--grey-2);
+    --at-color-bg-light: var(--grey-0);
+    --at-color-bg-transl: var(--grey-1-a7);
+    --at-color-bg-grey-transl: var(--grey-2-a0);
   }
-}
 
-.atk-send-btn {
-  background: var(--primary-color);
-  border-color: var(--primary-color);
-}
+  .atk-main-editor,
+  .atk-list > .atk-list-header,
+  .atk-list > .atk-comment-wrap {
+    @include shadow-box;
+  }
 
-.atk-dark-mode {
-  --at-color-font: var(--text-color);
-  --at-color-deep: var(--text-color);
-  --at-color-sub: var(--grey-5);
-  --at-color-grey: var(--grey-4);
-  --at-color-bg: var(--body-bg-shadow);
-  --at-color-bg-grey: var(--grey-1);
-  --at-color-border: var(--grey-2);
+  .atk-main-editor,
+  .atk-list > .atk-list-header {
+    border: none;
+  }
+
+  .atk-main-editor {
+    background: var(--grey-1);
+    color: var(--text-color);
+
+    .atk-header input,
+    .atk-textarea {
+      color: var(--text-color);
+    }
+
+    .atk-header input::placeholder,
+    .atk-textarea::placeholder {
+      color: var(--grey-5);
+    }
+  }
+
+  .atk-list > .atk-list-header,
+  .atk-comment-wrap {
+    background: var(--grey-1);
+    color: var(--text-color);
+  }
+
+  .atk-comment-wrap {
+    border-bottom-color: var(--grey-2);
+  }
+
+  .atk-content a,
+  .atk-comment-name {
+    color: var(--color-aqua);
+
+    &:hover {
+      color: var(--primary-color);
+    }
+  }
+
+  .atk-send-btn {
+    background: var(--primary-color) !important;
+    border-color: var(--primary-color) !important;
+    color: var(--grey-0) !important;
+
+    &:hover {
+      filter: brightness(1.05);
+    }
+  }
+
+  .atk-dark-mode {
+    --at-color-main: var(--primary-color);
+    --at-color-font: var(--text-color);
+    --at-color-deep: var(--text-color);
+    --at-color-sub: var(--grey-5);
+    --at-color-grey: var(--grey-4);
+    --at-color-meta: var(--grey-5);
+    --at-color-bg: var(--body-bg-shadow);
+    --at-color-bg-grey: var(--grey-1);
+    --at-color-bg-light: var(--grey-2);
+    --at-color-bg-transl: var(--grey-1-a7);
+    --at-color-bg-grey-transl: var(--grey-2-a0);
+    --at-color-border: var(--grey-2);
+  }
 }

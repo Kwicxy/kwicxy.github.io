@@ -49,6 +49,42 @@ const pjaxReload = function () {
 
 var artalkInstance = null;
 
+const isDarkTheme = function() {
+  return HTML.attr('data-theme') === 'dark';
+}
+
+const applyArtalkThemeClass = function(dark) {
+  var element = $('#comments');
+  if(!element) return;
+
+  $.each('#comments .atk', function(item) {
+    item.toggleClass('atk-dark-mode', dark);
+  });
+}
+
+const syncArtalkTheme = function(dark) {
+  dark = dark === undefined ? isDarkTheme() : dark;
+
+  if(artalkInstance && typeof artalkInstance.setDarkMode === "function") {
+    artalkInstance.setDarkMode(dark);
+  }
+
+  applyArtalkThemeClass(dark);
+}
+
+window.addEventListener('theme:change', function(event) {
+  syncArtalkTheme(event.detail ? event.detail.theme === 'dark' : undefined);
+});
+
+if(window.MutationObserver) {
+  new MutationObserver(function() {
+    syncArtalkTheme();
+  }).observe(document.documentElement, {
+    attributes: true,
+    attributeFilter: ['data-theme']
+  });
+}
+
 const artalkComments = function() {
   var element = $('#comments');
   if(!element || !LOCAL.artalk || !CONFIG.artalk || !CONFIG.artalk.server) return;
@@ -70,10 +106,13 @@ const artalkComments = function() {
     options.el = '#comments';
     options.pageKey = LOCAL.path;
     options.pageTitle = LOCAL.title || document.title;
+    options.darkMode = isDarkTheme();
 
     artalkInstance = Artalk.init(options);
+    syncArtalkTheme(options.darkMode);
 
     setTimeout(function(){
+      syncArtalkTheme();
       positionInit(1);
       postFancybox('.atk');
     }, 1000);
