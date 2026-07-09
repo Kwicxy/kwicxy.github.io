@@ -754,7 +754,7 @@ const pagefindSearch = function(pjax) {
 
       renderedCount += results.length;
       if(renderedCount < currentResults.length) {
-        searchPagination.innerHTML = '<button class="page-number search-load-more" type="button">加载更多</button>';
+        searchPagination.innerHTML = '<button class="page-number search-load-more" type="button">加载更多...</button>';
       } else {
         searchPagination.innerHTML = "";
       }

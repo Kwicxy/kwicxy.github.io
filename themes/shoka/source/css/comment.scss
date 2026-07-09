@@ -46,7 +46,7 @@
     @include artalk-light-vars;
   }
 
-  .atk-avatar {
+  .atk-avatar img {
     border-radius: 50%;
   }
 
@@ -99,6 +99,8 @@
     background: var(--primary-color) !important;
     border-color: var(--primary-color) !important;
     color: var(--grey-0) !important;
+    border-radius: .3125rem;
+    min-width: 3rem;
 
     &:hover {
       filter: brightness(1.05);
@@ -116,5 +118,76 @@
 
   .atk-right-action {
     display: none;
+  }
+}
+
+.atk-layer-wrap {
+  @include artalk-light-vars;
+
+  color: var(--text-color);
+
+  .atk-layer,
+  .atk-layer-dialog,
+  .atk-layer-content,
+  .atk-layer-main {
+    background: var(--grey-1);
+    color: var(--text-color);
+  }
+
+  .atk-layer-dialog {
+    @include shadow-box;
+  }
+
+  input,
+  textarea,
+  .atk-input {
+    background: var(--grey-2) !important;
+    border-color: var(--grey-2) !important;
+    color: var(--text-color) !important;
+
+    &::placeholder {
+      color: var(--grey-5);
+    }
+  }
+
+  a,
+  .atk-text,
+  .atk-nick,
+  .atk-copyright a {
+    color: var(--primary-color) !important;
+  }
+
+  .atk-btn,
+  .atk-btn-confirm {
+    background: var(--primary-color) !important;
+    border-color: var(--primary-color) !important;
+    color: var(--grey-0) !important;
+
+    &:hover {
+      filter: brightness(1.05);
+    }
+  }
+}
+
+[data-theme="dark"] .atk-layer-wrap,
+.atk-layer-wrap.atk-dark-mode {
+  @include artalk-dark-vars;
+
+  color: var(--text-color);
+
+  .atk-layer,
+  .atk-layer-dialog,
+  .atk-layer-content,
+  .atk-layer-main {
+    background: var(--grey-1);
+    color: var(--text-color);
+  }
+
+  input,
+  textarea,
+  .atk-input {
+    background: var(--grey-2) !important;
+    border-color: var(--grey-2) !important;
+    color: var(--text-color) !important;
   }
 }
