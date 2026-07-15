@@ -17,11 +17,11 @@
   &.affix {
     >.inner {
       position: fixed;
-      top: 0rem;
+      top: 3.125rem;
     }
     .panels {
       padding-top: 3.625rem;
-      height: 100vh;
+      height: calc(100vh - 3.125rem) !important;
     }
   }
 
