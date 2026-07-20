@@ -45,43 +45,44 @@ fireworks:
 
 font:
   enable: true
-  host: //fonts.font.im
+  # Font files are self-hosted in source/fonts and declared in source/_data/custom.scss.
   # Font options:
-  # `external: true` will load this font family from `host` above.
+  # `external: true` loads a font family from an external host.
+  # `external: false` expects a locally declared @font-face rule.
   # `family: Times New Roman`. Without any quotes.
   # `size: x.x`. Use `em` as unit. Default: 1 (16px)
 
   # Global font settings used for all elements inside <body>.
   global:
-    external: true
+    external: false
     family: Mulish
 
   # Font settings for alternate title.
   logo:
-    external: true
+    external: false
     family: Dancing Script
     size: 3.5
 
   # Font settings for site title.
   title:
-    external: true
+    external: false
     family: Noto Serif SC
     size: 2.5
 
   # Font settings for headlines (<h1> to <h6>).
   headings:
-    external: true
+    external: false
     family: Noto Serif SC
     size:
 
   # Font settings for posts.
   posts:
-    external: true
+    external: false
     family: Mulish
 
   # Font settings for <code> and code blocks.
   codes:
-    external: true
+    external: false
     family: Hack
     size: 0.875
 

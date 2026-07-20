@@ -1,1 +1,28 @@
-/* 一些自定义样式 */
+/* Self-hosted webfonts. Font files are published from source/fonts. */
+@mixin local-font($family, $weight, $style, $file) {
+  @font-face {
+    font-family: $family;
+    font-style: $style;
+    font-weight: $weight;
+    font-display: swap;
+    src: url("../fonts/#{$file}") format("woff2");
+  }
+}
+
+@include local-font("Mulish", 300, normal, "mulish-latin-300-normal.woff2");
+@include local-font("Mulish", 300, italic, "mulish-latin-300-italic.woff2");
+@include local-font("Mulish", 400, normal, "mulish-latin-400-normal.woff2");
+@include local-font("Mulish", 400, italic, "mulish-latin-400-italic.woff2");
+@include local-font("Mulish", 700, normal, "mulish-latin-700-normal.woff2");
+@include local-font("Mulish", 700, italic, "mulish-latin-700-italic.woff2");
+
+@include local-font("Dancing Script", 400, normal, "dancing-script-latin-400-normal.woff2");
+@include local-font("Dancing Script", 700, normal, "dancing-script-latin-700-normal.woff2");
+
+@include local-font("Noto Serif SC", 400, normal, "noto-serif-sc-chinese-simplified-400-normal.woff2");
+@include local-font("Noto Serif SC", 700, normal, "noto-serif-sc-chinese-simplified-700-normal.woff2");
+
+@include local-font("Hack", 400, normal, "hack-400-normal.woff2");
+@include local-font("Hack", 400, italic, "hack-400-italic.woff2");
+@include local-font("Hack", 700, normal, "hack-700-normal.woff2");
+@include local-font("Hack", 700, italic, "hack-700-italic.woff2");
