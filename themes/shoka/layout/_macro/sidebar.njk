@@ -1,7 +1,7 @@
 {% macro render(display_toc) %}
 <div class="inner">
   {%- if display_toc %}
-    {%- set toc = toc(page.content, { list_number: false }) %}
+    {%- set toc = toc(_normalize_katex_html(page.content), { list_number: false }) %}
     {%- set display_toc = toc.length > 1 and display_toc %}
     {%- set related = _category_posts(page) %}
   {%- endif %}

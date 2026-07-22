@@ -12,11 +12,11 @@
     <h3>{{ _url(item.link or item.path, postText + (postTitleIcon or ''), {itemprop: 'url', title: postText}) }}</h3>
     <div class="excerpt">
       {%- if item.description %}
-        {{ item.description }}
+        {{ _normalize_katex_html(item.description) }}
       {% elif item.excerpt %}
-        {{ item.excerpt }}
+        {{ _normalize_katex_html(item.excerpt) }}
       {% else %}
-        {{ item.content | striptags(true) | escape | truncate(300) }}
+        {{ _normalize_katex_html(item.content) | striptags(true) | escape | truncate(300) }}
       {%- endif %}
     </div>
     {%- if item.categories.length > 0 %}

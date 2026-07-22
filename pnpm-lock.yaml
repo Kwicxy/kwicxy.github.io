@@ -41,6 +41,9 @@ importers:
       hexo-util:
         specifier: ^4.0.0
         version: 4.0.0
+      htmlparser2:
+        specifier: ^10.1.0
+        version: 10.1.0
       sass:
         specifier: ^1.101.0
         version: 1.101.0

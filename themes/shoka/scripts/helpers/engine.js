@@ -3,10 +3,15 @@
 'use strict';
 
 const { htmlTag, url_for } = require('hexo-util');
+const { normalizeKatexHtml } = require("../utils/katex-html");
 const url = require('url');
 const crypto = require('crypto');
 const fs = require('fs');
 const path = require('path');
+
+hexo.extend.helper.register("_normalize_katex_html", function(html) {
+  return normalizeKatexHtml(html);
+});
 
 const randomBG = function(count = 1, image_server = null, image_list = []) {
   if (image_server) {
