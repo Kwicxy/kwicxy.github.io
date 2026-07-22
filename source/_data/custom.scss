@@ -26,3 +26,10 @@
 @include local-font("Hack", 400, italic, "hack-400-italic.woff2");
 @include local-font("Hack", 700, normal, "hack-700-normal.woff2");
 @include local-font("Hack", 700, italic, "hack-700-italic.woff2");
+
+.md img.svg-xs { width: 12rem; }
+.md img.svg-sm { width: 20rem; }
+.md img.svg-md { width: 32rem; }
+.md img.svg-lg { width: 44rem; }
+.md img.svg-xl { width: 56rem; }
+.md img.svg-full { width: 100%; }

@@ -1160,7 +1160,7 @@ $$
 
 作图结果如下：
 
-![曲线 y^2=(1-x^2)^3](/assets/math/MA-5/implicit-semicubical-cusp.svg)
+![曲线 y^2=(1-x^2)^3](/assets/math/MA-5/implicit-semicubical-cusp.svg){.svg-sm}
 +++
 
 +++ 例题 5.19：幂指函数的作图
@@ -1232,7 +1232,7 @@ $$
 
 作图结果如下：
 
-![函数 y=x^x](/assets/math/MA-5/x-power-x.svg)
+![函数 y=x^x](/assets/math/MA-5/x-power-x.svg){.svg-sm}
 +++
 
 +++ 例题 5.20：含铅直渐近线的函数作图
@@ -1291,7 +1291,7 @@ $$
 
 作图结果如下：
 
-![函数 y=e^x/x](/assets/math/MA-5/exp-over-x.svg)
+![函数 y=e^x/x](/assets/math/MA-5/exp-over-x.svg){.svg-md}
 +++
 
 +++ 例题 5.21：极坐标曲线在两种坐标系中的作图
@@ -1380,7 +1380,7 @@ $$
 
 作图结果如下：
 
-![极坐标曲线 r=sin^2 theta](/assets/math/MA-5/sin-squared-polar.svg)
+![极坐标曲线 r=sin^2 theta](/assets/math/MA-5/sin-squared-polar.svg){.svg-xl}
 +++
 
 # 参考资料
