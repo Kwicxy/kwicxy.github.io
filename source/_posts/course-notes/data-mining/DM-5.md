@@ -1,6 +1,7 @@
 ---
 layout: post
 title: 第5章 聚类算法
+description: 介绍无监督聚类的目标与评估方法，重点讲解 K-Means、层次聚类和簇数选择。
 math: true
 date: 2025-12-30 11:18:10
 categories:
@@ -10,6 +11,7 @@ tags:
   - K-Means
   - 聚类
 ---
+> 介绍无监督聚类的目标与评估方法，重点讲解 K-Means、层次聚类和簇数选择。
 
 聚类是无监督学习: 将数据对象划分为多个组(簇)，使得:
 * 簇内相似度高 (Intra-class similarity is high)

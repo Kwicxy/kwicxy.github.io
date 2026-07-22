@@ -1,6 +1,7 @@
 ---
 layout: post
 title: 管理统计 附录
+description: 汇总标准正态、t、卡方和 F 分布等统计表的使用方式，作为管理统计计算与查表附录。
 math: true
 date: 2026-01-02 03:22:43
 categories:
@@ -9,6 +10,7 @@ categories:
 tags:
   - 统计表
 ---
+> 汇总标准正态、t、卡方和 F 分布等统计表的使用方式，作为管理统计计算与查表附录。
 
 # 标准正态分布表
 

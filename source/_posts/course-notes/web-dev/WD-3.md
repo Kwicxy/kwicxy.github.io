@@ -1,6 +1,7 @@
 ---
 layout: post
 title: 第3章 Servlet请求与响应
+description: 讲解 Servlet 请求参数、报头、编码和响应输出的处理方式，覆盖常见 Web 交互场景。
 date: 2026-01-12 23:49:31
 mermaid: true
 categories:
@@ -11,6 +12,7 @@ tags:
   - Servlet
   - 后端
 ---
+> 讲解 Servlet 请求参数、报头、编码和响应输出的处理方式，覆盖常见 Web 交互场景。
 
 # 请求 ServletRequest
 ## 处理参数 Parameter

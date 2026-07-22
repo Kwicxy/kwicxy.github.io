@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Laudon MIS 练习题 11 (全英慎入)
+description: 汇总 Laudon MIS 第 11 章关于知识管理和人工智能的练习题与复习要点。
 quiz: true
 date: 2026-01-07 20:14:15
 categories:
@@ -9,6 +10,7 @@ categories:
 tags:
   - 习题
 ---
+> 汇总 Laudon MIS 第 11 章关于知识管理和人工智能的练习题与复习要点。
 
 # Chapter 11   Managing Knowledge and Artificial Intelligence
 

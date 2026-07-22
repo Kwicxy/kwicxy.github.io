@@ -1,6 +1,7 @@
 ---
 layout: post
 title: 第2章 Servlet基础
+description: 介绍 Servlet 的类与接口、生命周期、请求对象和响应对象，建立 Java Web 请求处理基础。
 date: 2026-01-12 21:49:31
 mermaid: true
 categories:
@@ -11,6 +12,7 @@ tags:
   - Servlet
   - 后端
 ---
+> 介绍 Servlet 的类与接口、生命周期、请求对象和响应对象，建立 Java Web 请求处理基础。
 
 # Servlet 类与接口
 

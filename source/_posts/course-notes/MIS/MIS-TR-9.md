@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Laudon MIS 练习题 9 (全英慎入)
+description: 汇总 Laudon MIS 第 9 章关于企业应用、运营卓越和客户亲密度的练习题与复习要点。
 quiz: true
 date: 2026-01-07 19:46:15
 categories:
@@ -9,6 +10,7 @@ categories:
 tags:
   - 习题
 ---
+> 汇总 Laudon MIS 第 9 章关于企业应用、运营卓越和客户亲密度的练习题与复习要点。
 
 # Chapter 9   Achieving Operational Excellence and Customer Intimacy: Enterprise Applications
 

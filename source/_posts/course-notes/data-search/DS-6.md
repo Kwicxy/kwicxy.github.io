@@ -1,6 +1,7 @@
 ---
 layout: post
 title: 第6章 常用的国外文摘数据库
+description: 梳理 SCI、EI、CPCI、INSPEC、CA 和 BIOSIS 等国外文摘数据库的学科范围、检索入口和结果分析方式。
 date: 2026-06-15 13:00:00
 categories:
   - 课程笔记
@@ -10,10 +11,7 @@ tags:
   - SCI
   - EI
 ---
-
-:::info
-本章重点掌握 SCI、EI、CPCI/ISTP、INSPEC、CA、BA/BIOSIS 等国外文摘数据库的学科范围、检索入口和结果分析方式。
-:::
+> 梳理 SCI、EI、CPCI、INSPEC、CA 和 BIOSIS 等国外文摘数据库的学科范围、检索入口和结果分析方式。
 
 ## 1. 文摘数据库概述
 

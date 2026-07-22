@@ -1,6 +1,7 @@
 ---
 layout: post
 title: 第4章 会话管理与作用域
+description: 梳理 Cookie、Session、作用域对象和会话跟踪机制，说明 Web 应用状态管理的实现方法。
 date: 2026-01-13 02:09:31
 categories:
   - 课程笔记
@@ -10,6 +11,7 @@ tags:
   - Servlet
   - 后端
 ---
+> 梳理 Cookie、Session、作用域对象和会话跟踪机制，说明 Web 应用状态管理的实现方法。
 
 # 会话管理
 

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: 第6章 关联规则挖掘
+description: 讲解关联规则挖掘的支持度、置信度和提升度，并说明 Apriori 等算法的基本思想与应用场景。
 math: true
 mermaid: true
 date: 2025-12-31 11:22:10
@@ -11,6 +12,7 @@ tags:
   - 关联规则
   - Apriori
 ---
+> 讲解关联规则挖掘的支持度、置信度和提升度，并说明 Apriori 等算法的基本思想与应用场景。
 
 场景: 购物篮分析。"啤酒与尿布"。
 形式: $X \rightarrow Y$ (买了x的人也会买Y)

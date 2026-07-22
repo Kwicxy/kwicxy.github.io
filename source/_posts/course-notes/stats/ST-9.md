@@ -1,6 +1,7 @@
 ---
 layout: post
 title: 第9章 方差检验
+description: 介绍单因素方差分析的思想、离差分解、F 检验与多重比较的基本方法。
 math: true
 date: 2026-01-02 01:45:43
 categories:
@@ -9,6 +10,7 @@ categories:
 tags: 
   - 方差分析
 ---
+> 介绍单因素方差分析的思想、离差分解、F 检验与多重比较的基本方法。
 
 # 单因素方差分析
 

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: 第5章 过滤器与监听器
+description: 介绍 Java Web 中的过滤器与监听器，说明其生命周期、典型事件和请求处理链中的作用。
 date: 2026-01-13 02:49:31
 categories:
   - 课程笔记
@@ -10,6 +11,7 @@ tags:
   - Servlet
   - 后端
 ---
+> 介绍 Java Web 中的过滤器与监听器，说明其生命周期、典型事件和请求处理链中的作用。
 
 # 监听器 Listener
 ## 会话事件 HttpSessionEvent

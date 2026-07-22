@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Web开发技术期末复习
+description: 汇总 Web 开发技术期末考试的题型与复习要点，串联 Servlet、会话管理、过滤器和监听器等主题。
 date: 2025-12-31 15:29:31
 mermaid: true
 categories:
@@ -11,6 +12,7 @@ tags:
   - Servlet
   - 后端
 ---
+> 汇总 Web 开发技术期末考试的题型与复习要点，串联 Servlet、会话管理、过滤器和监听器等主题。
 
 # 期末考试
 

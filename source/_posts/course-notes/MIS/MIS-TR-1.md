@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Laudon MIS 练习题 1 (全英慎入)
+description: 汇总 Laudon MIS 第 1 章关于全球商业环境中的信息系统的练习题与复习要点。
 quiz: true
 date: 2026-01-07 17:16:15
 categories:
@@ -9,6 +10,7 @@ categories:
 tags:
   - 习题
 ---
+> 汇总 Laudon MIS 第 1 章关于全球商业环境中的信息系统的练习题与复习要点。
 
 # Chapter 1 Information Systems in Global Business Today
 

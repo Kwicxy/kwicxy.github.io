@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Laudon MIS 练习题 2 (全英慎入)
+description: 汇总 Laudon MIS 第 2 章关于电子商务、数字化协作和全球化的练习题与复习要点。
 quiz: true
 date: 2026-01-07 17:46:15
 categories:
@@ -9,7 +10,7 @@ categories:
 tags:
   - 习题
 ---
-
+> 汇总 Laudon MIS 第 2 章关于电子商务、数字化协作和全球化的练习题与复习要点。
 
 # Chapter 2 Global E-business and Collaboration
 

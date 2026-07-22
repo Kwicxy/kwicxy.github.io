@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Laudon MIS 练习题 12 (全英慎入)
+description: 汇总 Laudon MIS 第 12 章关于决策支持与决策改进的练习题与复习要点。
 quiz: true
 date: 2026-01-07 20:17:15
 categories:
@@ -9,7 +10,7 @@ categories:
 tags:
   - 习题
 ---
-
+> 汇总 Laudon MIS 第 12 章关于决策支持与决策改进的练习题与复习要点。
 
 # Chapter 12   Enhancing Decision Making
 

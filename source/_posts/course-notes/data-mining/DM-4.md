@@ -1,6 +1,7 @@
 ---
 layout: post
 title: 第4章 分类算法的评估指标
+description: 系统说明分类模型评估方法，包括混淆矩阵、准确率、精确率、召回率、F1 值和 ROC 曲线。
 math: true
 date: 2025-12-30 11:08:10
 categories:
@@ -9,6 +10,7 @@ categories:
 tags:
   - 分类模型
 ---
+> 系统说明分类模型评估方法，包括混淆矩阵、准确率、精确率、召回率、F1 值和 ROC 曲线。
 
 # 混淆矩阵
 

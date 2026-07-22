@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Codex 一直 Reconnecting 解决方案
+description: 分析 Codex 出现 Reconnecting 循环的常见原因，并给出网络、客户端、会话和环境层面的排查与解决方案。
 date: 2026-06-28 23:00:00
 categories:
   - 经验帖
@@ -8,6 +9,7 @@ tags:
   - Codex
   - 代理
 ---
+> 分析 Codex 出现 Reconnecting 循环的常见原因，并给出网络、客户端、会话和环境层面的排查与解决方案。
 
 ```plaintext
 Reconnecting... 1/5

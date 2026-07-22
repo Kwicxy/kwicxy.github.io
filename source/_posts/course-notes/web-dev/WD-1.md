@@ -1,6 +1,7 @@
 ---
 layout: post
 title: 第1章 概述
+description: 概述 Web 应用的基础架构、网络编程模式、Servlet 容器和 Java Web 开发中的核心概念。
 date: 2026-01-12 21:29:31
 categories:
   - 课程笔记
@@ -10,6 +11,7 @@ tags:
   - Servlet
   - 后端
 ---
+> 概述 Web 应用的基础架构、网络编程模式、Servlet 容器和 Java Web 开发中的核心概念。
 
 ## Web 基础架构
 

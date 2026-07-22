@@ -1,6 +1,7 @@
 ---
 layout: post
 title: 第3章 数字企业时代的企业应用系统
+description: 梳理 ERP、SCM、CRM 等企业应用系统的特点、演进过程和数字企业中的协同价值。
 date: 2025-12-29 08:55:21
 categories:
   - 课程笔记
@@ -11,6 +12,7 @@ tags:
   - CRM
   - KMS
 ---
+> 梳理 ERP、SCM、CRM 等企业应用系统的特点、演进过程和数字企业中的协同价值。
 
 # `ERP` 企业资源计划系统
 

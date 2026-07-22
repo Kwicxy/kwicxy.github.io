@@ -1,6 +1,7 @@
 ---
 layout: post
 title: LaTeX 数学符号表
+description: 依据《LaTeX Mathematical Symbols》整理常用 LaTeX 数学符号、数学环境与宏包支持情况，作为 Markdown 写作查询页。
 date: 2026-07-18 22:00:00
 categories:
   - 示例
@@ -10,6 +11,7 @@ tags:
   - 数学公式
 math: true
 ---
+> 依据《LaTeX Mathematical Symbols》整理常用 LaTeX 数学符号、数学环境与宏包支持情况，作为 Markdown 写作查询页。
 
 > 本文依据《LaTeX Mathematical Symbols》整理为 Markdown 查询页。
 > 原表中一部分冷门符号来自 `amssymb`。

@@ -1,5 +1,6 @@
 ---
-title: Elements
+title: Markdown Render It 测试页
+description: 用于验证 Markdown Render It 的标题、列表、表格、代码、引用、媒体和其他 HTML 渲染元素是否正常显示。
 date: 2025-12-14 23:29:08
 categories:
     - 测试 
@@ -8,6 +9,7 @@ tags:
 mermaid: true
 math: true
 ---
+> 用于验证 Markdown Render It 的标题、列表、表格、代码、引用、媒体和其他 HTML 渲染元素是否正常显示。
 
 The purpose of this post is to help you make sure all of HTML elements can display properly. If you use CSS reset, don't forget to redefine the style by yourself.
 本页作为测试页
@@ -124,9 +126,9 @@ Lorem <sup>superscript</sup> dolor <sub>subscript</sub> amet, consectetuer adipi
 ++紫色下划线++{.primary}
 ++绿色波浪线++{.wavy .success}
 ++黄色着重点++{.dot .warning}
-~~ 删除线～～
-~~ 红色删除线～～{.danger}
-== 荧光高亮 ==
+~~删除线~~
+~~红色删除线~~{.danger}
+==荧光高亮==
 [赤橙黄绿青蓝紫]{.rainbow}
 [红色]{.red}
 [粉色]{.pink}
