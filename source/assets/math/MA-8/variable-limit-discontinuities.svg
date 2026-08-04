@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="907.2pt" height="504pt" viewBox="0 0 907.2 504" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-07-22T16:19:42.839711</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.10.7, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 504 
+L 907.2 504 
+L 907.2 0 
+L 0 0 
+L 0 504 
+z
+" style="fill: none"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 7.2 244.8 
+L 446.4 244.8 
+L 446.4 7.2 
+L 7.2 7.2 
+L 7.2 244.8 
+z
+" style="fill: none"/>
+   </g>
+   <g id="line2d_1">
+    <path d="M 226.8 244.8 
+L 226.8 7.2 
+" clip-path="url(#p0a126236e9)" style="fill: none; stroke-dasharray: 3.7,1.6; stroke-dashoffset: 0; stroke: #c9d2d8"/>
+   </g>
+   <g id="PathCollection_1">
+    <defs>
+     <path id="m410f26f984" d="M 0 4.330127 
+C 1.148363 4.330127 2.249847 3.873878 3.061862 3.061862 
+C 3.873878 2.249847 4.330127 1.148363 4.330127 0 
+C 4.330127 -1.148363 3.873878 -2.249847 3.061862 -3.061862 
+C 2.249847 -3.873878 1.148363 -4.330127 0 -4.330127 
+C -1.148363 -4.330127 -2.249847 -3.873878 -3.061862 -3.061862 
+C -3.873878 -2.249847 -4.330127 -1.148363 -4.330127 0 
+C -4.330127 1.148363 -3.873878 2.249847 -3.061862 3.061862 
+C -2.249847 3.873878 -1.148363 4.330127 0 4.330127 
+z
+" style="stroke: #3f6f8f; stroke-width: 2"/>
+    </defs>
+    <g clip-path="url(#p0a126236e9)">
+     <use xlink:href="#m410f26f984" x="226.8" y="133.2" style="fill: #ffffff; stroke: #3f6f8f; stroke-width: 2"/>
+     <use xlink:href="#m410f26f984" x="226.8" y="61.2" style="fill: #ffffff; stroke: #3f6f8f; stroke-width: 2"/>
+    </g>
+   </g>
+   <g id="matplotlib.axis_1"/>
+   <g id="matplotlib.axis_2"/>
+   <g id="line2d_2">
+    <path d="M 17.657143 156.24 
+L 226.538571 133.2288 
+L 226.538571 133.2288 
+" clip-path="url(#p0a126236e9)" style="fill: none; stroke: #3f6f8f; stroke-width: 2.5; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_3">
+    <path d="M 227.061429 61.1712 
+L 435.942857 38.16 
+L 435.942857 38.16 
+" clip-path="url(#p0a126236e9)" style="fill: none; stroke: #3f6f8f; stroke-width: 2.5; stroke-linecap: square"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 226.8 244.8 
+L 226.8 7.2 
+" style="fill: none; stroke: #263238; stroke-width: 1.2; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 7.2 172.8 
+L 446.4 172.8 
+" style="fill: none; stroke: #263238; stroke-width: 1.2; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="text_1">
+    <!-- $x_0$ -->
+    <g style="fill: #263238" transform="translate(235.165714 190.8)">
+     <text>
+      <tspan x="0" y="-0.0625" style="font-style: italic; font-size: 18px; font-family: 'STIXGeneral'; fill: #263238">x</tspan>
+      <tspan x="7.991989" y="2.31875" style="font-size: 12.6px; font-family: 'STIXGeneral'; fill: #263238">0</tspan>
+     </text>
+    </g>
+   </g>
+   <g id="text_2">
+    <!-- $f(x)$ -->
+    <g style="fill: #3f6f8f" transform="translate(367.971429 32.4)">
+     <text>
+      <tspan x="0" y="-0.796875" style="font-style: italic; font-size: 18px; font-family: 'STIXGeneral'; fill: #3f6f8f">f</tspan>
+      <tspan x="10.997986" y="-0.796875" style="font-style: italic; font-size: 18px; font-family: 'STIXGeneral'; fill: #3f6f8f">x</tspan>
+      <tspan x="5.003998" y="-0.796875" style="font-size: 18px; font-family: 'STIXGeneral'; fill: #3f6f8f">(</tspan>
+      <tspan x="18.989975" y="-0.796875" style="font-size: 18px; font-family: 'STIXGeneral'; fill: #3f6f8f">)</tspan>
+     </text>
+    </g>
+   </g>
+  </g>
+  <g id="axes_2">
+   <g id="patch_5">
+    <path d="M 460.8 244.8 
+L 900 244.8 
+L 900 7.2 
+L 460.8 7.2 
+L 460.8 244.8 
+z
+" style="fill: none"/>
+   </g>
+   <g id="line2d_4">
+    <path d="M 680.4 244.8 
+L 680.4 7.2 
+" clip-path="url(#p70f094250a)" style="fill: none; stroke-dasharray: 3.7,1.6; stroke-dashoffset: 0; stroke: #c9d2d8"/>
+   </g>
+   <g id="matplotlib.axis_3"/>
+   <g id="matplotlib.axis_4"/>
+   <g id="line2d_5">
+    <path d="M 471.257143 142.56 
+L 889.542857 73.44 
+L 889.542857 73.44 
+" clip-path="url(#p70f094250a)" style="fill: none; stroke: #3f6f8f; stroke-width: 2.5; stroke-linecap: square"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 680.4 244.8 
+L 680.4 7.2 
+" style="fill: none; stroke: #263238; stroke-width: 1.2; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="patch_7">
+    <path d="M 460.8 172.8 
+L 900 172.8 
+" style="fill: none; stroke: #263238; stroke-width: 1.2; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="text_3">
+    <!-- $x_0$ -->
+    <g style="fill: #263238" transform="translate(688.765714 190.8)">
+     <text>
+      <tspan x="0" y="-0.0625" style="font-style: italic; font-size: 18px; font-family: 'STIXGeneral'; fill: #263238">x</tspan>
+      <tspan x="7.991989" y="2.31875" style="font-size: 12.6px; font-family: 'STIXGeneral'; fill: #263238">0</tspan>
+     </text>
+    </g>
+   </g>
+   <g id="PathCollection_2">
+    <g clip-path="url(#p70f094250a)">
+     <use xlink:href="#m410f26f984" x="680.4" y="108" style="fill: #ffffff; stroke: #3f6f8f; stroke-width: 2"/>
+    </g>
+   </g>
+   <g id="PathCollection_3">
+    <defs>
+     <path id="m555f03cea6" d="M 0 4.031129 
+C 1.069068 4.031129 2.094493 3.606384 2.850439 2.850439 
+C 3.606384 2.094493 4.031129 1.069068 4.031129 0 
+C 4.031129 -1.069068 3.606384 -2.094493 2.850439 -2.850439 
+C 2.094493 -3.606384 1.069068 -4.031129 0 -4.031129 
+C -1.069068 -4.031129 -2.094493 -3.606384 -2.850439 -2.850439 
+C -3.606384 -2.094493 -4.031129 -1.069068 -4.031129 0 
+C -4.031129 1.069068 -3.606384 2.094493 -2.850439 2.850439 
+C -2.094493 3.606384 -1.069068 4.031129 0 4.031129 
+z
+" style="stroke: #3f6f8f"/>
+    </defs>
+    <g clip-path="url(#p70f094250a)">
+     <use xlink:href="#m555f03cea6" x="680.4" y="46.8" style="fill: #3f6f8f; stroke: #3f6f8f"/>
+    </g>
+   </g>
+   <g id="text_4">
+    <!-- $f(x)$ -->
+    <g style="fill: #3f6f8f" transform="translate(821.571429 61.2)">
+     <text>
+      <tspan x="0" y="-0.796875" style="font-style: italic; font-size: 18px; font-family: 'STIXGeneral'; fill: #3f6f8f">f</tspan>
+      <tspan x="10.997986" y="-0.796875" style="font-style: italic; font-size: 18px; font-family: 'STIXGeneral'; fill: #3f6f8f">x</tspan>
+      <tspan x="5.003998" y="-0.796875" style="font-size: 18px; font-family: 'STIXGeneral'; fill: #3f6f8f">(</tspan>
+      <tspan x="18.989975" y="-0.796875" style="font-size: 18px; font-family: 'STIXGeneral'; fill: #3f6f8f">)</tspan>
+     </text>
+    </g>
+   </g>
+  </g>
+  <g id="axes_3">
+   <g id="patch_8">
+    <path d="M 7.2 496.8 
+L 446.4 496.8 
+L 446.4 259.2 
+L 7.2 259.2 
+L 7.2 496.8 
+z
+" style="fill: none"/>
+   </g>
+   <g id="line2d_6">
+    <path d="M 226.8 496.8 
+L 226.8 259.2 
+" clip-path="url(#pef7902ec2a)" style="fill: none; stroke-dasharray: 3.7,1.6; stroke-dashoffset: 0; stroke: #c9d2d8"/>
+   </g>
+   <g id="matplotlib.axis_5"/>
+   <g id="matplotlib.axis_6"/>
+   <g id="line2d_7">
+    <path d="M 17.657143 481.05 
+L 32.297143 478.618704 
+L 46.937143 475.961616 
+L 61.577143 473.078736 
+L 76.217143 469.970064 
+L 90.857143 466.6356 
+L 105.497143 463.075344 
+L 120.137143 459.289296 
+L 135.038571 455.203764 
+L 149.94 450.884304 
+L 164.841429 446.330916 
+L 179.742857 441.5436 
+L 194.644286 436.522356 
+L 209.545714 431.267184 
+L 224.447143 425.778084 
+L 226.8 424.8 
+L 244.315714 405.945396 
+L 261.831429 386.767584 
+L 279.608571 366.973056 
+L 297.385714 346.8456 
+L 315.162857 326.385216 
+L 333.201429 305.283636 
+L 351.24 283.839264 
+L 369.278571 262.0521 
+L 387.578571 239.5989 
+L 405.878571 216.7929 
+L 424.178571 193.6341 
+L 435.942857 178.56 
+L 435.942857 178.56 
+" clip-path="url(#pef7902ec2a)" style="fill: none; stroke: #b88a44; stroke-width: 2.5; stroke-linecap: square"/>
+   </g>
+   <g id="patch_9">
+    <path d="M 226.8 496.8 
+L 226.8 259.2 
+" style="fill: none; stroke: #263238; stroke-width: 1.2; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="patch_10">
+    <path d="M 7.2 424.8 
+L 446.4 424.8 
+" style="fill: none; stroke: #263238; stroke-width: 1.2; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="text_5">
+    <!-- $x_0$ -->
+    <g style="fill: #263238" transform="translate(235.165714 442.8)">
+     <text>
+      <tspan x="0" y="-0.0625" style="font-style: italic; font-size: 18px; font-family: 'STIXGeneral'; fill: #263238">x</tspan>
+      <tspan x="7.991989" y="2.31875" style="font-size: 12.6px; font-family: 'STIXGeneral'; fill: #263238">0</tspan>
+     </text>
+    </g>
+   </g>
+   <g id="text_6">
+    <!-- $F(x)$ -->
+    <g style="fill: #b88a44" transform="translate(357.514286 302.4)">
+     <text>
+      <tspan x="0" y="-0.828125" style="font-style: italic; font-size: 18px; font-family: 'STIXGeneral'; fill: #b88a44">F</tspan>
+      <tspan x="16.991989" y="-0.828125" style="font-style: italic; font-size: 18px; font-family: 'STIXGeneral'; fill: #b88a44">x</tspan>
+      <tspan x="10.998001" y="-0.828125" style="font-size: 18px; font-family: 'STIXGeneral'; fill: #b88a44">(</tspan>
+      <tspan x="24.983978" y="-0.828125" style="font-size: 18px; font-family: 'STIXGeneral'; fill: #b88a44">)</tspan>
+     </text>
+    </g>
+   </g>
+  </g>
+  <g id="axes_4">
+   <g id="patch_11">
+    <path d="M 460.8 496.8 
+L 900 496.8 
+L 900 259.2 
+L 460.8 259.2 
+L 460.8 496.8 
+z
+" style="fill: none"/>
+   </g>
+   <g id="line2d_8">
+    <path d="M 680.4 496.8 
+L 680.4 259.2 
+" clip-path="url(#pf1f04784bb)" style="fill: none; stroke-dasharray: 3.7,1.6; stroke-dashoffset: 0; stroke: #c9d2d8"/>
+   </g>
+   <g id="matplotlib.axis_7"/>
+   <g id="matplotlib.axis_8"/>
+   <g id="line2d_9">
+    <path d="M 516.886042 505 
+L 529.032857 500.494986 
+L 541.32 495.700704 
+L 553.607143 490.66785 
+L 565.894286 485.396424 
+L 578.181429 479.886426 
+L 590.73 474.012954 
+L 603.278571 467.89065 
+L 615.827143 461.519514 
+L 628.375714 454.899546 
+L 640.924286 448.030746 
+L 653.734286 440.762184 
+L 666.544286 433.234314 
+L 679.354286 425.447136 
+L 692.164286 417.40065 
+L 704.974286 409.094856 
+L 718.045714 400.352256 
+L 731.117143 391.339656 
+L 744.188571 382.057056 
+L 757.26 372.504456 
+L 770.592857 362.48265 
+L 783.925714 352.179936 
+L 797.258571 341.596314 
+L 810.591429 330.731784 
+L 824.185714 319.365 
+L 837.78 307.706184 
+L 851.374286 295.755336 
+L 864.968571 283.512456 
+L 878.824286 270.733626 
+L 889.542857 260.64 
+L 889.542857 260.64 
+" clip-path="url(#pf1f04784bb)" style="fill: none; stroke: #b88a44; stroke-width: 2.5; stroke-linecap: square"/>
+   </g>
+   <g id="patch_12">
+    <path d="M 680.4 496.8 
+L 680.4 259.2 
+" style="fill: none; stroke: #263238; stroke-width: 1.2; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="patch_13">
+    <path d="M 460.8 424.8 
+L 900 424.8 
+" style="fill: none; stroke: #263238; stroke-width: 1.2; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="text_7">
+    <!-- $x_0$ -->
+    <g style="fill: #263238" transform="translate(688.765714 442.8)">
+     <text>
+      <tspan x="0" y="-0.0625" style="font-style: italic; font-size: 18px; font-family: 'STIXGeneral'; fill: #263238">x</tspan>
+      <tspan x="7.991989" y="2.31875" style="font-size: 12.6px; font-family: 'STIXGeneral'; fill: #263238">0</tspan>
+     </text>
+    </g>
+   </g>
+   <g id="text_8">
+    <!-- $F(x)$ -->
+    <g style="fill: #b88a44" transform="translate(811.114286 313.2)">
+     <text>
+      <tspan x="0" y="-0.828125" style="font-style: italic; font-size: 18px; font-family: 'STIXGeneral'; fill: #b88a44">F</tspan>
+      <tspan x="16.991989" y="-0.828125" style="font-style: italic; font-size: 18px; font-family: 'STIXGeneral'; fill: #b88a44">x</tspan>
+      <tspan x="10.998001" y="-0.828125" style="font-size: 18px; font-family: 'STIXGeneral'; fill: #b88a44">(</tspan>
+      <tspan x="24.983978" y="-0.828125" style="font-size: 18px; font-family: 'STIXGeneral'; fill: #b88a44">)</tspan>
+     </text>
+    </g>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p0a126236e9">
+   <rect x="7.2" y="7.2" width="439.2" height="237.6"/>
+  </clipPath>
+  <clipPath id="p70f094250a">
+   <rect x="460.8" y="7.2" width="439.2" height="237.6"/>
+  </clipPath>
+  <clipPath id="pef7902ec2a">
+   <rect x="7.2" y="259.2" width="439.2" height="237.6"/>
+  </clipPath>
+  <clipPath id="pf1f04784bb">
+   <rect x="460.8" y="259.2" width="439.2" height="237.6"/>
+  </clipPath>
+ </defs>
+</svg>
