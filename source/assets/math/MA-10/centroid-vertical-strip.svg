@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="360" viewBox="0 0 640 360" role="img" aria-labelledby="title desc">
+  <title id="title">曲边梯形的形心与竖直微元</title>
+  <desc id="desc">函数 y=f(x) 与坐标轴围成的区域，标出竖直条带和形心坐标。</desc>
+  <defs>
+    <marker id="arrow" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6Z" fill="#52616b"/></marker>
+  </defs>
+  <rect width="640" height="360" fill="#fdfdfd"/>
+  <g font-family="'STIX Two Text','STIXGeneral','Cambria Math','Noto Serif SC','Songti SC',serif" font-size="18" fill="#35424b">
+    <line x1="68" y1="283" x2="590" y2="283" stroke="#52616b" stroke-width="2" marker-end="url(#arrow)"/>
+    <line x1="104" y1="320" x2="104" y2="46" stroke="#52616b" stroke-width="2" marker-end="url(#arrow)"/>
+    <path d="M151 283 L151 253 C226 136 382 91 542 118 L542 283Z" fill="#dcecf7"/>
+    <line x1="68" y1="283" x2="590" y2="283" stroke="#52616b" stroke-width="2" marker-end="url(#arrow)"/>
+    <path d="M151 253 C226 136 382 91 542 118" fill="none" stroke="#2878a8" stroke-width="3"/>
+    <line x1="151" y1="283" x2="151" y2="253" stroke="#52616b" stroke-width="1.5"/>
+    <line x1="542" y1="283" x2="542" y2="118" stroke="#52616b" stroke-width="1.5"/>
+    <rect x="365" y="110" width="17" height="173" fill="#75b7d8" fill-opacity=".82" stroke="#2878a8" stroke-width="1.5"/>
+    <circle cx="335" cy="196" r="6" fill="#d56a3a"/>
+    <line x1="335" y1="196" x2="335" y2="283" stroke="#d56a3a" stroke-width="1.2" stroke-dasharray="5 4"/>
+    <line x1="104" y1="196" x2="335" y2="196" stroke="#d56a3a" stroke-width="1.2" stroke-dasharray="5 4"/>
+    <text x="344" y="187" fill="#c25022">(x̄, ȳ)</text><text x="388" y="165" fill="#1e5d86">f(x)</text>
+    <text x="358" y="305">dx</text><text x="145" y="306">a</text><text x="536" y="306">b</text>
+    <text x="600" y="290">x</text><text x="92" y="44">y</text><text x="91" y="302">O</text>
+    <text x="176" y="337" font-size="16" fill="#65737d">面积微元 dA = f(x) dx；形心由面积矩确定</text>
+  </g>
+</svg>

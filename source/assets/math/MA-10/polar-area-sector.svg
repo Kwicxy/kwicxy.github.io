@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="360" viewBox="0 0 640 360" role="img" aria-labelledby="title desc">
+  <title id="title">极坐标下的曲边扇形面积微元</title>
+  <desc id="desc">以极点 O 和极轴 theta 等于零绘制的极坐标图中，两条极坐标曲线之间的窄扇形区域，展示外半径、内半径和角度微元。</desc>
+  <defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6Z" fill="#52616b"/></marker></defs>
+  <rect width="640" height="360" fill="#fdfdfd"/>
+  <g font-family="'STIX Two Text','STIXGeneral','Cambria Math','Noto Serif SC','Songti SC',serif" font-size="18" fill="#35424b">
+    <circle cx="200" cy="190" r="65" fill="none" stroke="#d2dbe1" stroke-width="1.2" stroke-dasharray="5 5"/>
+    <circle cx="200" cy="190" r="150" fill="none" stroke="#d2dbe1" stroke-width="1.2" stroke-dasharray="5 5"/>
+    <line x1="200" y1="190" x2="558" y2="190" stroke="#52616b" stroke-width="2" marker-end="url(#arrow)"/>
+    <text x="522" y="214" font-size="16">极轴 θ = 0</text><text x="186" y="214">O</text>
+    <path d="M200 190 L328 112 A150 150 0 0 1 346 157 L263 176 A65 65 0 0 0 255 156Z" fill="#dcecf7" stroke="#2878a8" stroke-width="2.4"/>
+    <path d="M200 190 L328 112 M200 190 L346 157" stroke="#98a7b3" stroke-width="1.5" stroke-dasharray="6 5"/>
+    <path d="M200 190 L255 156 M200 190 L263 176" stroke="#d56a3a" stroke-width="2"/>
+    <path d="M243 164 A56 56 0 0 1 252 178" fill="none" stroke="#d56a3a" stroke-width="2" marker-end="url(#arrow)"/>
+    <text x="249" y="151" fill="#c25022">dθ</text><text x="282" y="102" fill="#2878a8">r = r₁(θ)</text><text x="270" y="185" fill="#d56a3a">r = r₂(θ)</text><text x="316" y="151" fill="#1e5d86">dS</text>
+    <text x="214" y="328" font-size="16" fill="#65737d">扇形微元：dS = ½[r₁²(θ) − r₂²(θ)] dθ</text>
+  </g>
+</svg>

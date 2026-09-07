@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="360" viewBox="0 0 640 360" role="img" aria-labelledby="title desc">
+  <title id="title">摆线一拱与 x 轴围成的面积</title>
+  <desc id="desc">摆线从 t 等于零到 t 等于二 pi 的一拱，和 x 轴围成阴影区域。</desc>
+  <defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6Z" fill="#52616b"/></marker></defs>
+  <rect width="640" height="360" fill="#fdfdfd"/>
+  <g font-family="'STIX Two Text','STIXGeneral','Cambria Math','Noto Serif SC','Songti SC',serif" font-size="18" fill="#35424b">
+    <path d="M92 276 C92 198 185 92 301 92 C417 92 510 198 510 276Z" fill="#dcecf7"/>
+    <line x1="58" y1="276" x2="595" y2="276" stroke="#52616b" stroke-width="2" marker-end="url(#arrow)"/>
+    <line x1="92" y1="311" x2="92" y2="55" stroke="#52616b" stroke-width="2" marker-end="url(#arrow)"/>
+    <path d="M92 276 C92 198 185 92 301 92 C417 92 510 198 510 276" fill="none" stroke="#2878a8" stroke-width="3.5"/>
+    <circle cx="92" cy="276" r="4" fill="#d56a3a"/><circle cx="510" cy="276" r="4" fill="#d56a3a"/>
+    <line x1="92" y1="268" x2="92" y2="284" stroke="#52616b"/><line x1="301" y1="268" x2="301" y2="284" stroke="#52616b"/><line x1="510" y1="268" x2="510" y2="284" stroke="#52616b"/>
+    <text x="84" y="306">0</text><text x="282" y="306">πa</text><text x="488" y="306">2πa</text>
+    <text x="265" y="73" fill="#2878a8">摆线一拱</text><text x="294" y="204" fill="#1e5d86">S</text>
+    <text x="604" y="283">x</text><text x="80" y="52">y</text>
+    <text x="157" y="343" font-size="16" fill="#65737d">x = a(t − sin t)，y = a(1 − cos t)，0 ≤ t ≤ 2π</text>
+  </g>
+</svg>

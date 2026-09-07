@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="360" viewBox="0 0 640 360" role="img" aria-labelledby="title desc">
+  <title id="title">曲线弧长微元</title>
+  <desc id="desc">曲线上的相邻两点及其水平、竖直增量和弧长增量。</desc>
+  <defs>
+    <marker id="arrow" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6Z" fill="#52616b"/></marker>
+  </defs>
+  <rect width="640" height="360" fill="#fdfdfd"/>
+  <g font-family="'STIX Two Text','STIXGeneral','Cambria Math','Noto Serif SC','Songti SC',serif" font-size="18" fill="#35424b">
+    <line x1="65" y1="282" x2="590" y2="282" stroke="#52616b" stroke-width="2" marker-end="url(#arrow)"/>
+    <line x1="104" y1="320" x2="104" y2="47" stroke="#52616b" stroke-width="2" marker-end="url(#arrow)"/>
+    <path d="M135 238 C205 224 251 171 308 184 C368 198 416 112 548 91" fill="none" stroke="#2878a8" stroke-width="3.5"/>
+    <circle cx="308" cy="184" r="5" fill="#d56a3a"/><circle cx="398" cy="146" r="5" fill="#d56a3a"/>
+    <line x1="308" y1="184" x2="398" y2="184" stroke="#98a7b3" stroke-width="1.5" stroke-dasharray="5 4"/>
+    <line x1="398" y1="184" x2="398" y2="146" stroke="#98a7b3" stroke-width="1.5" stroke-dasharray="5 4"/>
+    <path d="M308 184 Q350 166 398 146" fill="none" stroke="#d56a3a" stroke-width="3"/>
+    <line x1="313" y1="222" x2="393" y2="222" stroke="#52616b" stroke-width="1.5" marker-start="url(#arrow)" marker-end="url(#arrow)"/>
+    <line x1="430" y1="181" x2="430" y2="150" stroke="#52616b" stroke-width="1.5" marker-start="url(#arrow)" marker-end="url(#arrow)"/>
+    <text x="335" y="248">dx</text><text x="441" y="169">dy</text><text x="345" y="145" fill="#c25022">ds</text>
+    <text x="289" y="205" font-size="16">(x, y)</text><text x="405" y="138" font-size="16">(x+dx, y+dy)</text>
+    <text x="582" y="289">x</text><text x="92" y="44">y</text>
+    <text x="204" y="332" font-size="16" fill="#65737d">ds = √[(dx)² + (dy)²] = √[1 + (y′)²] dx</text>
+  </g>
+</svg>

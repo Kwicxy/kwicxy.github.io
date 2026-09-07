@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="360" viewBox="0 0 640 360" role="img" aria-labelledby="title desc">
+  <title id="title">根号正弦函数的实际定义区间</title>
+  <desc id="desc">函数 e 的负 x 二分之一乘以根号 sin x 只在零到 pi 内为实数，图中显示该曲线和 x 轴围成区域。</desc>
+  <defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6Z" fill="#52616b"/></marker></defs>
+  <rect width="640" height="360" fill="#fdfdfd"/>
+  <g font-family="'STIX Two Text','STIXGeneral','Cambria Math','Noto Serif SC','Songti SC',serif" font-size="18" fill="#35424b">
+    <path d="M104 265 C130 128 186 102 256 137 C326 171 365 224 421 265Z" fill="#dcecf7"/>
+    <line x1="61" y1="265" x2="590" y2="265" stroke="#52616b" stroke-width="2" marker-end="url(#arrow)"/>
+    <line x1="104" y1="302" x2="104" y2="50" stroke="#52616b" stroke-width="2" marker-end="url(#arrow)"/>
+    <path d="M104 265 C130 128 186 102 256 137 C326 171 365 224 421 265" fill="none" stroke="#2878a8" stroke-width="3.5"/>
+    <path d="M421 265 L558 265" stroke="#98a7b3" stroke-width="2" stroke-dasharray="7 6"/>
+    <line x1="104" y1="257" x2="104" y2="273" stroke="#52616b"/><line x1="421" y1="257" x2="421" y2="273" stroke="#52616b"/><line x1="558" y1="257" x2="558" y2="273" stroke="#52616b"/>
+    <text x="97" y="294">0</text><text x="414" y="294">π</text><text x="546" y="294">2π</text>
+    <text x="454" y="247" font-size="16" fill="#65737d">(π, 2π) 内无实函数值</text>
+    <text x="210" y="107" fill="#2878a8">y = e⁻ˣ⁄²√(sin x)</text><text x="588" y="272">x</text><text x="92" y="48">y</text>
+    <text x="186" y="338" font-size="16" fill="#65737d">绕 x 轴旋转时，积分区间应截为 [0, π]</text>
+  </g>
+</svg>

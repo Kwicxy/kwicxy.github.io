@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="360" viewBox="0 0 640 360" role="img" aria-labelledby="title desc">
+  <title id="title">星形线绕 x 轴旋转时的计数范围</title>
+  <desc id="desc">星形线的上半部分，第一象限曲线被突出，说明只计算第一象限后乘以二。</desc>
+  <rect width="640" height="360" fill="#fdfdfd"/>
+  <g font-family="'STIX Two Text','STIXGeneral','Cambria Math','Noto Serif SC','Songti SC',serif" font-size="18" fill="#35424b">
+    <path d="M535 181 C500 181 320 108 320 73 C320 108 140 181 105 181 C140 181 320 254 320 289 C320 254 500 181 535 181Z" fill="#dcecf7" fill-opacity=".6" stroke="#2878a8" stroke-width="3.5"/>
+    <path d="M320 181 L320 73 C320 108 500 181 535 181Z" fill="#75b7d8" fill-opacity=".8"/>
+    <line x1="63" y1="181" x2="592" y2="181" stroke="#52616b" stroke-width="2"/>
+    <line x1="320" y1="319" x2="320" y2="44" stroke="#52616b" stroke-width="2"/>
+    <path d="M320 73 C320 108 500 181 535 181" fill="none" stroke="#d56a3a" stroke-width="5"/>
+    <text x="421" y="97" fill="#c25022">第一象限曲线</text><text x="355" y="156" fill="#1e5d86">x=2cos³t，y=2sin³t</text>
+    <text x="545" y="189">x</text><text x="308" y="42">y</text><text x="307" y="204">O</text>
+    <text x="145" y="337" font-size="16" fill="#65737d">下半部分旋转后与上半部分重合；面积 = 2 × 第一象限旋转面积</text>
+  </g>
+</svg>

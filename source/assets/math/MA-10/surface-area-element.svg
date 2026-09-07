@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="360" viewBox="0 0 640 360" role="img" aria-labelledby="title desc">
+  <title id="title">旋转曲面面积微元</title>
+  <desc id="desc">曲线弧长微元绕 x 轴旋转形成的窄圆台侧面积。</desc>
+  <defs>
+    <marker id="arrow" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6Z" fill="#52616b"/></marker>
+  </defs>
+  <rect width="640" height="360" fill="#fdfdfd"/>
+  <g font-family="'STIX Two Text','STIXGeneral','Cambria Math','Noto Serif SC','Songti SC',serif" font-size="18" fill="#35424b">
+    <line x1="72" y1="195" x2="580" y2="195" stroke="#52616b" stroke-width="2" marker-end="url(#arrow)"/>
+    <text x="590" y="202">x</text>
+    <ellipse cx="182" cy="195" rx="62" ry="85" fill="#dcecf7" fill-opacity=".6" stroke="#2878a8" stroke-width="2.5"/>
+    <path d="M182 110 C278 91 345 103 435 142 L435 248 C345 287 278 299 182 280Z" fill="#dcecf7" fill-opacity=".6" stroke="#2878a8" stroke-width="3"/>
+    <ellipse cx="435" cy="195" rx="42" ry="53" fill="#dcecf7" fill-opacity=".55" stroke="#2878a8" stroke-width="2.5"/>
+    <path d="M300 101 C323 108 345 115 366 124 L366 266 C345 275 323 282 300 289Z" fill="#75b7d8" fill-opacity=".65" stroke="#2878a8" stroke-width="1.5"/>
+    <line x1="72" y1="195" x2="580" y2="195" stroke="#52616b" stroke-width="2" marker-end="url(#arrow)"/>
+    <ellipse cx="300" cy="195" rx="20" ry="94" fill="none" stroke="#2878a8" stroke-width="1.5"/>
+    <ellipse cx="366" cy="195" rx="18" ry="71" fill="none" stroke="#2878a8" stroke-width="1.5"/>
+    <line x1="333" y1="195" x2="333" y2="121" stroke="#52616b" stroke-width="1.5" marker-end="url(#arrow)"/>
+    <text x="342" y="142">|y|</text><text x="307" y="90" fill="#1e5d86">ds</text><text x="292" y="325" font-size="16" fill="#65737d">dS = 2π · |y| · ds</text>
+    <text x="110" y="62" font-size="17" fill="#65737d">曲线绕 x 轴旋转形成窄圆台</text>
+  </g>
+</svg>
